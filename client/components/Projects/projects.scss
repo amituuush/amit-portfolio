@@ -1,0 +1,70 @@
+.projects-section {
+    background: #F7F7F7;
+    height: 100%;
+    padding-bottom: 4em;
+
+    .portfolio-container {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+
+      -webkit-flex-flow: row wrap;
+      justify-content: space-around;
+
+      .portfolio-item {
+        padding: 5px;
+        margin-top: 3.5em;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+
+        img {
+            width: 325px;
+        }
+
+        h3, p {
+            color: #01A193;
+
+        }
+
+        h3 {
+            font-weight: 400;
+            font-size: 1.75em;
+            margin-top: 0em;
+            margin-bottom: 0em;
+        }
+
+        p {
+            font-weight: 100;
+            font-size: 1.2em;
+            width: 70%;
+            margin: 0.5em auto;
+        }
+
+        button {
+            background: #F7F7F7;
+            border: 1px solid #01A193;
+            padding: 0.5em 1em;
+            border-radius: 5px;
+            margin-right: 0.75em;
+            color: #01A193;
+
+            &:hover {
+                background: #01A193;
+                color: #fff;
+                cursor: pointer;
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+      }
+    }
+}

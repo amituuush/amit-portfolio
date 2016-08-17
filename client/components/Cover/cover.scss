@@ -1,0 +1,15 @@
+.cover-section {
+    height: 22em;
+    text-align: center;
+    .cover-left, .cover-right {
+        width: 25%;
+        display: inline-block;
+        text-align: center;
+        padding: 3em;
+    }
+
+    .cover-right {
+        position: relative;
+        top: -75px;
+    }
+}
