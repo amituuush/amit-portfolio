@@ -1,15 +1,12 @@
-$primary-color: #415161;
+$primary-color: #fff;
+$background-color: #415161;
 
-.projects-section {
-    background: #F7F7F7;
+.about-me-section {
+    background: $background-color;
     height: 100%;
     padding: 2em 4em 4em 4em;
 
-    h2 {
-        color: $primary-color;
-    }
-
-    .projects-container {
+    .about-me-container {
       padding: 0;
       margin: 0;
       list-style: none;
@@ -23,20 +20,12 @@ $primary-color: #415161;
       -webkit-flex-flow: row wrap;
       justify-content: space-around;
 
-      .projects-item {
+      .about-me-item {
         padding: 5px;
         margin-top: 1em;
         color: white;
         font-weight: bold;
         text-align: center;
-
-        &:nth-child(3) {
-            margin-top: 3em;
-        }
-
-        img {
-            width: 350px;
-        }
 
         h3, p {
             color: $primary-color;
@@ -48,33 +37,16 @@ $primary-color: #415161;
             font-size: 1.75em;
             margin-top: 0em;
             margin-bottom: 0em;
+            text-align: left;
         }
 
         p {
             font-weight: 100;
             font-size: 1.2em;
             width: 70%;
-            margin: 0.75em auto;
+            text-align: left;
         }
 
-        button {
-            background: #F7F7F7;
-            border: 1px solid $primary-color;
-            padding: 0.5em 1em;
-            border-radius: 5px;
-            margin-right: 0.75em;
-            color: $primary-color;
-
-            &:hover {
-                background: $primary-color;
-                color: #fff;
-                cursor: pointer;
-            }
-
-            &:focus {
-                outline: none;
-            }
-        }
       }
     }
 }

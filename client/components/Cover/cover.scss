@@ -1,3 +1,5 @@
+$primary-color: #415161;
+
 .cover-section {
     height: 22em;
     text-align: center;
@@ -11,5 +13,18 @@
     .cover-right {
         position: relative;
         top: -75px;
+
+        h1, h2 {
+            color: $primary-color;
+            font-weight: 100;
+        }
+
+        h1 {
+            font-size: 3em;
+        }
+        h2 {
+            font-size: 1.75em;
+        }
+
     }
 }

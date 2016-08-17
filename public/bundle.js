@@ -21846,6 +21846,22 @@
 
 	var _Projects2 = _interopRequireDefault(_Projects);
 
+	var _AboutMe = __webpack_require__(191);
+
+	var _AboutMe2 = _interopRequireDefault(_AboutMe);
+
+	var _Footer = __webpack_require__(194);
+
+	var _Footer2 = _interopRequireDefault(_Footer);
+
+	var _AboutSite = __webpack_require__(197);
+
+	var _AboutSite2 = _interopRequireDefault(_AboutSite);
+
+	var _Contact = __webpack_require__(200);
+
+	var _Contact2 = _interopRequireDefault(_Contact);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var App = _react2.default.createClass({
@@ -21858,7 +21874,10 @@
 	            _react2.default.createElement(_Nav2.default, null),
 	            _react2.default.createElement(_Cover2.default, null),
 	            _react2.default.createElement(_Projects2.default, null),
-	            _react2.default.createElement(_Cover2.default, null)
+	            _react2.default.createElement(_AboutMe2.default, null),
+	            _react2.default.createElement(_AboutSite2.default, null),
+	            _react2.default.createElement(_Contact2.default, null),
+	            _react2.default.createElement(_Footer2.default, null)
 	        );
 	    }
 	});
@@ -22086,7 +22105,7 @@
 
 
 	// module
-	exports.push([module.id, ".cover-section {\n  height: 22em;\n  text-align: center; }\n  .cover-section .cover-left, .cover-section .cover-right {\n    width: 25%;\n    display: inline-block;\n    text-align: center;\n    padding: 3em; }\n  .cover-section .cover-right {\n    position: relative;\n    top: -75px; }\n", ""]);
+	exports.push([module.id, ".cover-section {\n  height: 22em;\n  text-align: center; }\n  .cover-section .cover-left, .cover-section .cover-right {\n    width: 25%;\n    display: inline-block;\n    text-align: center;\n    padding: 3em; }\n  .cover-section .cover-right {\n    position: relative;\n    top: -75px; }\n    .cover-section .cover-right h1, .cover-section .cover-right h2 {\n      color: #415161;\n      font-weight: 100; }\n    .cover-section .cover-right h1 {\n      font-size: 3em; }\n    .cover-section .cover-right h2 {\n      font-size: 1.75em; }\n", ""]);
 
 	// exports
 
@@ -22115,11 +22134,16 @@
 	            'section',
 	            { className: 'projects-section' },
 	            _react2.default.createElement(
+	                'h2',
+	                null,
+	                'My Work'
+	            ),
+	            _react2.default.createElement(
 	                'ul',
-	                { className: 'portfolio-container' },
+	                { className: 'projects-container' },
 	                _react2.default.createElement(
 	                    'li',
-	                    { className: 'portfolio-item' },
+	                    { className: 'projects-item' },
 	                    _react2.default.createElement('img', { src: 'img/gomocha.jpg' }),
 	                    _react2.default.createElement(
 	                        'h3',
@@ -22152,7 +22176,7 @@
 	                ),
 	                _react2.default.createElement(
 	                    'li',
-	                    { className: 'portfolio-item' },
+	                    { className: 'projects-item' },
 	                    _react2.default.createElement('img', { src: 'img/cellbreaker.jpg' }),
 	                    _react2.default.createElement(
 	                        'h3',
@@ -22167,7 +22191,7 @@
 	                ),
 	                _react2.default.createElement(
 	                    'li',
-	                    { className: 'portfolio-item' },
+	                    { className: 'projects-item' },
 	                    _react2.default.createElement('img', { src: 'img/bird-strike.jpg' }),
 	                    _react2.default.createElement(
 	                        'h3',
@@ -22240,7 +22264,413 @@
 
 
 	// module
-	exports.push([module.id, ".projects-section {\n  background: #F7F7F7;\n  height: 100%;\n  padding-bottom: 4em; }\n  .projects-section .portfolio-container {\n    padding: 0;\n    margin: 0;\n    list-style: none;\n    display: -webkit-box;\n    display: -moz-box;\n    display: -ms-flexbox;\n    display: -webkit-flex;\n    display: flex;\n    -webkit-flex-flow: row wrap;\n    justify-content: space-around; }\n    .projects-section .portfolio-container .portfolio-item {\n      padding: 5px;\n      margin-top: 3.5em;\n      color: white;\n      font-weight: bold;\n      text-align: center; }\n      .projects-section .portfolio-container .portfolio-item img {\n        width: 325px; }\n      .projects-section .portfolio-container .portfolio-item h3, .projects-section .portfolio-container .portfolio-item p {\n        color: #01A193; }\n      .projects-section .portfolio-container .portfolio-item h3 {\n        font-weight: 400;\n        font-size: 1.75em;\n        margin-top: 0em;\n        margin-bottom: 0em; }\n      .projects-section .portfolio-container .portfolio-item p {\n        font-weight: 100;\n        font-size: 1.2em;\n        width: 70%;\n        margin: 0.5em auto; }\n      .projects-section .portfolio-container .portfolio-item button {\n        background: #F7F7F7;\n        border: 1px solid #01A193;\n        padding: 0.5em 1em;\n        border-radius: 5px;\n        margin-right: 0.75em;\n        color: #01A193; }\n        .projects-section .portfolio-container .portfolio-item button:hover {\n          background: #01A193;\n          color: #fff;\n          cursor: pointer; }\n        .projects-section .portfolio-container .portfolio-item button:focus {\n          outline: none; }\n", ""]);
+	exports.push([module.id, ".projects-section {\n  background: #F7F7F7;\n  height: 100%;\n  padding: 2em 4em 4em 4em; }\n  .projects-section h2 {\n    color: #415161; }\n  .projects-section .projects-container {\n    padding: 0;\n    margin: 0;\n    list-style: none;\n    display: -webkit-box;\n    display: -moz-box;\n    display: -ms-flexbox;\n    display: -webkit-flex;\n    display: flex;\n    -webkit-flex-flow: row wrap;\n    justify-content: space-around; }\n    .projects-section .projects-container .projects-item {\n      padding: 5px;\n      margin-top: 1em;\n      color: white;\n      font-weight: bold;\n      text-align: center; }\n      .projects-section .projects-container .projects-item:nth-child(3) {\n        margin-top: 3em; }\n      .projects-section .projects-container .projects-item img {\n        width: 350px; }\n      .projects-section .projects-container .projects-item h3, .projects-section .projects-container .projects-item p {\n        color: #415161; }\n      .projects-section .projects-container .projects-item h3 {\n        font-weight: 400;\n        font-size: 1.75em;\n        margin-top: 0em;\n        margin-bottom: 0em; }\n      .projects-section .projects-container .projects-item p {\n        font-weight: 100;\n        font-size: 1.2em;\n        width: 70%;\n        margin: 0.75em auto; }\n      .projects-section .projects-container .projects-item button {\n        background: #F7F7F7;\n        border: 1px solid #415161;\n        padding: 0.5em 1em;\n        border-radius: 5px;\n        margin-right: 0.75em;\n        color: #415161; }\n        .projects-section .projects-container .projects-item button:hover {\n          background: #415161;\n          color: #fff;\n          cursor: pointer; }\n        .projects-section .projects-container .projects-item button:focus {\n          outline: none; }\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 191 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _react = __webpack_require__(5);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _aboutMe = __webpack_require__(192);
+
+	var _aboutMe2 = _interopRequireDefault(_aboutMe);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var AboutMe = _react2.default.createClass({
+	    displayName: 'AboutMe',
+
+	    render: function render() {
+	        return _react2.default.createElement(
+	            'section',
+	            { className: 'about-me-section' },
+	            _react2.default.createElement(
+	                'ul',
+	                { className: 'about-me-container' },
+	                _react2.default.createElement(
+	                    'li',
+	                    { className: 'about-me-item' },
+	                    _react2.default.createElement(
+	                        'h3',
+	                        null,
+	                        'Who I am'
+	                    ),
+	                    _react2.default.createElement(
+	                        'p',
+	                        null,
+	                        'I am a really cool guy I swear'
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'li',
+	                    { className: 'about-me-item' },
+	                    _react2.default.createElement(
+	                        'h3',
+	                        null,
+	                        'What I do'
+	                    ),
+	                    _react2.default.createElement(
+	                        'p',
+	                        null,
+	                        'I put characters together in the right order'
+	                    )
+	                )
+	            )
+	        );
+	    }
+	});
+
+	module.exports = AboutMe;
+
+/***/ },
+/* 192 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(193);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(4)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/index.js!./about-me.scss", function() {
+				var newContent = require("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/index.js!./about-me.scss");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 193 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(3)();
+	// imports
+
+
+	// module
+	exports.push([module.id, ".about-me-section {\n  background: #415161;\n  height: 100%;\n  padding: 2em 4em 4em 4em; }\n  .about-me-section .about-me-container {\n    padding: 0;\n    margin: 0;\n    list-style: none;\n    display: -webkit-box;\n    display: -moz-box;\n    display: -ms-flexbox;\n    display: -webkit-flex;\n    display: flex;\n    -webkit-flex-flow: row wrap;\n    justify-content: space-around; }\n    .about-me-section .about-me-container .about-me-item {\n      padding: 5px;\n      margin-top: 1em;\n      color: white;\n      font-weight: bold;\n      text-align: center; }\n      .about-me-section .about-me-container .about-me-item h3, .about-me-section .about-me-container .about-me-item p {\n        color: #fff; }\n      .about-me-section .about-me-container .about-me-item h3 {\n        font-weight: 400;\n        font-size: 1.75em;\n        margin-top: 0em;\n        margin-bottom: 0em;\n        text-align: left; }\n      .about-me-section .about-me-container .about-me-item p {\n        font-weight: 100;\n        font-size: 1.2em;\n        width: 70%;\n        text-align: left; }\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 194 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _react = __webpack_require__(5);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _footer = __webpack_require__(195);
+
+	var _footer2 = _interopRequireDefault(_footer);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var Footer = _react2.default.createClass({
+	    displayName: 'Footer',
+
+	    render: function render() {
+	        return _react2.default.createElement(
+	            'section',
+	            { className: 'footer-section' },
+	            _react2.default.createElement(
+	                'ul',
+	                { className: 'footer-container' },
+	                _react2.default.createElement(
+	                    'li',
+	                    { className: 'footer-item' },
+	                    _react2.default.createElement(
+	                        'h3',
+	                        null,
+	                        'Who I am'
+	                    ),
+	                    _react2.default.createElement(
+	                        'p',
+	                        null,
+	                        'I am a really cool guy I swear'
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'li',
+	                    { className: 'footer-item' },
+	                    _react2.default.createElement(
+	                        'h3',
+	                        null,
+	                        'Disclaimer'
+	                    ),
+	                    _react2.default.createElement(
+	                        'p',
+	                        null,
+	                        'This website is to be used by prospective employers or parties with legitimate business interests. Some of the material on this website is owned by their respective trademarked entities.﻿Amit Ranan © 2015﻿'
+	                    )
+	                )
+	            )
+	        );
+	    }
+	});
+
+	module.exports = Footer;
+
+/***/ },
+/* 195 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(196);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(4)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/index.js!./footer.scss", function() {
+				var newContent = require("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/index.js!./footer.scss");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 196 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(3)();
+	// imports
+
+
+	// module
+	exports.push([module.id, ".footer-section {\n  background: #415161;\n  height: 20em;\n  padding: 2em 4em 4em 4em; }\n  .footer-section .footer-container {\n    padding: 0;\n    margin: 0;\n    list-style: none;\n    display: -webkit-box;\n    display: -moz-box;\n    display: -ms-flexbox;\n    display: -webkit-flex;\n    display: flex;\n    -webkit-flex-flow: row wrap;\n    justify-content: space-around; }\n    .footer-section .footer-container .footer-item {\n      width: 49%;\n      padding: 5px;\n      margin-top: 1em;\n      color: white;\n      font-weight: bold;\n      text-align: center; }\n      .footer-section .footer-container .footer-item h3, .footer-section .footer-container .footer-item p {\n        color: #fff; }\n      .footer-section .footer-container .footer-item h3 {\n        font-weight: 400;\n        font-size: 1.75em;\n        margin-top: 0em;\n        margin-bottom: 0em;\n        text-align: left; }\n      .footer-section .footer-container .footer-item p {\n        font-weight: 100;\n        font-size: 1.2em;\n        width: 70%;\n        text-align: left; }\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 197 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _react = __webpack_require__(5);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _aboutSite = __webpack_require__(198);
+
+	var _aboutSite2 = _interopRequireDefault(_aboutSite);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var AboutSite = _react2.default.createClass({
+	    displayName: 'AboutSite',
+
+	    render: function render() {
+	        return _react2.default.createElement(
+	            'section',
+	            { className: 'about-site-section' },
+	            _react2.default.createElement(
+	                'h2',
+	                null,
+	                'About this site'
+	            ),
+	            _react2.default.createElement(
+	                'ul',
+	                { className: 'about-site-container' },
+	                _react2.default.createElement(
+	                    'li',
+	                    { className: 'about-site-item' },
+	                    _react2.default.createElement('h3', null),
+	                    _react2.default.createElement(
+	                        'p',
+	                        null,
+	                        'This site it built in React'
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'li',
+	                    { className: 'about-site-item' },
+	                    _react2.default.createElement('h3', null),
+	                    _react2.default.createElement(
+	                        'p',
+	                        null,
+	                        'Yaaaay'
+	                    )
+	                )
+	            )
+	        );
+	    }
+	});
+
+	module.exports = AboutSite;
+
+/***/ },
+/* 198 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(199);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(4)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/index.js!./about-site.scss", function() {
+				var newContent = require("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/index.js!./about-site.scss");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 199 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(3)();
+	// imports
+
+
+	// module
+	exports.push([module.id, ".about-site-section {\n  background: #fff;\n  height: 100%;\n  padding: 2em 4em 4em 4em; }\n  .about-site-section h2 {\n    color: #415161; }\n  .about-site-section .about-site-container {\n    padding: 0;\n    margin: 0;\n    list-style: none;\n    display: -webkit-box;\n    display: -moz-box;\n    display: -ms-flexbox;\n    display: -webkit-flex;\n    display: flex;\n    -webkit-flex-flow: row wrap;\n    justify-content: space-around; }\n    .about-site-section .about-site-container .about-site-item {\n      padding: 5px;\n      margin-top: 1em;\n      color: white;\n      font-weight: bold;\n      text-align: center; }\n      .about-site-section .about-site-container .about-site-item h3, .about-site-section .about-site-container .about-site-item p {\n        color: #415161; }\n      .about-site-section .about-site-container .about-site-item h3 {\n        font-weight: 400;\n        font-size: 1.75em;\n        margin-top: 0em;\n        margin-bottom: 0em;\n        text-align: left; }\n      .about-site-section .about-site-container .about-site-item p {\n        font-weight: 100;\n        font-size: 1.2em;\n        width: 70%;\n        text-align: left; }\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 200 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _react = __webpack_require__(5);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _contact = __webpack_require__(201);
+
+	var _contact2 = _interopRequireDefault(_contact);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var Contact = _react2.default.createClass({
+	    displayName: 'Contact',
+
+	    render: function render() {
+	        return _react2.default.createElement(
+	            'section',
+	            { className: 'contact-section' },
+	            _react2.default.createElement(
+	                'h2',
+	                null,
+	                'Contact'
+	            ),
+	            _react2.default.createElement(
+	                'ul',
+	                { className: 'contact-container' },
+	                _react2.default.createElement(
+	                    'li',
+	                    { className: 'contact-item' },
+	                    _react2.default.createElement(
+	                        'h3',
+	                        null,
+	                        'Call me'
+	                    ),
+	                    _react2.default.createElement(
+	                        'p',
+	                        null,
+	                        'Pleaaassseeeee'
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'li',
+	                    { className: 'contact-item' },
+	                    _react2.default.createElement(
+	                        'h3',
+	                        null,
+	                        'Email me'
+	                    ),
+	                    _react2.default.createElement(
+	                        'p',
+	                        null,
+	                        'now.'
+	                    )
+	                )
+	            )
+	        );
+	    }
+	});
+
+	module.exports = Contact;
+
+/***/ },
+/* 201 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(202);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(4)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/index.js!./contact.scss", function() {
+				var newContent = require("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/index.js!./contact.scss");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 202 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(3)();
+	// imports
+
+
+	// module
+	exports.push([module.id, ".contact-section {\n  background: #F7F7F7;\n  height: 100%;\n  padding: 2em 4em 4em 4em; }\n  .contact-section h2 {\n    color: #415161; }\n  .contact-section .contact-container {\n    padding: 0;\n    margin: 0;\n    list-style: none;\n    display: -webkit-box;\n    display: -moz-box;\n    display: -ms-flexbox;\n    display: -webkit-flex;\n    display: flex;\n    -webkit-flex-flow: row wrap;\n    justify-content: space-around; }\n    .contact-section .contact-container .contact-item {\n      padding: 5px;\n      margin-top: 1em;\n      color: white;\n      font-weight: bold;\n      text-align: center; }\n      .contact-section .contact-container .contact-item h3, .contact-section .contact-container .contact-item p {\n        color: #415161; }\n      .contact-section .contact-container .contact-item h3 {\n        font-weight: 400;\n        font-size: 1.75em;\n        margin-top: 0em;\n        margin-bottom: 0em;\n        text-align: left; }\n      .contact-section .contact-container .contact-item p {\n        font-weight: 100;\n        font-size: 1.2em;\n        width: 70%;\n        text-align: left; }\n", ""]);
 
 	// exports
 
