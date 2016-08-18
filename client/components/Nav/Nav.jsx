@@ -9,11 +9,14 @@ var Nav = React.createClass({
                     <i className="fa fa-bars fa-2x" aria-hidden="true"></i>
                 </div>
                 <ul className={this.props.menuShow ? 'menu-show' : 'menu-hide'}>
-                    <li>Home</li>
-                    <li>Portfolio</li>
-                    <li>Contact</li>
-                    <li>LinkedIn</li>
-                    <li>Resume</li>
+                    <a href="#home"><li>Home</li></a>
+                    <a href="#portfolio"><li>Portfolio</li></a>
+                    <a href="#about-me"><li>About me</li></a>
+                    <a href="#contact"><li>Contact</li></a>
+                    <a href="https://www.linkedin.com/in/amitranan" target="_blank">
+                        <li>LinkedIn</li>
+                    </a>
+                    {/* <li>Resume</li> */}
                 </ul>
             </nav>
         )

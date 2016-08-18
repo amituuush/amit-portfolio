@@ -5,9 +5,9 @@ var Cover = React.createClass({
     render: function() {
         return (
             <section className="cover-section">
-                <div className="cover-left">
+                <a name="home"><div className="cover-left">
                     <img src="img/amit-circle-pic.png" />
-                </div>
+                </div></a>
                 <div className="cover-right">
                     <h1>Amit Ranan</h1>
                     <h2>Frontend Developer</h2>

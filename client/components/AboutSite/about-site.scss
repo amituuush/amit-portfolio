@@ -5,7 +5,12 @@ $primary-color: #415161;
     height: 100%;
     padding: 2em 4em 4em 4em;
 
-    h2 {
+    h3 {
+        font-weight: 400;
+        font-size: 1.75em;
+        margin-top: 0em;
+        margin-bottom: 0em;
+        text-align: left;
         color: $primary-color;
     }
 

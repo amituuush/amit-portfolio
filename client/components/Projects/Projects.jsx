@@ -5,7 +5,7 @@ var Projects = React.createClass({
     render: function() {
         return (
             <section className="projects-section">
-                <h2>My Work</h2>
+                <a name="portfolio"><h3 className="projects-title">My work</h3></a>
                 <ul className="projects-container">
                     <li className="projects-item">
                         <img src="img/gomocha.jpg" />

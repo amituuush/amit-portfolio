@@ -31,6 +31,13 @@ nav {
         background: #fff;
         z-index: 9999;
         width: 100%;
+
+        a {
+            text-decoration: none;
+            color: $primary-color;
+            
+        }
+
         li {
             list-style-type: none;
             padding: 0.75em;

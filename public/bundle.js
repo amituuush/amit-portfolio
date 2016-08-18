@@ -21975,29 +21975,49 @@
 	                'ul',
 	                { className: this.props.menuShow ? 'menu-show' : 'menu-hide' },
 	                _react2.default.createElement(
-	                    'li',
-	                    null,
-	                    'Home'
+	                    'a',
+	                    { href: '#home' },
+	                    _react2.default.createElement(
+	                        'li',
+	                        null,
+	                        'Home'
+	                    )
 	                ),
 	                _react2.default.createElement(
-	                    'li',
-	                    null,
-	                    'Portfolio'
+	                    'a',
+	                    { href: '#portfolio' },
+	                    _react2.default.createElement(
+	                        'li',
+	                        null,
+	                        'Portfolio'
+	                    )
 	                ),
 	                _react2.default.createElement(
-	                    'li',
-	                    null,
-	                    'Contact'
+	                    'a',
+	                    { href: '#about-me' },
+	                    _react2.default.createElement(
+	                        'li',
+	                        null,
+	                        'About me'
+	                    )
 	                ),
 	                _react2.default.createElement(
-	                    'li',
-	                    null,
-	                    'LinkedIn'
+	                    'a',
+	                    { href: '#contact' },
+	                    _react2.default.createElement(
+	                        'li',
+	                        null,
+	                        'Contact'
+	                    )
 	                ),
 	                _react2.default.createElement(
-	                    'li',
-	                    null,
-	                    'Resume'
+	                    'a',
+	                    { href: 'https://www.linkedin.com/in/amitranan', target: '_blank' },
+	                    _react2.default.createElement(
+	                        'li',
+	                        null,
+	                        'LinkedIn'
+	                    )
 	                )
 	            )
 	        );
@@ -22041,7 +22061,7 @@
 
 
 	// module
-	exports.push([module.id, "nav {\n  text-align: left;\n  border-bottom: 1px solid #efefef; }\n  nav .menu-bars .fa-bars {\n    color: #415161;\n    margin: 0.5em; }\n    nav .menu-bars .fa-bars:hover {\n      cursor: pointer; }\n  nav .menu-show {\n    display: block; }\n  nav .menu-hide {\n    display: none; }\n  nav ul {\n    padding-left: 0em;\n    position: absolute;\n    top: 48px;\n    background: #fff;\n    z-index: 9999;\n    width: 100%; }\n    nav ul li {\n      list-style-type: none;\n      padding: 0.75em;\n      width: 100%;\n      border-bottom: 1px solid #EFEFEF; }\n      nav ul li:first-child {\n        border-top: 1px solid #efefef; }\n", ""]);
+	exports.push([module.id, "nav {\n  text-align: left;\n  border-bottom: 1px solid #efefef; }\n  nav .menu-bars .fa-bars {\n    color: #415161;\n    margin: 0.5em; }\n    nav .menu-bars .fa-bars:hover {\n      cursor: pointer; }\n  nav .menu-show {\n    display: block; }\n  nav .menu-hide {\n    display: none; }\n  nav ul {\n    padding-left: 0em;\n    position: absolute;\n    top: 48px;\n    background: #fff;\n    z-index: 9999;\n    width: 100%; }\n    nav ul a {\n      text-decoration: none;\n      color: #415161; }\n    nav ul li {\n      list-style-type: none;\n      padding: 0.75em;\n      width: 100%;\n      border-bottom: 1px solid #EFEFEF; }\n      nav ul li:first-child {\n        border-top: 1px solid #efefef; }\n", ""]);
 
 	// exports
 
@@ -22070,9 +22090,13 @@
 	            'section',
 	            { className: 'cover-section' },
 	            _react2.default.createElement(
-	                'div',
-	                { className: 'cover-left' },
-	                _react2.default.createElement('img', { src: 'img/amit-circle-pic.png' })
+	                'a',
+	                { name: 'home' },
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'cover-left' },
+	                    _react2.default.createElement('img', { src: 'img/amit-circle-pic.png' })
+	                )
 	            ),
 	            _react2.default.createElement(
 	                'div',
@@ -22129,7 +22153,7 @@
 
 
 	// module
-	exports.push([module.id, ".cover-section {\n  text-align: center; }\n  .cover-section .cover-left, .cover-section .cover-right {\n    display: block;\n    text-align: center;\n    padding: 2em 0em 2em 0em; }\n  .cover-section .cover-right h1, .cover-section .cover-right h2 {\n    color: #415161;\n    font-weight: 100; }\n  .cover-section .cover-right h1 {\n    font-size: 3em;\n    margin-top: 0em; }\n  .cover-section .cover-right h2 {\n    font-size: 1.75em; }\n", ""]);
+	exports.push([module.id, ".cover-section {\n  text-align: center; }\n  .cover-section .cover-left, .cover-section .cover-right {\n    display: block;\n    text-align: center;\n    padding: 2em 0em 2em 0em; }\n  .cover-section .cover-right {\n    display: block;\n    text-align: center;\n    padding: 0em 0em 2em 0em; }\n  .cover-section .cover-right h1, .cover-section .cover-right h2 {\n    color: #415161;\n    font-weight: 100; }\n  .cover-section .cover-right h1 {\n    font-size: 3em;\n    margin-top: 0em;\n    margin-bottom: 0em; }\n  .cover-section .cover-right h2 {\n    font-size: 1.75em;\n    margin-top: 0.5em; }\n", ""]);
 
 	// exports
 
@@ -22158,9 +22182,13 @@
 	            'section',
 	            { className: 'projects-section' },
 	            _react2.default.createElement(
-	                'h2',
-	                null,
-	                'My Work'
+	                'a',
+	                { name: 'portfolio' },
+	                _react2.default.createElement(
+	                    'h3',
+	                    { className: 'projects-title' },
+	                    'My work'
+	                )
 	            ),
 	            _react2.default.createElement(
 	                'ul',
@@ -22288,7 +22316,7 @@
 
 
 	// module
-	exports.push([module.id, ".projects-section {\n  background: #F7F7F7;\n  height: 100%;\n  padding: 2em 4em 4em 4em; }\n  .projects-section h2 {\n    color: #415161;\n    font-size: 1.75em; }\n  .projects-section .projects-container {\n    padding: 0;\n    margin: 0;\n    list-style: none;\n    display: -webkit-box;\n    display: -moz-box;\n    display: -ms-flexbox;\n    display: -webkit-flex;\n    display: flex;\n    -webkit-flex-flow: row wrap;\n    justify-content: space-around; }\n    .projects-section .projects-container .projects-item {\n      padding: 5px;\n      margin-top: 1em;\n      margin-bottom: 2em;\n      color: white;\n      font-weight: bold;\n      text-align: center; }\n      .projects-section .projects-container .projects-item img {\n        width: 350px; }\n      .projects-section .projects-container .projects-item h3, .projects-section .projects-container .projects-item p {\n        color: #415161; }\n      .projects-section .projects-container .projects-item h3 {\n        font-weight: 400;\n        font-size: 1.75em;\n        margin-top: 0.5em;\n        margin-bottom: 0em; }\n      .projects-section .projects-container .projects-item p {\n        font-weight: 100;\n        font-size: 1.2em;\n        width: 100%;\n        margin: 0.5em auto 1em auto; }\n      .projects-section .projects-container .projects-item button {\n        background: #415161;\n        border: none;\n        padding: 0.5em 1em;\n        border-radius: 3px;\n        margin-right: 0.75em;\n        color: #fff; }\n        .projects-section .projects-container .projects-item button:hover {\n          background: #4b5e70;\n          color: #fff;\n          cursor: pointer; }\n        .projects-section .projects-container .projects-item button:focus {\n          outline: none; }\n", ""]);
+	exports.push([module.id, ".projects-section {\n  background: #F7F7F7;\n  height: 100%;\n  padding: 2em 4em 4em 4em; }\n  .projects-section h2 {\n    color: #415161;\n    font-size: 1.75em; }\n  .projects-section .projects-title {\n    font-weight: 400;\n    font-size: 1.75em;\n    margin-top: 0em;\n    margin-bottom: 0em;\n    text-align: left;\n    color: #415161; }\n  .projects-section .projects-container {\n    padding: 0;\n    margin: 0;\n    list-style: none;\n    display: -webkit-box;\n    display: -moz-box;\n    display: -ms-flexbox;\n    display: -webkit-flex;\n    display: flex;\n    -webkit-flex-flow: row wrap;\n    justify-content: space-around; }\n    .projects-section .projects-container .projects-item {\n      padding: 5px;\n      margin-top: 1em;\n      margin-bottom: 2em;\n      color: white;\n      font-weight: bold;\n      text-align: center; }\n      .projects-section .projects-container .projects-item img {\n        width: 350px; }\n      .projects-section .projects-container .projects-item h3, .projects-section .projects-container .projects-item p {\n        color: #415161; }\n      .projects-section .projects-container .projects-item h3 {\n        font-weight: 400;\n        font-size: 1.75em;\n        margin-top: 0.5em;\n        margin-bottom: 0em; }\n      .projects-section .projects-container .projects-item p {\n        font-weight: 100;\n        font-size: 1.2em;\n        width: 100%;\n        margin: 0.5em auto 1em auto; }\n      .projects-section .projects-container .projects-item button {\n        background: #415161;\n        border: none;\n        padding: 0.5em 1em;\n        border-radius: 3px;\n        margin-right: 0.75em;\n        color: #fff; }\n        .projects-section .projects-container .projects-item button:hover {\n          background: #4b5e70;\n          color: #fff;\n          cursor: pointer; }\n        .projects-section .projects-container .projects-item button:focus {\n          outline: none; }\n", ""]);
 
 	// exports
 
@@ -22323,9 +22351,13 @@
 	                    'li',
 	                    { className: 'about-me-item' },
 	                    _react2.default.createElement(
-	                        'h3',
-	                        null,
-	                        'About me'
+	                        'a',
+	                        { name: 'about-me' },
+	                        _react2.default.createElement(
+	                            'h3',
+	                            null,
+	                            'About me'
+	                        )
 	                    ),
 	                    _react2.default.createElement(
 	                        'p',
@@ -22507,7 +22539,7 @@
 	            'section',
 	            { className: 'about-site-section' },
 	            _react2.default.createElement(
-	                'h2',
+	                'h3',
 	                null,
 	                'About this site'
 	            ),
@@ -22526,7 +22558,19 @@
 	                            { className: 'about-site-highlight' },
 	                            'React'
 	                        ),
-	                        ' using a ',
+	                        ' using ',
+	                        _react2.default.createElement(
+	                            'span',
+	                            { className: 'about-site-highlight' },
+	                            'Sass'
+	                        ),
+	                        ', ',
+	                        _react2.default.createElement(
+	                            'span',
+	                            { className: 'about-site-highlight' },
+	                            'Webpack'
+	                        ),
+	                        ', and a ',
 	                        _react2.default.createElement(
 	                            'span',
 	                            { className: 'about-site-highlight' },
@@ -22577,7 +22621,7 @@
 
 
 	// module
-	exports.push([module.id, ".about-site-section {\n  background: #fff;\n  height: 100%;\n  padding: 2em 4em 4em 4em; }\n  .about-site-section h2 {\n    color: #415161; }\n  .about-site-section .about-site-container {\n    padding: 0;\n    margin: 0;\n    list-style: none; }\n    .about-site-section .about-site-container .about-site-item {\n      padding: 5px;\n      margin-top: 1em;\n      color: white;\n      font-weight: bold;\n      text-align: center; }\n      .about-site-section .about-site-container .about-site-item h3 {\n        color: #415161;\n        font-weight: 400;\n        font-size: 1.5em;\n        margin-top: 0em;\n        margin-bottom: 0em;\n        text-align: left; }\n        .about-site-section .about-site-container .about-site-item h3 .about-site-highlight {\n          color: #1FA975; }\n      .about-site-section .about-site-container .about-site-item p {\n        font-weight: 100;\n        font-size: 1.2em;\n        width: 70%;\n        text-align: left; }\n", ""]);
+	exports.push([module.id, ".about-site-section {\n  background: #fff;\n  height: 100%;\n  padding: 2em 4em 4em 4em; }\n  .about-site-section h3 {\n    font-weight: 400;\n    font-size: 1.75em;\n    margin-top: 0em;\n    margin-bottom: 0em;\n    text-align: left;\n    color: #415161; }\n  .about-site-section .about-site-container {\n    padding: 0;\n    margin: 0;\n    list-style: none; }\n    .about-site-section .about-site-container .about-site-item {\n      padding: 5px;\n      margin-top: 1em;\n      color: white;\n      font-weight: bold;\n      text-align: center; }\n      .about-site-section .about-site-container .about-site-item h3 {\n        color: #415161;\n        font-weight: 400;\n        font-size: 1.5em;\n        margin-top: 0em;\n        margin-bottom: 0em;\n        text-align: left; }\n        .about-site-section .about-site-container .about-site-item h3 .about-site-highlight {\n          color: #1FA975; }\n      .about-site-section .about-site-container .about-site-item p {\n        font-weight: 100;\n        font-size: 1.2em;\n        width: 70%;\n        text-align: left; }\n", ""]);
 
 	// exports
 
@@ -22606,9 +22650,13 @@
 	            'section',
 	            { className: 'contact-section' },
 	            _react2.default.createElement(
-	                'h2',
-	                null,
-	                'Contact'
+	                'a',
+	                { name: 'contact' },
+	                _react2.default.createElement(
+	                    'h3',
+	                    null,
+	                    'Contact'
+	                )
 	            ),
 	            _react2.default.createElement(
 	                'ul',
@@ -22619,7 +22667,7 @@
 	                    _react2.default.createElement('i', { className: 'fa fa-mobile fa-5x', 'aria-hidden': 'true' }),
 	                    _react2.default.createElement(
 	                        'a',
-	                        { href: 'tel:8186069556' },
+	                        { href: 'tel:8186069556', className: 'contact-phone' },
 	                        '(818) 606-9556'
 	                    )
 	                ),
@@ -22629,14 +22677,27 @@
 	                    _react2.default.createElement('i', { className: 'fa fa-envelope-o fa-3x', 'aria-hidden': 'true' }),
 	                    _react2.default.createElement(
 	                        'a',
-	                        { href: 'mailto: ranan.amit@gmail.com' },
+	                        { href: 'mailto: ranan.amit@gmail.com', className: 'contact-email' },
 	                        'ranan.amit@gmail.com'
 	                    )
 	                ),
 	                _react2.default.createElement(
 	                    'li',
 	                    { className: 'contact-item' },
-	                    'GitHub, LinkedIn'
+	                    _react2.default.createElement(
+	                        'a',
+	                        { href: 'https://www.linkedin.com/in/amitranan', target: '_blank' },
+	                        _react2.default.createElement('i', { className: 'fa fa-linkedin-square fa-2x', 'aria-hidden': 'true' })
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'li',
+	                    { className: 'contact-item' },
+	                    _react2.default.createElement(
+	                        'a',
+	                        { href: 'https://github.com/amituuush', target: '_blank' },
+	                        _react2.default.createElement('i', { className: 'fa fa-github fa-2x', 'aria-hidden': 'true' })
+	                    )
 	                )
 	            )
 	        );
@@ -22680,7 +22741,7 @@
 
 
 	// module
-	exports.push([module.id, ".contact-section {\n  background: #F7F7F7;\n  height: 100%;\n  padding: 2em 4em 4em 4em; }\n  .contact-section h2 {\n    color: #415161;\n    font-size: 1.75em; }\n  .contact-section .contact-container {\n    padding: 0;\n    margin: 0;\n    list-style: none; }\n    .contact-section .contact-container .contact-item {\n      padding: 5px;\n      margin-top: 1em;\n      color: white;\n      font-weight: bold;\n      text-align: center; }\n      .contact-section .contact-container .contact-item:nth-child(2) {\n        margin-top: 3em; }\n      .contact-section .contact-container .contact-item .fa-mobile, .contact-section .contact-container .contact-item .fa-envelope-o {\n        color: #415161;\n        display: block; }\n      .contact-section .contact-container .contact-item a {\n        color: #556b80;\n        font-weight: 400;\n        font-size: 1.75em;\n        margin-top: 0em;\n        margin-bottom: 0em;\n        text-align: left;\n        text-decoration: none; }\n        .contact-section .contact-container .contact-item a:hover {\n          color: #415161; }\n      .contact-section .contact-container .contact-item p {\n        font-weight: 100;\n        font-size: 1.2em;\n        width: 70%;\n        text-align: left; }\n", ""]);
+	exports.push([module.id, ".contact-section {\n  background: #F7F7F7;\n  height: 100%;\n  padding: 2em 4em 4em 4em; }\n  .contact-section h3 {\n    font-weight: 400;\n    font-size: 1.75em;\n    margin-top: 0em;\n    margin-bottom: 0em;\n    text-align: left;\n    color: #415161; }\n  .contact-section .contact-container {\n    padding: 0;\n    margin: 0;\n    list-style: none; }\n    .contact-section .contact-container .contact-item {\n      padding: 5px;\n      margin-top: 1em;\n      color: white;\n      font-weight: bold;\n      text-align: left; }\n      .contact-section .contact-container .contact-item:nth-child(2) {\n        margin-top: 2em; }\n      .contact-section .contact-container .contact-item:nth-child(3) {\n        display: inline-block;\n        margin-top: 2em;\n        margin-right: 1em; }\n      .contact-section .contact-container .contact-item:nth-child(4) {\n        display: inline-block; }\n      .contact-section .contact-container .contact-item .fa-mobile, .contact-section .contact-container .contact-item .fa-envelope-o {\n        color: #415161;\n        display: inline-block; }\n      .contact-section .contact-container .contact-item .fa-linkedin-square, .contact-section .contact-container .contact-item .fa-github {\n        display: inline-block;\n        color: #415161; }\n      .contact-section .contact-container .contact-item .contact-phone {\n        position: relative;\n        top: -20px;\n        left: 32px; }\n      .contact-section .contact-container .contact-item .contact-email {\n        position: relative;\n        top: -10px;\n        left: 20px; }\n      .contact-section .contact-container .contact-item a {\n        color: #556b80;\n        font-weight: 400;\n        font-size: 1.5em;\n        margin-top: 0em;\n        margin-bottom: 0em;\n        text-align: left;\n        text-decoration: none; }\n        .contact-section .contact-container .contact-item a:hover {\n          color: #415161; }\n      .contact-section .contact-container .contact-item p {\n        font-weight: 100;\n        font-size: 1.2em;\n        width: 70%;\n        text-align: left; }\n", ""]);
 
 	// exports
 
