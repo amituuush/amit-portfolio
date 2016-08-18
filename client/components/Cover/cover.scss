@@ -1,18 +1,16 @@
 $primary-color: #415161;
 
 .cover-section {
-    height: 22em;
+
     text-align: center;
     .cover-left, .cover-right {
-        width: 25%;
-        display: inline-block;
+
+        display: block;
         text-align: center;
-        padding: 3em;
+        padding: 2em 0em 2em 0em;
     }
 
     .cover-right {
-        position: relative;
-        top: -75px;
 
         h1, h2 {
             color: $primary-color;
@@ -21,6 +19,7 @@ $primary-color: #415161;
 
         h1 {
             font-size: 3em;
+            margin-top: 0em;
         }
         h2 {
             font-size: 1.75em;

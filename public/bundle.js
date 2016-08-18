@@ -21867,16 +21867,31 @@
 	var App = _react2.default.createClass({
 	    displayName: 'App',
 
+
+	    getInitialState: function getInitialState() {
+	        return {
+	            menuShow: false
+	        };
+	    },
+
+	    _handleMenuToggle: function _handleMenuToggle() {
+	        this.setState({
+	            menuShow: !this.state.menuShow
+	        });
+	    },
+
 	    render: function render() {
 	        return _react2.default.createElement(
 	            'div',
 	            null,
-	            _react2.default.createElement(_Nav2.default, null),
+	            _react2.default.createElement(_Nav2.default, {
+	                handleMenuToggle: this._handleMenuToggle,
+	                menuShow: this.state.menuShow }),
 	            _react2.default.createElement(_Cover2.default, null),
 	            _react2.default.createElement(_Projects2.default, null),
 	            _react2.default.createElement(_AboutMe2.default, null),
-	            _react2.default.createElement(_AboutSite2.default, null),
 	            _react2.default.createElement(_Contact2.default, null),
+	            _react2.default.createElement(_AboutSite2.default, null),
 	            _react2.default.createElement(_Footer2.default, null)
 	        );
 	    }
@@ -21944,12 +21959,21 @@
 	    displayName: 'Nav',
 
 	    render: function render() {
+	        var _this = this;
+
 	        return _react2.default.createElement(
 	            'nav',
-	            null,
+	            { className: '' },
+	            _react2.default.createElement(
+	                'div',
+	                { onClick: function onClick() {
+	                        _this.props.handleMenuToggle();
+	                    }, className: 'menu-bars' },
+	                _react2.default.createElement('i', { className: 'fa fa-bars fa-2x', 'aria-hidden': 'true' })
+	            ),
 	            _react2.default.createElement(
 	                'ul',
-	                null,
+	                { className: this.props.menuShow ? 'menu-show' : 'menu-hide' },
 	                _react2.default.createElement(
 	                    'li',
 	                    null,
@@ -22017,7 +22041,7 @@
 
 
 	// module
-	exports.push([module.id, "nav {\n  text-align: center;\n  border-bottom: 1px solid #efefef; }\n  nav ul li {\n    display: inline-block;\n    list-style-type: none;\n    border: 1px solid black;\n    padding: 0.5em;\n    border-radius: 3px;\n    margin-left: 1em; }\n", ""]);
+	exports.push([module.id, "nav {\n  text-align: left;\n  border-bottom: 1px solid #efefef; }\n  nav .menu-bars .fa-bars {\n    color: #415161;\n    margin: 0.5em; }\n    nav .menu-bars .fa-bars:hover {\n      cursor: pointer; }\n  nav .menu-show {\n    display: block; }\n  nav .menu-hide {\n    display: none; }\n  nav ul {\n    padding-left: 0em;\n    position: absolute;\n    top: 48px;\n    background: #fff;\n    z-index: 9999;\n    width: 100%; }\n    nav ul li {\n      list-style-type: none;\n      padding: 0.75em;\n      width: 100%;\n      border-bottom: 1px solid #EFEFEF; }\n      nav ul li:first-child {\n        border-top: 1px solid #efefef; }\n", ""]);
 
 	// exports
 
@@ -22105,7 +22129,7 @@
 
 
 	// module
-	exports.push([module.id, ".cover-section {\n  height: 22em;\n  text-align: center; }\n  .cover-section .cover-left, .cover-section .cover-right {\n    width: 25%;\n    display: inline-block;\n    text-align: center;\n    padding: 3em; }\n  .cover-section .cover-right {\n    position: relative;\n    top: -75px; }\n    .cover-section .cover-right h1, .cover-section .cover-right h2 {\n      color: #415161;\n      font-weight: 100; }\n    .cover-section .cover-right h1 {\n      font-size: 3em; }\n    .cover-section .cover-right h2 {\n      font-size: 1.75em; }\n", ""]);
+	exports.push([module.id, ".cover-section {\n  text-align: center; }\n  .cover-section .cover-left, .cover-section .cover-right {\n    display: block;\n    text-align: center;\n    padding: 2em 0em 2em 0em; }\n  .cover-section .cover-right h1, .cover-section .cover-right h2 {\n    color: #415161;\n    font-weight: 100; }\n  .cover-section .cover-right h1 {\n    font-size: 3em;\n    margin-top: 0em; }\n  .cover-section .cover-right h2 {\n    font-size: 1.75em; }\n", ""]);
 
 	// exports
 
@@ -22264,7 +22288,7 @@
 
 
 	// module
-	exports.push([module.id, ".projects-section {\n  background: #F7F7F7;\n  height: 100%;\n  padding: 2em 4em 4em 4em; }\n  .projects-section h2 {\n    color: #415161; }\n  .projects-section .projects-container {\n    padding: 0;\n    margin: 0;\n    list-style: none;\n    display: -webkit-box;\n    display: -moz-box;\n    display: -ms-flexbox;\n    display: -webkit-flex;\n    display: flex;\n    -webkit-flex-flow: row wrap;\n    justify-content: space-around; }\n    .projects-section .projects-container .projects-item {\n      padding: 5px;\n      margin-top: 1em;\n      color: white;\n      font-weight: bold;\n      text-align: center; }\n      .projects-section .projects-container .projects-item:nth-child(3) {\n        margin-top: 3em; }\n      .projects-section .projects-container .projects-item img {\n        width: 350px; }\n      .projects-section .projects-container .projects-item h3, .projects-section .projects-container .projects-item p {\n        color: #415161; }\n      .projects-section .projects-container .projects-item h3 {\n        font-weight: 400;\n        font-size: 1.75em;\n        margin-top: 0em;\n        margin-bottom: 0em; }\n      .projects-section .projects-container .projects-item p {\n        font-weight: 100;\n        font-size: 1.2em;\n        width: 70%;\n        margin: 0.75em auto; }\n      .projects-section .projects-container .projects-item button {\n        background: #F7F7F7;\n        border: 1px solid #415161;\n        padding: 0.5em 1em;\n        border-radius: 5px;\n        margin-right: 0.75em;\n        color: #415161; }\n        .projects-section .projects-container .projects-item button:hover {\n          background: #415161;\n          color: #fff;\n          cursor: pointer; }\n        .projects-section .projects-container .projects-item button:focus {\n          outline: none; }\n", ""]);
+	exports.push([module.id, ".projects-section {\n  background: #F7F7F7;\n  height: 100%;\n  padding: 2em 4em 4em 4em; }\n  .projects-section h2 {\n    color: #415161;\n    font-size: 1.75em; }\n  .projects-section .projects-container {\n    padding: 0;\n    margin: 0;\n    list-style: none;\n    display: -webkit-box;\n    display: -moz-box;\n    display: -ms-flexbox;\n    display: -webkit-flex;\n    display: flex;\n    -webkit-flex-flow: row wrap;\n    justify-content: space-around; }\n    .projects-section .projects-container .projects-item {\n      padding: 5px;\n      margin-top: 1em;\n      margin-bottom: 2em;\n      color: white;\n      font-weight: bold;\n      text-align: center; }\n      .projects-section .projects-container .projects-item img {\n        width: 350px; }\n      .projects-section .projects-container .projects-item h3, .projects-section .projects-container .projects-item p {\n        color: #415161; }\n      .projects-section .projects-container .projects-item h3 {\n        font-weight: 400;\n        font-size: 1.75em;\n        margin-top: 0.5em;\n        margin-bottom: 0em; }\n      .projects-section .projects-container .projects-item p {\n        font-weight: 100;\n        font-size: 1.2em;\n        width: 100%;\n        margin: 0.5em auto 1em auto; }\n      .projects-section .projects-container .projects-item button {\n        background: #415161;\n        border: none;\n        padding: 0.5em 1em;\n        border-radius: 3px;\n        margin-right: 0.75em;\n        color: #fff; }\n        .projects-section .projects-container .projects-item button:hover {\n          background: #4b5e70;\n          color: #fff;\n          cursor: pointer; }\n        .projects-section .projects-container .projects-item button:focus {\n          outline: none; }\n", ""]);
 
 	// exports
 
@@ -22301,27 +22325,29 @@
 	                    _react2.default.createElement(
 	                        'h3',
 	                        null,
-	                        'Who I am'
+	                        'About me'
 	                    ),
 	                    _react2.default.createElement(
 	                        'p',
 	                        null,
-	                        'I am a really cool guy I swear'
+	                        'After graduating from UC Davis with a bachelor\'s in Economics, I worked in finance and soon realized I needed more creativity in my work. I was then exposed to coding and realized I found my niche. I love the way it allows me to organize large amounts of information in my head, and I love the way it challenges me every day.'
+	                    ),
+	                    _react2.default.createElement(
+	                        'p',
+	                        null,
+	                        'I recently graduated from ',
+	                        _react2.default.createElement(
+	                            'a',
+	                            { href: 'https://www.thinkful.com/', target: '_blank' },
+	                            'Thinkful'
+	                        ),
+	                        '\'s coding bootcamp and have been looking to work for a fun and exciting company to continue my endless growth as a software developer.'
 	                    )
 	                ),
 	                _react2.default.createElement(
 	                    'li',
 	                    { className: 'about-me-item' },
-	                    _react2.default.createElement(
-	                        'h3',
-	                        null,
-	                        'What I do'
-	                    ),
-	                    _react2.default.createElement(
-	                        'p',
-	                        null,
-	                        'I put characters together in the right order'
-	                    )
+	                    _react2.default.createElement('img', { src: 'img/amit-canyoning.jpg' })
 	                )
 	            )
 	        );
@@ -22365,7 +22391,7 @@
 
 
 	// module
-	exports.push([module.id, ".about-me-section {\n  background: #415161;\n  height: 100%;\n  padding: 2em 4em 4em 4em; }\n  .about-me-section .about-me-container {\n    padding: 0;\n    margin: 0;\n    list-style: none;\n    display: -webkit-box;\n    display: -moz-box;\n    display: -ms-flexbox;\n    display: -webkit-flex;\n    display: flex;\n    -webkit-flex-flow: row wrap;\n    justify-content: space-around; }\n    .about-me-section .about-me-container .about-me-item {\n      padding: 5px;\n      margin-top: 1em;\n      color: white;\n      font-weight: bold;\n      text-align: center; }\n      .about-me-section .about-me-container .about-me-item h3, .about-me-section .about-me-container .about-me-item p {\n        color: #fff; }\n      .about-me-section .about-me-container .about-me-item h3 {\n        font-weight: 400;\n        font-size: 1.75em;\n        margin-top: 0em;\n        margin-bottom: 0em;\n        text-align: left; }\n      .about-me-section .about-me-container .about-me-item p {\n        font-weight: 100;\n        font-size: 1.2em;\n        width: 70%;\n        text-align: left; }\n", ""]);
+	exports.push([module.id, ".about-me-section {\n  background: #fff;\n  height: 100%;\n  padding: 2em 4em 4em 4em; }\n  .about-me-section .about-me-container {\n    padding: 0;\n    margin: 0;\n    list-style: none; }\n    .about-me-section .about-me-container .about-me-item {\n      padding: 5px;\n      margin-top: 1em;\n      color: #415161;\n      font-weight: bold;\n      text-align: center; }\n      .about-me-section .about-me-container .about-me-item h3, .about-me-section .about-me-container .about-me-item p {\n        color: #415161; }\n      .about-me-section .about-me-container .about-me-item h3 {\n        font-weight: 400;\n        font-size: 1.75em;\n        margin-top: 0em;\n        margin-bottom: 0em;\n        text-align: left; }\n      .about-me-section .about-me-container .about-me-item p {\n        font-weight: 100;\n        font-size: 1.2em;\n        text-align: left; }\n      .about-me-section .about-me-container .about-me-item img {\n        max-width: 430px; }\n      .about-me-section .about-me-container .about-me-item:nth-child(2) {\n        text-align: center; }\n", ""]);
 
 	// exports
 
@@ -22402,26 +22428,12 @@
 	                    _react2.default.createElement(
 	                        'h3',
 	                        null,
-	                        'Who I am'
-	                    ),
-	                    _react2.default.createElement(
-	                        'p',
-	                        null,
-	                        'I am a really cool guy I swear'
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    'li',
-	                    { className: 'footer-item' },
-	                    _react2.default.createElement(
-	                        'h3',
-	                        null,
 	                        'Disclaimer'
 	                    ),
 	                    _react2.default.createElement(
 	                        'p',
 	                        null,
-	                        'This website is to be used by prospective employers or parties with legitimate business interests. Some of the material on this website is owned by their respective trademarked entities.﻿Amit Ranan © 2015﻿'
+	                        'This website is to be used by prospective employers or parties with legitimate business interests. Some of the material on this website is owned by their respective trademarked entities. ﻿   Amit Ranan © 2016'
 	                    )
 	                )
 	            )
@@ -22466,7 +22478,7 @@
 
 
 	// module
-	exports.push([module.id, ".footer-section {\n  background: #415161;\n  height: 20em;\n  padding: 2em 4em 4em 4em; }\n  .footer-section .footer-container {\n    padding: 0;\n    margin: 0;\n    list-style: none;\n    display: -webkit-box;\n    display: -moz-box;\n    display: -ms-flexbox;\n    display: -webkit-flex;\n    display: flex;\n    -webkit-flex-flow: row wrap;\n    justify-content: space-around; }\n    .footer-section .footer-container .footer-item {\n      width: 49%;\n      padding: 5px;\n      margin-top: 1em;\n      color: white;\n      font-weight: bold;\n      text-align: center; }\n      .footer-section .footer-container .footer-item h3, .footer-section .footer-container .footer-item p {\n        color: #fff; }\n      .footer-section .footer-container .footer-item h3 {\n        font-weight: 400;\n        font-size: 1.75em;\n        margin-top: 0em;\n        margin-bottom: 0em;\n        text-align: left; }\n      .footer-section .footer-container .footer-item p {\n        font-weight: 100;\n        font-size: 1.2em;\n        width: 70%;\n        text-align: left; }\n", ""]);
+	exports.push([module.id, ".footer-section {\n  background: #415161;\n  padding: 1em 4em 2em 4em; }\n  .footer-section .footer-container {\n    padding: 0;\n    margin: 0;\n    list-style: none; }\n    .footer-section .footer-container .footer-item {\n      padding: 5px;\n      margin-top: 1em;\n      color: white;\n      font-weight: bold;\n      text-align: center; }\n      .footer-section .footer-container .footer-item h3, .footer-section .footer-container .footer-item p {\n        color: #fff; }\n      .footer-section .footer-container .footer-item h3 {\n        font-weight: 400;\n        font-size: 1.25em;\n        margin-top: 0em;\n        margin-bottom: 0em;\n        text-align: left; }\n      .footer-section .footer-container .footer-item p {\n        font-weight: 100;\n        font-size: 1em;\n        text-align: left; }\n", ""]);
 
 	// exports
 
@@ -22505,21 +22517,22 @@
 	                _react2.default.createElement(
 	                    'li',
 	                    { className: 'about-site-item' },
-	                    _react2.default.createElement('h3', null),
 	                    _react2.default.createElement(
-	                        'p',
+	                        'h3',
 	                        null,
-	                        'This site it built in React'
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    'li',
-	                    { className: 'about-site-item' },
-	                    _react2.default.createElement('h3', null),
-	                    _react2.default.createElement(
-	                        'p',
-	                        null,
-	                        'Yaaaay'
+	                        'This site has been designed and built by hand in ',
+	                        _react2.default.createElement(
+	                            'span',
+	                            { className: 'about-site-highlight' },
+	                            'React'
+	                        ),
+	                        ' using a ',
+	                        _react2.default.createElement(
+	                            'span',
+	                            { className: 'about-site-highlight' },
+	                            'mobile-first'
+	                        ),
+	                        ' approach.'
 	                    )
 	                )
 	            )
@@ -22564,7 +22577,7 @@
 
 
 	// module
-	exports.push([module.id, ".about-site-section {\n  background: #fff;\n  height: 100%;\n  padding: 2em 4em 4em 4em; }\n  .about-site-section h2 {\n    color: #415161; }\n  .about-site-section .about-site-container {\n    padding: 0;\n    margin: 0;\n    list-style: none;\n    display: -webkit-box;\n    display: -moz-box;\n    display: -ms-flexbox;\n    display: -webkit-flex;\n    display: flex;\n    -webkit-flex-flow: row wrap;\n    justify-content: space-around; }\n    .about-site-section .about-site-container .about-site-item {\n      padding: 5px;\n      margin-top: 1em;\n      color: white;\n      font-weight: bold;\n      text-align: center; }\n      .about-site-section .about-site-container .about-site-item h3, .about-site-section .about-site-container .about-site-item p {\n        color: #415161; }\n      .about-site-section .about-site-container .about-site-item h3 {\n        font-weight: 400;\n        font-size: 1.75em;\n        margin-top: 0em;\n        margin-bottom: 0em;\n        text-align: left; }\n      .about-site-section .about-site-container .about-site-item p {\n        font-weight: 100;\n        font-size: 1.2em;\n        width: 70%;\n        text-align: left; }\n", ""]);
+	exports.push([module.id, ".about-site-section {\n  background: #fff;\n  height: 100%;\n  padding: 2em 4em 4em 4em; }\n  .about-site-section h2 {\n    color: #415161; }\n  .about-site-section .about-site-container {\n    padding: 0;\n    margin: 0;\n    list-style: none; }\n    .about-site-section .about-site-container .about-site-item {\n      padding: 5px;\n      margin-top: 1em;\n      color: white;\n      font-weight: bold;\n      text-align: center; }\n      .about-site-section .about-site-container .about-site-item h3 {\n        color: #415161;\n        font-weight: 400;\n        font-size: 1.5em;\n        margin-top: 0em;\n        margin-bottom: 0em;\n        text-align: left; }\n        .about-site-section .about-site-container .about-site-item h3 .about-site-highlight {\n          color: #1FA975; }\n      .about-site-section .about-site-container .about-site-item p {\n        font-weight: 100;\n        font-size: 1.2em;\n        width: 70%;\n        text-align: left; }\n", ""]);
 
 	// exports
 
@@ -22603,30 +22616,27 @@
 	                _react2.default.createElement(
 	                    'li',
 	                    { className: 'contact-item' },
+	                    _react2.default.createElement('i', { className: 'fa fa-mobile fa-5x', 'aria-hidden': 'true' }),
 	                    _react2.default.createElement(
-	                        'h3',
-	                        null,
-	                        'Call me'
-	                    ),
-	                    _react2.default.createElement(
-	                        'p',
-	                        null,
-	                        'Pleaaassseeeee'
+	                        'a',
+	                        { href: 'tel:8186069556' },
+	                        '(818) 606-9556'
 	                    )
 	                ),
 	                _react2.default.createElement(
 	                    'li',
 	                    { className: 'contact-item' },
+	                    _react2.default.createElement('i', { className: 'fa fa-envelope-o fa-3x', 'aria-hidden': 'true' }),
 	                    _react2.default.createElement(
-	                        'h3',
-	                        null,
-	                        'Email me'
-	                    ),
-	                    _react2.default.createElement(
-	                        'p',
-	                        null,
-	                        'now.'
+	                        'a',
+	                        { href: 'mailto: ranan.amit@gmail.com' },
+	                        'ranan.amit@gmail.com'
 	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'li',
+	                    { className: 'contact-item' },
+	                    'GitHub, LinkedIn'
 	                )
 	            )
 	        );
@@ -22670,7 +22680,7 @@
 
 
 	// module
-	exports.push([module.id, ".contact-section {\n  background: #F7F7F7;\n  height: 100%;\n  padding: 2em 4em 4em 4em; }\n  .contact-section h2 {\n    color: #415161; }\n  .contact-section .contact-container {\n    padding: 0;\n    margin: 0;\n    list-style: none;\n    display: -webkit-box;\n    display: -moz-box;\n    display: -ms-flexbox;\n    display: -webkit-flex;\n    display: flex;\n    -webkit-flex-flow: row wrap;\n    justify-content: space-around; }\n    .contact-section .contact-container .contact-item {\n      padding: 5px;\n      margin-top: 1em;\n      color: white;\n      font-weight: bold;\n      text-align: center; }\n      .contact-section .contact-container .contact-item h3, .contact-section .contact-container .contact-item p {\n        color: #415161; }\n      .contact-section .contact-container .contact-item h3 {\n        font-weight: 400;\n        font-size: 1.75em;\n        margin-top: 0em;\n        margin-bottom: 0em;\n        text-align: left; }\n      .contact-section .contact-container .contact-item p {\n        font-weight: 100;\n        font-size: 1.2em;\n        width: 70%;\n        text-align: left; }\n", ""]);
+	exports.push([module.id, ".contact-section {\n  background: #F7F7F7;\n  height: 100%;\n  padding: 2em 4em 4em 4em; }\n  .contact-section h2 {\n    color: #415161;\n    font-size: 1.75em; }\n  .contact-section .contact-container {\n    padding: 0;\n    margin: 0;\n    list-style: none; }\n    .contact-section .contact-container .contact-item {\n      padding: 5px;\n      margin-top: 1em;\n      color: white;\n      font-weight: bold;\n      text-align: center; }\n      .contact-section .contact-container .contact-item:nth-child(2) {\n        margin-top: 3em; }\n      .contact-section .contact-container .contact-item .fa-mobile, .contact-section .contact-container .contact-item .fa-envelope-o {\n        color: #415161;\n        display: block; }\n      .contact-section .contact-container .contact-item a {\n        color: #556b80;\n        font-weight: 400;\n        font-size: 1.75em;\n        margin-top: 0em;\n        margin-bottom: 0em;\n        text-align: left;\n        text-decoration: none; }\n        .contact-section .contact-container .contact-item a:hover {\n          color: #415161; }\n      .contact-section .contact-container .contact-item p {\n        font-weight: 100;\n        font-size: 1.2em;\n        width: 70%;\n        text-align: left; }\n", ""]);
 
 	// exports
 

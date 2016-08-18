@@ -3,25 +3,14 @@ $background-color: #415161;
 
 .footer-section {
     background: $background-color;
-    height: 20em;
-    padding: 2em 4em 4em 4em;
+    padding: 1em 4em 2em 4em;
 
     .footer-container {
       padding: 0;
       margin: 0;
       list-style: none;
 
-      display: -webkit-box;
-      display: -moz-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-
-      -webkit-flex-flow: row wrap;
-      justify-content: space-around;
-
       .footer-item {
-        width: 49%;
         padding: 5px;
         margin-top: 1em;
         color: white;
@@ -35,7 +24,7 @@ $background-color: #415161;
 
         h3 {
             font-weight: 400;
-            font-size: 1.75em;
+            font-size: 1.25em;
             margin-top: 0em;
             margin-bottom: 0em;
             text-align: left;
@@ -43,8 +32,7 @@ $background-color: #415161;
 
         p {
             font-weight: 100;
-            font-size: 1.2em;
-            width: 70%;
+            font-size: 1em;
             text-align: left;
         }
       }

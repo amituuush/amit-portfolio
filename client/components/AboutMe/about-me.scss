@@ -1,8 +1,7 @@
-$primary-color: #fff;
-$background-color: #415161;
+$primary-color: #415161;
 
 .about-me-section {
-    background: $background-color;
+    background: #fff;
     height: 100%;
     padding: 2em 4em 4em 4em;
 
@@ -11,19 +10,10 @@ $background-color: #415161;
       margin: 0;
       list-style: none;
 
-      display: -webkit-box;
-      display: -moz-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-
-      -webkit-flex-flow: row wrap;
-      justify-content: space-around;
-
       .about-me-item {
         padding: 5px;
         margin-top: 1em;
-        color: white;
+        color: $primary-color;
         font-weight: bold;
         text-align: center;
 
@@ -43,8 +33,15 @@ $background-color: #415161;
         p {
             font-weight: 100;
             font-size: 1.2em;
-            width: 70%;
             text-align: left;
+        }
+
+        img {
+            max-width: 430px;
+        }
+
+        &:nth-child(2) {
+            text-align: center;
         }
 
       }

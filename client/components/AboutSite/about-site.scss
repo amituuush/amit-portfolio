@@ -14,15 +14,6 @@ $primary-color: #415161;
       margin: 0;
       list-style: none;
 
-      display: -webkit-box;
-      display: -moz-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-
-      -webkit-flex-flow: row wrap;
-      justify-content: space-around;
-
       .about-site-item {
         padding: 5px;
         margin-top: 1em;
@@ -30,17 +21,17 @@ $primary-color: #415161;
         font-weight: bold;
         text-align: center;
 
-        h3, p {
-            color: $primary-color;
-
-        }
-
         h3 {
+            color: $primary-color;
             font-weight: 400;
-            font-size: 1.75em;
+            font-size: 1.5em;
             margin-top: 0em;
             margin-bottom: 0em;
             text-align: left;
+
+            .about-site-highlight {
+                color: #1FA975;
+            }
         }
 
         p {

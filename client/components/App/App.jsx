@@ -9,15 +9,30 @@ import AboutSite from '../AboutSite/AboutSite'
 import Contact from '../Contact/Contact'
 
 var App = React.createClass({
+
+    getInitialState: function() {
+        return {
+            menuShow: false
+        }
+    },
+
+    _handleMenuToggle: function() {
+        this.setState({
+            menuShow: !this.state.menuShow
+        });
+    },
+
     render: function() {
         return (
             <div>
-                <Nav />
+                <Nav
+                    handleMenuToggle={this._handleMenuToggle}
+                    menuShow={this.state.menuShow} />
                 <Cover />
                 <Projects />
                 <AboutMe />
-                <AboutSite />
                 <Contact />
+                <AboutSite />
                 <Footer />
             </div>
         )
