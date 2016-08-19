@@ -9,8 +9,8 @@ var Cover = React.createClass({
                     <img src="img/amit-circle-pic.png" />
                 </div></a>
                 <div className="cover-right">
-                    <h1>Amit Ranan</h1>
-                    <h2>Frontend Developer</h2>
+                    <h1>Hi, I'm Amit,</h1>
+                    <h2>a front end developer.</h2>
                 </div>
             </section>
         )
