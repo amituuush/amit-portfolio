@@ -17,92 +17,61 @@ $background-color: #F7F7F7;
 
     .contact-container {
       padding: 0;
-      margin: 0;
+      margin: 0 auto;
       list-style: none;
+      text-align: center;
+
+      p {
+          font-weight: 100;
+          font-size: 2em;
+          color: $primary-color;
+          margin-bottom: 0.75em;
+      }
+
+      .vertical-divider {
+          height: 2em;
+          border-left: 1px solid #BCBCBC;
+          width: 0em;
+          margin: 0 auto;
+      }
 
       .contact-item {
         padding: 5px;
         margin-top: 1em;
         color: white;
         font-weight: bold;
-        text-align: left;
-
-        &:nth-child(2) {
-            margin-top: 2em;
-        }
-
-        &:nth-child(3) {
-            display: inline-block;
-            margin-top: 3em;
-            margin-right: 1em;
-            position: relative;
-            left: 4px;
-        }
-
-        &:nth-child(4) {
-            display: inline-block;
-            position: relative;
-            left: 10px;
-        }
-
-        .fa-mobile, .fa-envelope-o {
-            color: $primary-color;
-            display: inline-block;
-
-            &:hover {
-                color: lighten($primary-color, 5%);
-            }
-        }
-
-        .fa-mobile {
-            position: relative;
-            left: 7px;
-        }
-
-        .fa-linkedin-square, .fa-github {
-            display: inline-block;
-            color: $primary-color;
-
-            &:hover {
-                color: lighten($primary-color, 5%);
-            }
-        }
-
-        .contact-phone {
-            display: inline-block;
-            position: relative;
-            top: -20px;
-            left: 35px;
-        }
-
-        .contact-email {
-            display: inline-block;
-            position: relative;
-            top: -10px;
-            left: 20px;
-        }
+        text-align: center;
 
         a {
             color: lighten($primary-color, 10%);
-            font-weight: 400;
-            font-size: 1.2em;
-            margin-top: 0em;
+            font-weight: 100;
+            font-size: 1.5em;
+            margin-top: 1em;
             margin-bottom: 0em;
-            text-align: left;
             text-decoration: none;
 
             &:hover {
                 color: $primary-color;
+                text-decoration: underline;
             }
         }
+      }
 
-        p {
-            font-weight: 100;
-            font-size: 1.2em;
-            width: 70%;
-            text-align: left;
-        }
+      .icons-container {
+          .contact-icons {
+              display: inline-block;
+              padding: 1em;
+              margin-top: 2em;
 
+              .fa-linkedin-square, .fa-github, .fa-facebook-official, .fa-dribbble {
+                  display: inline-block;
+                  color: $primary-color;
+
+                  &:hover {
+                      color: lighten($primary-color, 5%);
+                  }
+              }
+          }
       }
     }
 }

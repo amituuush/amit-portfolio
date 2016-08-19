@@ -70,7 +70,9 @@
 	// rewrite about me section
 	// add drowdown with info for each project piece?
 	// add smooth scrolling, back to top
-	//
+	// make fixed nav
+	// fix contact section
+	// add dribbble account to contact
 
 /***/ },
 /* 1 */
@@ -22658,59 +22660,64 @@
 	            _react2.default.createElement(
 	                'a',
 	                { name: 'contact' },
-	                _react2.default.createElement(
-	                    'h3',
-	                    null,
-	                    'Contact'
-	                )
+	                _react2.default.createElement('h3', null)
 	            ),
 	            _react2.default.createElement(
 	                'div',
 	                { className: 'contact-container' },
 	                _react2.default.createElement(
+	                    'p',
+	                    null,
+	                    'Feel free to email me at:'
+	                ),
+	                _react2.default.createElement('div', { className: 'vertical-divider' }),
+	                _react2.default.createElement(
 	                    'div',
 	                    { className: 'contact-item' },
 	                    _react2.default.createElement(
 	                        'a',
-	                        { href: 'tel:8186069556' },
-	                        _react2.default.createElement('i', { className: 'fa fa-mobile fa-3x', 'aria-hidden': 'true' }),
+	                        { href: 'mailto: ranan.amit@gmail.com', className: 'contact-email' },
+	                        'ranan.amit@gmail.com'
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'icons-container' },
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'contact-icons' },
 	                        _react2.default.createElement(
-	                            'div',
-	                            { className: 'contact-phone' },
-	                            '(818) 606-9556'
+	                            'a',
+	                            { href: 'https://www.linkedin.com/in/amitranan', target: '_blank' },
+	                            _react2.default.createElement('i', { className: 'fa fa-linkedin-square fa-3x', 'aria-hidden': 'true' })
 	                        )
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: 'contact-item' },
+	                    ),
 	                    _react2.default.createElement(
-	                        'a',
-	                        { href: 'mailto: ranan.amit@gmail.com' },
-	                        _react2.default.createElement('i', { className: 'fa fa-envelope-o fa-2x', 'aria-hidden': 'true' }),
+	                        'div',
+	                        { className: 'contact-icons' },
 	                        _react2.default.createElement(
-	                            'div',
-	                            { className: 'contact-email' },
-	                            'ranan.amit@gmail.com'
+	                            'a',
+	                            { href: 'https://github.com/amituuush', target: '_blank' },
+	                            _react2.default.createElement('i', { className: 'fa fa-github fa-3x', 'aria-hidden': 'true' })
 	                        )
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: 'contact-item' },
+	                    ),
 	                    _react2.default.createElement(
-	                        'a',
-	                        { href: 'https://www.linkedin.com/in/amitranan', target: '_blank' },
-	                        _react2.default.createElement('i', { className: 'fa fa-linkedin-square fa-2x', 'aria-hidden': 'true' })
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: 'contact-item' },
+	                        'div',
+	                        { className: 'contact-icons' },
+	                        _react2.default.createElement(
+	                            'a',
+	                            { href: 'https://www.facebook.com/amit.ranan', target: '_blank' },
+	                            _react2.default.createElement('i', { className: 'fa fa-facebook-official fa-3x', 'aria-hidden': 'true' })
+	                        )
+	                    ),
 	                    _react2.default.createElement(
-	                        'a',
-	                        { href: 'https://github.com/amituuush', target: '_blank' },
-	                        _react2.default.createElement('i', { className: 'fa fa-github fa-2x', 'aria-hidden': 'true' })
+	                        'div',
+	                        { className: 'contact-icons' },
+	                        _react2.default.createElement(
+	                            'a',
+	                            { href: '#', target: '_blank' },
+	                            _react2.default.createElement('i', { className: 'fa fa-dribbble fa-3x', 'aria-hidden': 'true' })
+	                        )
 	                    )
 	                )
 	            )
@@ -22755,7 +22762,7 @@
 
 
 	// module
-	exports.push([module.id, ".contact-section {\n  background: #F7F7F7;\n  height: 100%;\n  padding: 2em 4em 4em 4em; }\n  .contact-section h3 {\n    font-weight: 400;\n    font-size: 1.75em;\n    margin-top: 0em;\n    margin-bottom: 0em;\n    text-align: left;\n    color: #415161; }\n  .contact-section .contact-container {\n    padding: 0;\n    margin: 0;\n    list-style: none; }\n    .contact-section .contact-container .contact-item {\n      padding: 5px;\n      margin-top: 1em;\n      color: white;\n      font-weight: bold;\n      text-align: left; }\n      .contact-section .contact-container .contact-item:nth-child(2) {\n        margin-top: 2em; }\n      .contact-section .contact-container .contact-item:nth-child(3) {\n        display: inline-block;\n        margin-top: 3em;\n        margin-right: 1em;\n        position: relative;\n        left: 4px; }\n      .contact-section .contact-container .contact-item:nth-child(4) {\n        display: inline-block;\n        position: relative;\n        left: 10px; }\n      .contact-section .contact-container .contact-item .fa-mobile, .contact-section .contact-container .contact-item .fa-envelope-o {\n        color: #415161;\n        display: inline-block; }\n        .contact-section .contact-container .contact-item .fa-mobile:hover, .contact-section .contact-container .contact-item .fa-envelope-o:hover {\n          color: #4b5e70; }\n      .contact-section .contact-container .contact-item .fa-mobile {\n        position: relative;\n        left: 7px; }\n      .contact-section .contact-container .contact-item .fa-linkedin-square, .contact-section .contact-container .contact-item .fa-github {\n        display: inline-block;\n        color: #415161; }\n        .contact-section .contact-container .contact-item .fa-linkedin-square:hover, .contact-section .contact-container .contact-item .fa-github:hover {\n          color: #4b5e70; }\n      .contact-section .contact-container .contact-item .contact-phone {\n        display: inline-block;\n        position: relative;\n        top: -20px;\n        left: 35px; }\n      .contact-section .contact-container .contact-item .contact-email {\n        display: inline-block;\n        position: relative;\n        top: -10px;\n        left: 20px; }\n      .contact-section .contact-container .contact-item a {\n        color: #556b80;\n        font-weight: 400;\n        font-size: 1.2em;\n        margin-top: 0em;\n        margin-bottom: 0em;\n        text-align: left;\n        text-decoration: none; }\n        .contact-section .contact-container .contact-item a:hover {\n          color: #415161; }\n      .contact-section .contact-container .contact-item p {\n        font-weight: 100;\n        font-size: 1.2em;\n        width: 70%;\n        text-align: left; }\n", ""]);
+	exports.push([module.id, ".contact-section {\n  background: #F7F7F7;\n  height: 100%;\n  padding: 2em 4em 4em 4em; }\n  .contact-section h3 {\n    font-weight: 400;\n    font-size: 1.75em;\n    margin-top: 0em;\n    margin-bottom: 0em;\n    text-align: left;\n    color: #415161; }\n  .contact-section .contact-container {\n    padding: 0;\n    margin: 0 auto;\n    list-style: none;\n    text-align: center; }\n    .contact-section .contact-container p {\n      font-weight: 100;\n      font-size: 2em;\n      color: #415161;\n      margin-bottom: 0.75em; }\n    .contact-section .contact-container .vertical-divider {\n      height: 2em;\n      border-left: 1px solid #BCBCBC;\n      width: 0em;\n      margin: 0 auto; }\n    .contact-section .contact-container .contact-item {\n      padding: 5px;\n      margin-top: 1em;\n      color: white;\n      font-weight: bold;\n      text-align: center; }\n      .contact-section .contact-container .contact-item a {\n        color: #556b80;\n        font-weight: 100;\n        font-size: 1.5em;\n        margin-top: 1em;\n        margin-bottom: 0em;\n        text-decoration: none; }\n        .contact-section .contact-container .contact-item a:hover {\n          color: #415161;\n          text-decoration: underline; }\n    .contact-section .contact-container .icons-container .contact-icons {\n      display: inline-block;\n      padding: 1em;\n      margin-top: 2em; }\n      .contact-section .contact-container .icons-container .contact-icons .fa-linkedin-square, .contact-section .contact-container .icons-container .contact-icons .fa-github, .contact-section .contact-container .icons-container .contact-icons .fa-facebook-official, .contact-section .contact-container .icons-container .contact-icons .fa-dribbble {\n        display: inline-block;\n        color: #415161; }\n        .contact-section .contact-container .icons-container .contact-icons .fa-linkedin-square:hover, .contact-section .contact-container .icons-container .contact-icons .fa-github:hover, .contact-section .contact-container .icons-container .contact-icons .fa-facebook-official:hover, .contact-section .contact-container .icons-container .contact-icons .fa-dribbble:hover {\n          color: #4b5e70; }\n", ""]);
 
 	// exports
 

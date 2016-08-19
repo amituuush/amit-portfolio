@@ -10,4 +10,6 @@ ReactDOM.render(<App />, document.getElementById('root'));
 // rewrite about me section
 // add drowdown with info for each project piece?
 // add smooth scrolling, back to top
-//
+// make fixed nav
+// fix contact section
+// add dribbble account to contact
