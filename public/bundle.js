@@ -21969,7 +21969,7 @@
 	                { onClick: function onClick() {
 	                        _this.props.handleMenuToggle();
 	                    }, className: 'menu-bars' },
-	                _react2.default.createElement('i', { className: this.props.menuShow ? 'fa fa-bars fa-2x' : 'fa fa-times fa-2x', 'aria-hidden': 'true' })
+	                _react2.default.createElement('i', { className: this.props.menuShow ? 'fa fa-times fa-2x' : 'fa fa-bars fa-2x', 'aria-hidden': 'true' })
 	            ),
 	            _react2.default.createElement(
 	                'ul',
@@ -22061,7 +22061,7 @@
 
 
 	// module
-	exports.push([module.id, "nav {\n  text-align: left;\n  border-bottom: 1px solid #efefef; }\n  nav .menu-bars .fa-bars {\n    color: #415161;\n    margin: 0.5em; }\n    nav .menu-bars .fa-bars:hover {\n      cursor: pointer; }\n  nav .menu-show {\n    display: block; }\n  nav .menu-hide {\n    display: none; }\n  nav ul {\n    padding-left: 0em;\n    position: absolute;\n    top: 48px;\n    background: #fff;\n    z-index: 9999;\n    width: 100%; }\n    nav ul a {\n      text-decoration: none;\n      color: #415161; }\n    nav ul li {\n      list-style-type: none;\n      padding: 0.75em;\n      width: 100%;\n      border-bottom: 1px solid #EFEFEF; }\n      nav ul li:first-child {\n        border-top: 1px solid #efefef; }\n", ""]);
+	exports.push([module.id, "nav {\n  text-align: left;\n  border-bottom: 1px solid #efefef; }\n  nav .menu-bars .fa-bars, nav .menu-bars .fa-times {\n    color: #415161;\n    margin: 0.5em; }\n    nav .menu-bars .fa-bars:hover, nav .menu-bars .fa-times:hover {\n      cursor: pointer; }\n  nav .menu-show {\n    display: block; }\n  nav .menu-hide {\n    display: none; }\n  nav ul {\n    padding-left: 0em;\n    position: absolute;\n    top: 48px;\n    background: #fff;\n    z-index: 9999;\n    width: 100%; }\n    nav ul a {\n      text-decoration: none;\n      color: #415161; }\n    nav ul li {\n      list-style-type: none;\n      padding: 0.75em;\n      width: 100%;\n      border-bottom: 1px solid #EFEFEF; }\n      nav ul li:first-child {\n        border-top: 1px solid #efefef; }\n", ""]);
 
 	// exports
 

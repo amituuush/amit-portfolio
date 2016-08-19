@@ -6,7 +6,7 @@ var Nav = React.createClass({
         return (
             <nav className="">
                 <div onClick={() => {this.props.handleMenuToggle()}} className="menu-bars">
-                    <i className={this.props.menuShow ? 'fa fa-bars fa-2x' : 'fa fa-times fa-2x' } aria-hidden="true"></i>
+                    <i className={this.props.menuShow ? 'fa fa-times fa-2x' : 'fa fa-bars fa-2x' } aria-hidden="true"></i>
                 </div>
                 <ul className={this.props.menuShow ? 'menu-show' : 'menu-hide'}>
                     <a href="#home"><li>Home</li></a>
