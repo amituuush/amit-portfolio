@@ -33,31 +33,50 @@ $background-color: #F7F7F7;
 
         &:nth-child(3) {
             display: inline-block;
-            margin-top: 2em;
+            margin-top: 3em;
             margin-right: 1em;
+            position: relative;
+            left: 4px;
         }
 
         &:nth-child(4) {
             display: inline-block;
+            position: relative;
+            left: 10px;
         }
 
         .fa-mobile, .fa-envelope-o {
             color: $primary-color;
             display: inline-block;
+
+            &:hover {
+                color: lighten($primary-color, 5%);
+            }
+        }
+
+        .fa-mobile {
+            position: relative;
+            left: 7px;
         }
 
         .fa-linkedin-square, .fa-github {
             display: inline-block;
             color: $primary-color;
+
+            &:hover {
+                color: lighten($primary-color, 5%);
+            }
         }
 
         .contact-phone {
+            display: inline-block;
             position: relative;
             top: -20px;
-            left: 32px;
+            left: 35px;
         }
 
         .contact-email {
+            display: inline-block;
             position: relative;
             top: -10px;
             left: 20px;

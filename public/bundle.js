@@ -21969,7 +21969,7 @@
 	                { onClick: function onClick() {
 	                        _this.props.handleMenuToggle();
 	                    }, className: 'menu-bars' },
-	                _react2.default.createElement('i', { className: 'fa fa-bars fa-2x', 'aria-hidden': 'true' })
+	                _react2.default.createElement('i', { className: this.props.menuShow ? 'fa fa-bars fa-2x' : 'fa fa-times fa-2x', 'aria-hidden': 'true' })
 	            ),
 	            _react2.default.createElement(
 	                'ul',
@@ -22659,30 +22659,38 @@
 	                )
 	            ),
 	            _react2.default.createElement(
-	                'ul',
+	                'div',
 	                { className: 'contact-container' },
 	                _react2.default.createElement(
-	                    'li',
+	                    'div',
 	                    { className: 'contact-item' },
-	                    _react2.default.createElement('i', { className: 'fa fa-mobile fa-5x', 'aria-hidden': 'true' }),
 	                    _react2.default.createElement(
 	                        'a',
-	                        { href: 'tel:8186069556', className: 'contact-phone' },
-	                        '(818) 606-9556'
+	                        { href: 'tel:8186069556' },
+	                        _react2.default.createElement('i', { className: 'fa fa-mobile fa-3x', 'aria-hidden': 'true' }),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'contact-phone' },
+	                            '(818) 606-9556'
+	                        )
 	                    )
 	                ),
 	                _react2.default.createElement(
-	                    'li',
+	                    'div',
 	                    { className: 'contact-item' },
-	                    _react2.default.createElement('i', { className: 'fa fa-envelope-o fa-3x', 'aria-hidden': 'true' }),
 	                    _react2.default.createElement(
 	                        'a',
-	                        { href: 'mailto: ranan.amit@gmail.com', className: 'contact-email' },
-	                        'ranan.amit@gmail.com'
+	                        { href: 'mailto: ranan.amit@gmail.com' },
+	                        _react2.default.createElement('i', { className: 'fa fa-envelope-o fa-2x', 'aria-hidden': 'true' }),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'contact-email' },
+	                            'ranan.amit@gmail.com'
+	                        )
 	                    )
 	                ),
 	                _react2.default.createElement(
-	                    'li',
+	                    'div',
 	                    { className: 'contact-item' },
 	                    _react2.default.createElement(
 	                        'a',
@@ -22691,7 +22699,7 @@
 	                    )
 	                ),
 	                _react2.default.createElement(
-	                    'li',
+	                    'div',
 	                    { className: 'contact-item' },
 	                    _react2.default.createElement(
 	                        'a',
@@ -22741,7 +22749,7 @@
 
 
 	// module
-	exports.push([module.id, ".contact-section {\n  background: #F7F7F7;\n  height: 100%;\n  padding: 2em 4em 4em 4em; }\n  .contact-section h3 {\n    font-weight: 400;\n    font-size: 1.75em;\n    margin-top: 0em;\n    margin-bottom: 0em;\n    text-align: left;\n    color: #415161; }\n  .contact-section .contact-container {\n    padding: 0;\n    margin: 0;\n    list-style: none; }\n    .contact-section .contact-container .contact-item {\n      padding: 5px;\n      margin-top: 1em;\n      color: white;\n      font-weight: bold;\n      text-align: left; }\n      .contact-section .contact-container .contact-item:nth-child(2) {\n        margin-top: 2em; }\n      .contact-section .contact-container .contact-item:nth-child(3) {\n        display: inline-block;\n        margin-top: 2em;\n        margin-right: 1em; }\n      .contact-section .contact-container .contact-item:nth-child(4) {\n        display: inline-block; }\n      .contact-section .contact-container .contact-item .fa-mobile, .contact-section .contact-container .contact-item .fa-envelope-o {\n        color: #415161;\n        display: inline-block; }\n      .contact-section .contact-container .contact-item .fa-linkedin-square, .contact-section .contact-container .contact-item .fa-github {\n        display: inline-block;\n        color: #415161; }\n      .contact-section .contact-container .contact-item .contact-phone {\n        position: relative;\n        top: -20px;\n        left: 32px; }\n      .contact-section .contact-container .contact-item .contact-email {\n        position: relative;\n        top: -10px;\n        left: 20px; }\n      .contact-section .contact-container .contact-item a {\n        color: #556b80;\n        font-weight: 400;\n        font-size: 1.5em;\n        margin-top: 0em;\n        margin-bottom: 0em;\n        text-align: left;\n        text-decoration: none; }\n        .contact-section .contact-container .contact-item a:hover {\n          color: #415161; }\n      .contact-section .contact-container .contact-item p {\n        font-weight: 100;\n        font-size: 1.2em;\n        width: 70%;\n        text-align: left; }\n", ""]);
+	exports.push([module.id, ".contact-section {\n  background: #F7F7F7;\n  height: 100%;\n  padding: 2em 4em 4em 4em; }\n  .contact-section h3 {\n    font-weight: 400;\n    font-size: 1.75em;\n    margin-top: 0em;\n    margin-bottom: 0em;\n    text-align: left;\n    color: #415161; }\n  .contact-section .contact-container {\n    padding: 0;\n    margin: 0;\n    list-style: none; }\n    .contact-section .contact-container .contact-item {\n      padding: 5px;\n      margin-top: 1em;\n      color: white;\n      font-weight: bold;\n      text-align: left; }\n      .contact-section .contact-container .contact-item:nth-child(2) {\n        margin-top: 2em; }\n      .contact-section .contact-container .contact-item:nth-child(3) {\n        display: inline-block;\n        margin-top: 3em;\n        margin-right: 1em;\n        position: relative;\n        left: 4px; }\n      .contact-section .contact-container .contact-item:nth-child(4) {\n        display: inline-block;\n        position: relative;\n        left: 10px; }\n      .contact-section .contact-container .contact-item .fa-mobile, .contact-section .contact-container .contact-item .fa-envelope-o {\n        color: #415161;\n        display: inline-block; }\n        .contact-section .contact-container .contact-item .fa-mobile:hover, .contact-section .contact-container .contact-item .fa-envelope-o:hover {\n          color: #4b5e70; }\n      .contact-section .contact-container .contact-item .fa-mobile {\n        position: relative;\n        left: 7px; }\n      .contact-section .contact-container .contact-item .fa-linkedin-square, .contact-section .contact-container .contact-item .fa-github {\n        display: inline-block;\n        color: #415161; }\n        .contact-section .contact-container .contact-item .fa-linkedin-square:hover, .contact-section .contact-container .contact-item .fa-github:hover {\n          color: #4b5e70; }\n      .contact-section .contact-container .contact-item .contact-phone {\n        display: inline-block;\n        position: relative;\n        top: -20px;\n        left: 35px; }\n      .contact-section .contact-container .contact-item .contact-email {\n        display: inline-block;\n        position: relative;\n        top: -10px;\n        left: 20px; }\n      .contact-section .contact-container .contact-item a {\n        color: #556b80;\n        font-weight: 400;\n        font-size: 1.5em;\n        margin-top: 0em;\n        margin-bottom: 0em;\n        text-align: left;\n        text-decoration: none; }\n        .contact-section .contact-container .contact-item a:hover {\n          color: #415161; }\n      .contact-section .contact-container .contact-item p {\n        font-weight: 100;\n        font-size: 1.2em;\n        width: 70%;\n        text-align: left; }\n", ""]);
 
 	// exports
 
