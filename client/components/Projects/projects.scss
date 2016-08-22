@@ -24,13 +24,11 @@ $secondary-color: #F7F7F7;
       padding: 0;
       margin: 0;
       list-style: none;
-
       display: -webkit-box;
       display: -moz-box;
       display: -ms-flexbox;
       display: -webkit-flex;
       display: flex;
-
       -webkit-flex-flow: row wrap;
       justify-content: space-around;
 
@@ -43,7 +41,7 @@ $secondary-color: #F7F7F7;
         text-align: center;
 
         img {
-            width: 350px;
+            width: 100%;
         }
 
         h3, p {
@@ -85,5 +83,17 @@ $secondary-color: #F7F7F7;
             }
         }
       }
+    }
+}
+
+@media only screen and (min-width: 570px) {
+    .projects-section {
+        .projects-container {
+            .projects-item {
+                img {
+                    max-width: 400px;
+                }
+            }
+        }
     }
 }

@@ -60,7 +60,7 @@ $background-color: #F7F7F7;
       .icons-container {
           .contact-icons {
               display: inline-block;
-              padding: 1em;
+              padding: 0.2em;
               margin-top: 2em;
 
               .fa-linkedin-square, .fa-github, .fa-facebook-official, .fa-dribbble {
@@ -73,5 +73,29 @@ $background-color: #F7F7F7;
               }
           }
       }
+    }
+}
+
+@media only screen and (min-width: 348px) {
+    .contact-section {
+        .contact-container {
+            .icons-container {
+                .contact-icons {
+                    padding: 0.4em;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 421px) {
+    .contact-section {
+        .contact-container {
+            .icons-container {
+                .contact-icons {
+                    padding: 1em;
+                }
+            }
+        }
     }
 }

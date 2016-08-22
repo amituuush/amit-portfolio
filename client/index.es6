@@ -11,5 +11,6 @@ ReactDOM.render(<App />, document.getElementById('root'));
 // add drowdown with info for each project piece?
 // add smooth scrolling, back to top
 // make fixed nav
-// fix contact section
 // add dribbble account to contact
+// responsive issue for my work
+// responsive issue on contact icons
