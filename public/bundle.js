@@ -21862,6 +21862,10 @@
 
 	var _Projects2 = _interopRequireDefault(_Projects);
 
+	var _TechSkills = __webpack_require__(203);
+
+	var _TechSkills2 = _interopRequireDefault(_TechSkills);
+
 	var _AboutMe = __webpack_require__(191);
 
 	var _AboutMe2 = _interopRequireDefault(_AboutMe);
@@ -21905,6 +21909,7 @@
 	                menuShow: this.state.menuShow }),
 	            _react2.default.createElement(_Cover2.default, null),
 	            _react2.default.createElement(_Projects2.default, null),
+	            _react2.default.createElement(_TechSkills2.default, null),
 	            _react2.default.createElement(_AboutMe2.default, null),
 	            _react2.default.createElement(_Contact2.default, null),
 	            _react2.default.createElement(_AboutSite2.default, null),
@@ -22127,14 +22132,23 @@
 	                    null,
 	                    'Hi, I\'m Amit.'
 	                ),
+	                _react2.default.createElement('a', { name: 'portfolio' }),
 	                _react2.default.createElement(
-	                    'a',
-	                    { name: 'portfolio' },
+	                    'h2',
+	                    null,
+	                    'Banker turned frontend developer. Recent ',
 	                    _react2.default.createElement(
-	                        'h2',
-	                        null,
-	                        'Banker turned frontend developer. Recent Thinkful coding bootcamp grad. B.A. in economics from UC Davis. 500 Startups Batch 13.'
-	                    )
+	                        'a',
+	                        { href: 'https://www.thinkful.com/', target: '_blank' },
+	                        'Thinkful'
+	                    ),
+	                    ' coding bootcamp grad. B.A. in economics from UC Davis. ',
+	                    _react2.default.createElement(
+	                        'a',
+	                        { href: 'http://500.co/', target: '_blank' },
+	                        '500 Startups'
+	                    ),
+	                    ' Batch 13.'
 	                )
 	            )
 	        );
@@ -22178,7 +22192,7 @@
 
 
 	// module
-	exports.push([module.id, ".cover-section {\n  width: 90%;\n  text-align: center;\n  margin: 0 auto; }\n  .cover-section .cover-left, .cover-section .cover-right {\n    display: block;\n    text-align: center;\n    padding: 8em 0em 2em 0em; }\n  .cover-section .cover-right {\n    display: block;\n    text-align: center;\n    padding: 0em 0em 2em 0em; }\n  .cover-section .cover-right h1, .cover-section .cover-right h2 {\n    color: #415161;\n    font-weight: 100; }\n  .cover-section .cover-right h1 {\n    font-size: 2.5em;\n    margin-top: 0em;\n    margin-bottom: 0em; }\n  .cover-section .cover-right h2 {\n    font-size: 1.5em;\n    margin-top: 0.5em; }\n\n@media only screen and (min-width: 700px) {\n  .cover-section .cover-right {\n    width: 35em;\n    margin: 0 auto; } }\n\n@media only screen and (min-width: 1000px) {\n  .cover-section .cover-left, .cover-section .cover-right {\n    display: inline-block; }\n  .cover-section .cover-right {\n    padding-left: 4em;\n    position: relative;\n    top: -3.5em; } }\n", ""]);
+	exports.push([module.id, ".cover-section {\n  width: 90%;\n  text-align: center;\n  margin: 0 auto; }\n  .cover-section .cover-left, .cover-section .cover-right {\n    display: block;\n    text-align: center;\n    padding: 8em 0em 2em 0em; }\n  .cover-section .cover-right {\n    display: block;\n    text-align: center;\n    padding: 0em 0em 2em 0em; }\n  .cover-section .cover-right h1, .cover-section .cover-right h2 {\n    color: #415161;\n    font-weight: 100; }\n  .cover-section .cover-right h1 {\n    font-size: 2.5em;\n    margin-top: 0em;\n    margin-bottom: 0em; }\n  .cover-section .cover-right h2 {\n    font-size: 1.5em;\n    margin-top: 0.5em; }\n  .cover-section .cover-right a {\n    color: #586D82; }\n    .cover-section .cover-right a:hover {\n      color: #415161; }\n\n@media only screen and (min-width: 700px) {\n  .cover-section .cover-right {\n    width: 35em;\n    margin: 0 auto; } }\n\n@media only screen and (min-width: 1000px) {\n  .cover-section .cover-left, .cover-section .cover-right {\n    display: inline-block; }\n  .cover-section .cover-right {\n    padding-left: 4em;\n    position: relative;\n    top: -3.5em; } }\n", ""]);
 
 	// exports
 
@@ -22209,7 +22223,7 @@
 	            _react2.default.createElement(
 	                'h3',
 	                { className: 'projects-title' },
-	                'My work'
+	                'Portfolio'
 	            ),
 	            _react2.default.createElement(
 	                'ul',
@@ -22445,7 +22459,7 @@
 
 
 	// module
-	exports.push([module.id, ".about-me-section {\n  background: #fff;\n  height: 100%;\n  padding: 2em 4em 4em 4em; }\n  .about-me-section .about-me-container {\n    padding: 0;\n    margin: 0;\n    list-style: none; }\n    .about-me-section .about-me-container .about-me-item {\n      padding: 5px;\n      margin-top: 1em;\n      color: #415161;\n      font-weight: bold;\n      text-align: center; }\n      .about-me-section .about-me-container .about-me-item h3, .about-me-section .about-me-container .about-me-item p {\n        color: #415161; }\n      .about-me-section .about-me-container .about-me-item h3 {\n        font-weight: 400;\n        font-size: 1.75em;\n        margin-top: 0em;\n        margin-bottom: 0em;\n        text-align: left; }\n      .about-me-section .about-me-container .about-me-item p {\n        font-weight: 100;\n        font-size: 1.2em;\n        text-align: left; }\n      .about-me-section .about-me-container .about-me-item img {\n        max-width: 100%; }\n      .about-me-section .about-me-container .about-me-item:nth-child(2) {\n        text-align: center; }\n\n@media only screen and (min-width: 570px) {\n  .about-me-section .about-me-container .about-me-item img {\n    max-width: 430px; } }\n", ""]);
+	exports.push([module.id, ".about-me-section {\n  background: #fff;\n  height: 100%;\n  padding: 2em 4em 4em 4em; }\n  .about-me-section .about-me-container {\n    padding: 0;\n    margin: 0;\n    list-style: none; }\n    .about-me-section .about-me-container .about-me-item {\n      padding: 5px;\n      margin-top: 1em;\n      color: #415161;\n      font-weight: bold;\n      text-align: center; }\n      .about-me-section .about-me-container .about-me-item h3, .about-me-section .about-me-container .about-me-item p {\n        color: #415161; }\n      .about-me-section .about-me-container .about-me-item h3 {\n        font-weight: 400;\n        font-size: 1.75em;\n        margin-top: 0em;\n        margin-bottom: 0em;\n        text-align: left; }\n      .about-me-section .about-me-container .about-me-item p {\n        font-weight: 100;\n        font-size: 1.2em;\n        text-align: left; }\n      .about-me-section .about-me-container .about-me-item img {\n        max-width: 100%; }\n      .about-me-section .about-me-container .about-me-item a {\n        color: #586D82; }\n        .about-me-section .about-me-container .about-me-item a:hover {\n          color: #415161; }\n      .about-me-section .about-me-container .about-me-item:nth-child(2) {\n        text-align: center; }\n\n@media only screen and (min-width: 570px) {\n  .about-me-section .about-me-container .about-me-item img {\n    max-width: 430px; } }\n", ""]);
 
 	// exports
 
@@ -22773,6 +22787,208 @@
 
 	// module
 	exports.push([module.id, ".contact-section {\n  background: #F7F7F7;\n  height: 100%;\n  padding: 2em 4em 4em 4em; }\n  .contact-section h3 {\n    font-weight: 400;\n    font-size: 1.75em;\n    margin-top: 0em;\n    margin-bottom: 0em;\n    text-align: left;\n    color: #415161; }\n  .contact-section .contact-container {\n    padding: 0;\n    margin: 0 auto;\n    list-style: none;\n    text-align: center; }\n    .contact-section .contact-container p {\n      font-weight: 100;\n      font-size: 2em;\n      color: #415161;\n      margin-bottom: 0.75em; }\n    .contact-section .contact-container .vertical-divider {\n      height: 2em;\n      border-left: 1px solid #BCBCBC;\n      width: 0em;\n      margin: 0 auto; }\n    .contact-section .contact-container .contact-item {\n      padding: 5px;\n      margin-top: 1em;\n      color: white;\n      font-weight: bold;\n      text-align: center; }\n      .contact-section .contact-container .contact-item a {\n        color: #556b80;\n        font-weight: 100;\n        font-size: 1.5em;\n        margin-top: 1em;\n        margin-bottom: 0em;\n        text-decoration: none; }\n        .contact-section .contact-container .contact-item a:hover {\n          color: #415161;\n          text-decoration: underline; }\n    .contact-section .contact-container .icons-container .contact-icons {\n      display: inline-block;\n      padding: 0.2em;\n      margin-top: 2em; }\n      .contact-section .contact-container .icons-container .contact-icons .fa-linkedin-square, .contact-section .contact-container .icons-container .contact-icons .fa-github, .contact-section .contact-container .icons-container .contact-icons .fa-facebook-official, .contact-section .contact-container .icons-container .contact-icons .fa-dribbble {\n        display: inline-block;\n        color: #415161; }\n        .contact-section .contact-container .icons-container .contact-icons .fa-linkedin-square:hover, .contact-section .contact-container .icons-container .contact-icons .fa-github:hover, .contact-section .contact-container .icons-container .contact-icons .fa-facebook-official:hover, .contact-section .contact-container .icons-container .contact-icons .fa-dribbble:hover {\n          color: #4b5e70; }\n\n@media only screen and (min-width: 348px) {\n  .contact-section .contact-container .icons-container .contact-icons {\n    padding: 0.4em; } }\n\n@media only screen and (min-width: 421px) {\n  .contact-section .contact-container .icons-container .contact-icons {\n    padding: 1em; } }\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 203 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _react = __webpack_require__(5);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _techSkills = __webpack_require__(204);
+
+	var _techSkills2 = _interopRequireDefault(_techSkills);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var TechSkills = _react2.default.createClass({
+	    displayName: 'TechSkills',
+
+	    render: function render() {
+	        return _react2.default.createElement(
+	            'section',
+	            { className: 'tech-skills-section' },
+	            _react2.default.createElement(
+	                'h3',
+	                null,
+	                'Technical Expertise'
+	            ),
+	            _react2.default.createElement(
+	                'ul',
+	                { className: 'tech-skills-container' },
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'tech-skills-item-container' },
+	                    _react2.default.createElement(
+	                        'li',
+	                        { className: 'tech-skills-item' },
+	                        _react2.default.createElement(
+	                            'h3',
+	                            null,
+	                            'Professional Skillset'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            'HTML5'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            'CSS3'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            'JavaScript'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            'React'
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'li',
+	                        { className: 'tech-skills-item' },
+	                        _react2.default.createElement(
+	                            'h3',
+	                            null,
+	                            'Other Notables'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            'Redux'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            'SASS/LESS'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            'Compass/Bourbon'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            'jQuery'
+	                        )
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'tech-skills-item-container' },
+	                    _react2.default.createElement(
+	                        'li',
+	                        { className: 'tech-skills-item tech-skills-tools' },
+	                        _react2.default.createElement(
+	                            'h3',
+	                            null,
+	                            'Tools'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            'Photoshop & Sketch'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            'Webpack/Gulp'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            'Atom'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            'Babel'
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'li',
+	                        { className: 'tech-skills-item' },
+	                        _react2.default.createElement(
+	                            'h3',
+	                            null,
+	                            'Working Knowledge'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            'Node.js'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            'Express'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            'MongoDB'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            'Mongoose'
+	                        )
+	                    )
+	                )
+	            )
+	        );
+	    }
+	});
+
+	module.exports = TechSkills;
+
+/***/ },
+/* 204 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(205);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(4)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/index.js!./tech-skills.scss", function() {
+				var newContent = require("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/index.js!./tech-skills.scss");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 205 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(3)();
+	// imports
+
+
+	// module
+	exports.push([module.id, ".tech-skills-section {\n  background: #fff;\n  height: 100%;\n  padding: 2em 4em 4em 4em; }\n  .tech-skills-section h3 {\n    font-weight: 400;\n    font-size: 1.75em;\n    margin-top: 0em;\n    margin-bottom: 0em;\n    text-align: left;\n    color: #415161; }\n  .tech-skills-section .tech-skills-container {\n    padding: 2em 0 0 0;\n    margin: 0;\n    list-style: none; }\n    .tech-skills-section .tech-skills-container .tech-skills-item {\n      display: block;\n      width: 100%;\n      padding: 5px;\n      margin-top: 1em;\n      color: #415161;\n      font-weight: bold;\n      text-align: center; }\n      .tech-skills-section .tech-skills-container .tech-skills-item h3, .tech-skills-section .tech-skills-container .tech-skills-item p {\n        color: #415161; }\n      .tech-skills-section .tech-skills-container .tech-skills-item h3 {\n        font-weight: 400;\n        font-size: 1.25em;\n        margin-top: 0em;\n        margin-bottom: 0em;\n        text-align: left;\n        text-decoration: underline; }\n      .tech-skills-section .tech-skills-container .tech-skills-item p {\n        font-weight: 100;\n        font-size: 1.2em;\n        text-align: left; }\n      .tech-skills-section .tech-skills-container .tech-skills-item img {\n        max-width: 100%; }\n      .tech-skills-section .tech-skills-container .tech-skills-item a {\n        color: #586D82; }\n        .tech-skills-section .tech-skills-container .tech-skills-item a:hover {\n          color: #415161; }\n      .tech-skills-section .tech-skills-container .tech-skills-item:nth-child(2) {\n        text-align: center; }\n\n@media only screen and (min-width: 679px) {\n  .tech-skills-section .tech-skills-container .tech-skills-item-container {\n    display: inline-block; }\n    .tech-skills-section .tech-skills-container .tech-skills-item-container:first-child {\n      padding-right: 4em; }\n    .tech-skills-section .tech-skills-container .tech-skills-item-container:nth-child(2) {\n      border-left: 1px solid #BCBCBC;\n      padding-left: 2em; }\n  .tech-skills-section .tech-skills-container .tech-skills-item {\n    padding-left: 2.25em; } }\n\n@media only screen and (min-width: 1000px) {\n  .tech-skills-section .tech-skills-container .tech-skills-item-container {\n    display: initial; }\n    .tech-skills-section .tech-skills-container .tech-skills-item-container:first-child {\n      padding-right: 0em; }\n    .tech-skills-section .tech-skills-container .tech-skills-item-container:nth-child(2) {\n      border-left: none;\n      padding-left: 0em; }\n  .tech-skills-section .tech-skills-container .tech-skills-item {\n    display: inline-block;\n    width: 22%;\n    padding-left: 0em; }\n    .tech-skills-section .tech-skills-container .tech-skills-item:nth-child(2) {\n      border-left: 1px solid #BCBCBC;\n      padding-left: 1em; }\n  .tech-skills-section .tech-skills-container .tech-skills-tools {\n    border-left: 1px solid #BCBCBC;\n    padding-left: 1em; } }\n", ""]);
 
 	// exports
 

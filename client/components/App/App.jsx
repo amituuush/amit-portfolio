@@ -3,6 +3,7 @@ import sass from './app.scss'
 import Nav from '../Nav/Nav'
 import Cover from '../Cover/Cover'
 import Projects from '../Projects/Projects'
+import TechSkills from '../TechSkills/TechSkills'
 import AboutMe from '../AboutMe/AboutMe'
 import Footer from '../Footer/Footer'
 import AboutSite from '../AboutSite/AboutSite'
@@ -30,6 +31,7 @@ var App = React.createClass({
                     menuShow={this.state.menuShow} />
                 <Cover />
                 <Projects />
+                <TechSkills />
                 <AboutMe />
                 <Contact />
                 <AboutSite />

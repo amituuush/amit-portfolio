@@ -40,6 +40,14 @@ $primary-color: #415161;
             max-width: 100%;
         }
 
+        a {
+            color: #586D82;
+
+            &:hover {
+                color: #415161;
+            }
+        }
+
         &:nth-child(2) {
             text-align: center;
         }

@@ -34,6 +34,14 @@ $primary-color: #415161;
             margin-top: 0.5em;
         }
 
+        a {
+            color: #586D82;
+
+            &:hover {
+                color: #415161;
+            }
+        }
+
     }
 }
 

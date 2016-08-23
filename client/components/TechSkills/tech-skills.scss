@@ -1,0 +1,125 @@
+$primary-color: #415161;
+
+.tech-skills-section {
+    background: #fff;
+    height: 100%;
+    padding: 2em 4em 4em 4em;
+
+    h3 {
+      font-weight: 400;
+      font-size: 1.75em;
+      margin-top: 0em;
+      margin-bottom: 0em;
+      text-align: left;
+      color: $primary-color;
+      }
+
+    .tech-skills-container {
+      padding: 2em 0 0 0;
+      margin: 0;
+      list-style: none;
+
+      .tech-skills-item {
+        display: block;
+        width: 100%;
+        padding: 5px;
+        margin-top: 1em;
+        color: $primary-color;
+        font-weight: bold;
+        text-align: center;
+
+        h3, p {
+            color: $primary-color;
+
+        }
+
+        h3 {
+            font-weight: 400;
+            font-size: 1.25em;
+            margin-top: 0em;
+            margin-bottom: 0em;
+            text-align: left;
+            text-decoration: underline;
+        }
+
+        p {
+            font-weight: 100;
+            font-size: 1.2em;
+            text-align: left;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        a {
+            color: #586D82;
+
+            &:hover {
+                color: #415161;
+            }
+        }
+
+        &:nth-child(2) {
+            text-align: center;
+        }
+
+      }
+    }
+}
+
+@media only screen and (min-width: 679px) {
+    .tech-skills-section {
+        .tech-skills-container {
+            .tech-skills-item-container {
+                display: inline-block;
+
+                &:first-child {
+                    padding-right: 4em;
+                }
+
+                &:nth-child(2) {
+                    border-left: 1px solid #BCBCBC;
+                    padding-left: 2em;
+                }
+            }
+            .tech-skills-item {
+                padding-left: 2.25em;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .tech-skills-section {
+        .tech-skills-container {
+            .tech-skills-item-container {
+                display: initial;
+
+                &:first-child {
+                    padding-right: 0em;
+                }
+
+                &:nth-child(2) {
+                    border-left: none;
+                    padding-left: 0em;
+                }
+            }
+            .tech-skills-item {
+                display: inline-block;
+                width: 22%;
+                padding-left: 0em;
+
+                &:nth-child(2) {
+                    border-left: 1px solid #BCBCBC;
+                    padding-left: 1em;
+                }
+            }
+
+            .tech-skills-tools {
+                border-left: 1px solid #BCBCBC;
+                padding-left: 1em;
+            }
+        }
+    }
+}
