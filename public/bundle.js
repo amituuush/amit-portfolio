@@ -22226,90 +22226,114 @@
 	                'Portfolio'
 	            ),
 	            _react2.default.createElement(
-	                'ul',
+	                'div',
 	                { className: 'projects-container' },
 	                _react2.default.createElement(
-	                    'li',
+	                    'div',
 	                    { className: 'projects-item' },
-	                    _react2.default.createElement('img', { src: 'img/gomocha.jpg' }),
 	                    _react2.default.createElement(
-	                        'h3',
-	                        null,
-	                        'GoMocha'
+	                        'div',
+	                        { className: 'projects-item-image' },
+	                        _react2.default.createElement('img', { src: 'img/gomocha.jpg' })
 	                    ),
 	                    _react2.default.createElement(
-	                        'p',
-	                        null,
-	                        'Geolocation coffee order application built in React and Node.'
-	                    ),
-	                    _react2.default.createElement(
-	                        'a',
-	                        { href: 'https://gomocha.herokuapp.com/', target: '_blank' },
+	                        'div',
+	                        { className: 'projects-item-content' },
 	                        _react2.default.createElement(
-	                            'button',
+	                            'h3',
 	                            null,
-	                            'View'
-	                        )
-	                    ),
-	                    _react2.default.createElement(
-	                        'a',
-	                        { href: 'https://github.com/amituuush/gomocha', target: '_blank' },
-	                        _react2.default.createElement(
-	                            'button',
-	                            null,
-	                            'Repo'
-	                        )
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    'li',
-	                    { className: 'projects-item' },
-	                    _react2.default.createElement('img', { src: 'img/cellbreaker.jpg' }),
-	                    _react2.default.createElement(
-	                        'h3',
-	                        null,
-	                        'CellBreaker'
-	                    ),
-	                    _react2.default.createElement(
-	                        'p',
-	                        null,
-	                        'Web app for cell phone contract breaking service.'
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    'li',
-	                    { className: 'projects-item' },
-	                    _react2.default.createElement('img', { src: 'img/bird-strike.jpg' }),
-	                    _react2.default.createElement(
-	                        'h3',
-	                        null,
-	                        'Bird Strike'
-	                    ),
-	                    _react2.default.createElement(
-	                        'a',
-	                        { name: 'about-me' },
+	                            'GoMocha'
+	                        ),
 	                        _react2.default.createElement(
 	                            'p',
 	                            null,
-	                            'Online game built in JavaScript on HTML canvas.'
+	                            'Geolocation coffee order application built in React and Node.'
+	                        ),
+	                        _react2.default.createElement(
+	                            'a',
+	                            { href: 'https://gomocha.herokuapp.com/', target: '_blank' },
+	                            _react2.default.createElement(
+	                                'button',
+	                                null,
+	                                'View'
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            'a',
+	                            { href: 'https://github.com/amituuush/gomocha', target: '_blank' },
+	                            _react2.default.createElement(
+	                                'button',
+	                                null,
+	                                'Repo'
+	                            )
+	                        )
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'projects-item' },
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'projects-item-content' },
+	                        _react2.default.createElement(
+	                            'h3',
+	                            null,
+	                            'CellBreaker'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            'Web app for cell phone contract breaking service.'
 	                        )
 	                    ),
 	                    _react2.default.createElement(
-	                        'a',
-	                        { href: 'http://amituuush.github.io/bird-strike/', target: '_blank' },
-	                        _react2.default.createElement(
-	                            'button',
-	                            null,
-	                            'View'
-	                        )
+	                        'div',
+	                        { className: 'projects-item-image' },
+	                        _react2.default.createElement('img', { src: 'img/cellbreaker.jpg' })
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'projects-item' },
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'projects-item-image' },
+	                        _react2.default.createElement('img', { src: 'img/bird-strike.jpg' })
 	                    ),
 	                    _react2.default.createElement(
-	                        'a',
-	                        { href: 'https://github.com/amituuush/bird-strike', target: '_blank' },
+	                        'div',
+	                        { className: 'projects-item-content' },
 	                        _react2.default.createElement(
-	                            'button',
+	                            'h3',
 	                            null,
-	                            'Repo'
+	                            'Bird Strike'
+	                        ),
+	                        _react2.default.createElement(
+	                            'a',
+	                            { name: 'about-me' },
+	                            _react2.default.createElement(
+	                                'p',
+	                                null,
+	                                'Online game built in JavaScript on HTML canvas.'
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            'a',
+	                            { href: 'http://amituuush.github.io/bird-strike/', target: '_blank' },
+	                            _react2.default.createElement(
+	                                'button',
+	                                null,
+	                                'View'
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            'a',
+	                            { href: 'https://github.com/amituuush/bird-strike', target: '_blank' },
+	                            _react2.default.createElement(
+	                                'button',
+	                                null,
+	                                'Repo'
+	                            )
 	                        )
 	                    )
 	                )
@@ -22355,7 +22379,7 @@
 
 
 	// module
-	exports.push([module.id, ".projects-section {\n  background: #F7F7F7;\n  height: 100%;\n  padding: 2em 4em 4em 4em; }\n  .projects-section h2 {\n    color: #415161;\n    font-size: 1.75em; }\n  .projects-section .projects-title {\n    font-weight: 400;\n    font-size: 1.75em;\n    margin-top: 0em;\n    margin-bottom: 0em;\n    text-align: left;\n    color: #415161; }\n  .projects-section .projects-container {\n    padding: 0;\n    margin: 0;\n    list-style: none;\n    display: -webkit-box;\n    display: -moz-box;\n    display: -ms-flexbox;\n    display: -webkit-flex;\n    display: flex;\n    -webkit-flex-flow: row wrap;\n    justify-content: space-around; }\n    .projects-section .projects-container .projects-item {\n      padding: 5px;\n      margin-top: 1em;\n      margin-bottom: 2em;\n      color: white;\n      font-weight: bold;\n      text-align: center; }\n      .projects-section .projects-container .projects-item img {\n        width: 100%; }\n      .projects-section .projects-container .projects-item h3, .projects-section .projects-container .projects-item p {\n        color: #415161; }\n      .projects-section .projects-container .projects-item h3 {\n        font-weight: 400;\n        font-size: 1.75em;\n        margin-top: 0.5em;\n        margin-bottom: 0em; }\n      .projects-section .projects-container .projects-item p {\n        font-weight: 100;\n        font-size: 1.2em;\n        width: 100%;\n        margin: 0.5em auto 1em auto; }\n      .projects-section .projects-container .projects-item button {\n        background: #415161;\n        border: none;\n        font-weight: 100;\n        padding: 0.5em 1em;\n        border-radius: 3px;\n        margin-right: 0.75em;\n        color: #fff; }\n        .projects-section .projects-container .projects-item button:hover {\n          background: #4b5e70;\n          color: #fff;\n          cursor: pointer; }\n        .projects-section .projects-container .projects-item button:focus {\n          outline: none; }\n\n@media only screen and (min-width: 570px) {\n  .projects-section .projects-container .projects-item img {\n    max-width: 400px; } }\n", ""]);
+	exports.push([module.id, ".projects-section {\n  background: #F7F7F7;\n  height: 100%;\n  padding: 2em 4em 4em 4em; }\n  .projects-section h2 {\n    color: #415161;\n    font-size: 1.75em; }\n  .projects-section .projects-title {\n    font-weight: 400;\n    font-size: 1.75em;\n    margin-top: 0em;\n    margin-bottom: 0em;\n    text-align: left;\n    color: #415161; }\n  .projects-section .projects-container {\n    padding: 0;\n    margin: 0;\n    list-style: none; }\n    .projects-section .projects-container .projects-item {\n      display: block;\n      padding-top: 4em;\n      padding-bottom: 4em;\n      color: white;\n      font-weight: bold;\n      text-align: center; }\n      .projects-section .projects-container .projects-item:nth-child(2), .projects-section .projects-container .projects-item:nth-child(3) {\n        border-top: 1px solid #BCBCBC; }\n      .projects-section .projects-container .projects-item .projects-item-image {\n        display: inline-block;\n        width: 35%; }\n        .projects-section .projects-container .projects-item .projects-item-image img {\n          width: 100%;\n          display: inline-block; }\n      .projects-section .projects-container .projects-item .projects-item-content {\n        display: inline-block;\n        width: 64%; }\n        .projects-section .projects-container .projects-item .projects-item-content h3, .projects-section .projects-container .projects-item .projects-item-content p {\n          color: #415161; }\n        .projects-section .projects-container .projects-item .projects-item-content h3 {\n          font-weight: 400;\n          font-size: 1.75em;\n          margin-top: 0.5em;\n          margin-bottom: 0em; }\n        .projects-section .projects-container .projects-item .projects-item-content p {\n          font-weight: 100;\n          font-size: 1.2em;\n          width: 100%;\n          margin: 0.5em auto 1em auto; }\n        .projects-section .projects-container .projects-item .projects-item-content button {\n          background: #415161;\n          border: none;\n          font-weight: 100;\n          padding: 0.5em 1em;\n          border-radius: 3px;\n          margin-right: 0.75em;\n          color: #fff; }\n          .projects-section .projects-container .projects-item .projects-item-content button:hover {\n            background: #4b5e70;\n            color: #fff;\n            cursor: pointer; }\n          .projects-section .projects-container .projects-item .projects-item-content button:focus {\n            outline: none; }\n\n@media only screen and (min-width: 570px) {\n  .projects-section .projects-container .projects-item img {\n    max-width: 400px; } }\n", ""]);
 
 	// exports
 
@@ -22459,7 +22483,7 @@
 
 
 	// module
-	exports.push([module.id, ".about-me-section {\n  background: #fff;\n  height: 100%;\n  padding: 2em 4em 4em 4em; }\n  .about-me-section .about-me-container {\n    padding: 0;\n    margin: 0;\n    list-style: none; }\n    .about-me-section .about-me-container .about-me-item {\n      padding: 5px;\n      margin-top: 1em;\n      color: #415161;\n      font-weight: bold;\n      text-align: center; }\n      .about-me-section .about-me-container .about-me-item h3, .about-me-section .about-me-container .about-me-item p {\n        color: #415161; }\n      .about-me-section .about-me-container .about-me-item h3 {\n        font-weight: 400;\n        font-size: 1.75em;\n        margin-top: 0em;\n        margin-bottom: 0em;\n        text-align: left; }\n      .about-me-section .about-me-container .about-me-item p {\n        font-weight: 100;\n        font-size: 1.2em;\n        text-align: left; }\n      .about-me-section .about-me-container .about-me-item img {\n        max-width: 100%; }\n      .about-me-section .about-me-container .about-me-item a {\n        color: #586D82; }\n        .about-me-section .about-me-container .about-me-item a:hover {\n          color: #415161; }\n      .about-me-section .about-me-container .about-me-item:nth-child(2) {\n        text-align: center; }\n\n@media only screen and (min-width: 570px) {\n  .about-me-section .about-me-container .about-me-item img {\n    max-width: 430px; } }\n", ""]);
+	exports.push([module.id, ".about-me-section {\n  background: #F7F7F7;\n  height: 100%;\n  padding: 2em 4em 4em 4em; }\n  .about-me-section .about-me-container {\n    padding: 0;\n    margin: 0;\n    list-style: none; }\n    .about-me-section .about-me-container .about-me-item {\n      padding: 5px;\n      margin-top: 1em;\n      color: #415161;\n      font-weight: bold;\n      text-align: center; }\n      .about-me-section .about-me-container .about-me-item h3, .about-me-section .about-me-container .about-me-item p {\n        color: #415161; }\n      .about-me-section .about-me-container .about-me-item h3 {\n        font-weight: 400;\n        font-size: 1.75em;\n        margin-top: 0em;\n        margin-bottom: 0em;\n        text-align: left; }\n      .about-me-section .about-me-container .about-me-item p {\n        font-weight: 100;\n        font-size: 1.2em;\n        text-align: left; }\n      .about-me-section .about-me-container .about-me-item img {\n        max-width: 100%; }\n      .about-me-section .about-me-container .about-me-item a {\n        color: #586D82; }\n        .about-me-section .about-me-container .about-me-item a:hover {\n          color: #415161; }\n      .about-me-section .about-me-container .about-me-item:nth-child(2) {\n        text-align: center; }\n\n@media only screen and (min-width: 570px) {\n  .about-me-section .about-me-container .about-me-item img {\n    max-width: 430px; } }\n", ""]);
 
 	// exports
 
@@ -22657,7 +22681,7 @@
 
 
 	// module
-	exports.push([module.id, ".about-site-section {\n  background: #fff;\n  height: 100%;\n  padding: 2em 4em 4em 4em; }\n  .about-site-section h3 {\n    font-weight: 400;\n    font-size: 1.75em;\n    margin-top: 0em;\n    margin-bottom: 0em;\n    text-align: left;\n    color: #415161; }\n  .about-site-section .about-site-container {\n    padding: 0;\n    margin: 0;\n    list-style: none; }\n    .about-site-section .about-site-container .about-site-item {\n      padding: 5px;\n      margin-top: 1em;\n      color: white;\n      font-weight: bold;\n      text-align: center; }\n      .about-site-section .about-site-container .about-site-item h3 {\n        color: #415161;\n        font-weight: 100;\n        font-size: 1.2em;\n        margin-top: 0em;\n        margin-bottom: 0em;\n        text-align: left; }\n        .about-site-section .about-site-container .about-site-item h3 .about-site-highlight {\n          color: #1FA975; }\n      .about-site-section .about-site-container .about-site-item p {\n        font-weight: 100;\n        font-size: 1.2em;\n        width: 70%;\n        text-align: left; }\n", ""]);
+	exports.push([module.id, ".about-site-section {\n  background: #F7F7F7;\n  height: 100%;\n  padding: 2em 4em 4em 4em; }\n  .about-site-section h3 {\n    font-weight: 400;\n    font-size: 1.75em;\n    margin-top: 0em;\n    margin-bottom: 0em;\n    text-align: left;\n    color: #415161; }\n  .about-site-section .about-site-container {\n    padding: 0;\n    margin: 0;\n    list-style: none; }\n    .about-site-section .about-site-container .about-site-item {\n      padding: 5px;\n      margin-top: 1em;\n      color: #F7F7F7;\n      font-weight: bold;\n      text-align: center; }\n      .about-site-section .about-site-container .about-site-item h3 {\n        color: #415161;\n        font-weight: 100;\n        font-size: 1.2em;\n        margin-top: 0em;\n        margin-bottom: 0em;\n        text-align: left; }\n        .about-site-section .about-site-container .about-site-item h3 .about-site-highlight {\n          color: #1FA975; }\n      .about-site-section .about-site-container .about-site-item p {\n        font-weight: 100;\n        font-size: 1.2em;\n        width: 70%;\n        text-align: left; }\n", ""]);
 
 	// exports
 
@@ -22786,7 +22810,7 @@
 
 
 	// module
-	exports.push([module.id, ".contact-section {\n  background: #F7F7F7;\n  height: 100%;\n  padding: 2em 4em 4em 4em; }\n  .contact-section h3 {\n    font-weight: 400;\n    font-size: 1.75em;\n    margin-top: 0em;\n    margin-bottom: 0em;\n    text-align: left;\n    color: #415161; }\n  .contact-section .contact-container {\n    padding: 0;\n    margin: 0 auto;\n    list-style: none;\n    text-align: center; }\n    .contact-section .contact-container p {\n      font-weight: 100;\n      font-size: 2em;\n      color: #415161;\n      margin-bottom: 0.75em; }\n    .contact-section .contact-container .vertical-divider {\n      height: 2em;\n      border-left: 1px solid #BCBCBC;\n      width: 0em;\n      margin: 0 auto; }\n    .contact-section .contact-container .contact-item {\n      padding: 5px;\n      margin-top: 1em;\n      color: white;\n      font-weight: bold;\n      text-align: center; }\n      .contact-section .contact-container .contact-item a {\n        color: #556b80;\n        font-weight: 100;\n        font-size: 1.5em;\n        margin-top: 1em;\n        margin-bottom: 0em;\n        text-decoration: none; }\n        .contact-section .contact-container .contact-item a:hover {\n          color: #415161;\n          text-decoration: underline; }\n    .contact-section .contact-container .icons-container .contact-icons {\n      display: inline-block;\n      padding: 0.2em;\n      margin-top: 2em; }\n      .contact-section .contact-container .icons-container .contact-icons .fa-linkedin-square, .contact-section .contact-container .icons-container .contact-icons .fa-github, .contact-section .contact-container .icons-container .contact-icons .fa-facebook-official, .contact-section .contact-container .icons-container .contact-icons .fa-dribbble {\n        display: inline-block;\n        color: #415161; }\n        .contact-section .contact-container .icons-container .contact-icons .fa-linkedin-square:hover, .contact-section .contact-container .icons-container .contact-icons .fa-github:hover, .contact-section .contact-container .icons-container .contact-icons .fa-facebook-official:hover, .contact-section .contact-container .icons-container .contact-icons .fa-dribbble:hover {\n          color: #4b5e70; }\n\n@media only screen and (min-width: 348px) {\n  .contact-section .contact-container .icons-container .contact-icons {\n    padding: 0.4em; } }\n\n@media only screen and (min-width: 421px) {\n  .contact-section .contact-container .icons-container .contact-icons {\n    padding: 1em; } }\n", ""]);
+	exports.push([module.id, ".contact-section {\n  background: #fff;\n  height: 100%;\n  padding: 2em 4em 4em 4em; }\n  .contact-section h3 {\n    font-weight: 400;\n    font-size: 1.75em;\n    margin-top: 0em;\n    margin-bottom: 0em;\n    text-align: left;\n    color: #415161; }\n  .contact-section .contact-container {\n    padding: 0;\n    margin: 0 auto;\n    list-style: none;\n    text-align: center; }\n    .contact-section .contact-container p {\n      font-weight: 100;\n      font-size: 2em;\n      color: #415161;\n      margin-bottom: 0.75em; }\n    .contact-section .contact-container .vertical-divider {\n      height: 2em;\n      border-left: 1px solid #BCBCBC;\n      width: 0em;\n      margin: 0 auto; }\n    .contact-section .contact-container .contact-item {\n      padding: 5px;\n      margin-top: 1em;\n      color: #fff;\n      font-weight: bold;\n      text-align: center; }\n      .contact-section .contact-container .contact-item a {\n        color: #556b80;\n        font-weight: 100;\n        font-size: 1.5em;\n        margin-top: 1em;\n        margin-bottom: 0em;\n        text-decoration: none; }\n        .contact-section .contact-container .contact-item a:hover {\n          color: #415161;\n          text-decoration: underline; }\n    .contact-section .contact-container .icons-container .contact-icons {\n      display: inline-block;\n      padding: 0.2em;\n      margin-top: 2em; }\n      .contact-section .contact-container .icons-container .contact-icons .fa-linkedin-square, .contact-section .contact-container .icons-container .contact-icons .fa-github, .contact-section .contact-container .icons-container .contact-icons .fa-facebook-official, .contact-section .contact-container .icons-container .contact-icons .fa-dribbble {\n        display: inline-block;\n        color: #415161; }\n        .contact-section .contact-container .icons-container .contact-icons .fa-linkedin-square:hover, .contact-section .contact-container .icons-container .contact-icons .fa-github:hover, .contact-section .contact-container .icons-container .contact-icons .fa-facebook-official:hover, .contact-section .contact-container .icons-container .contact-icons .fa-dribbble:hover {\n          color: #4b5e70; }\n\n@media only screen and (min-width: 348px) {\n  .contact-section .contact-container .icons-container .contact-icons {\n    padding: 0.4em; } }\n\n@media only screen and (min-width: 421px) {\n  .contact-section .contact-container .icons-container .contact-icons {\n    padding: 1em; } }\n", ""]);
 
 	// exports
 

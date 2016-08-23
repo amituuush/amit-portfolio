@@ -1,7 +1,9 @@
 $primary-color: #415161;
+$background-color: #F7F7F7;
+$highlight-color: #1FA975;
 
 .about-site-section {
-    background: #fff;
+    background: $background-color;
     height: 100%;
     padding: 2em 4em 4em 4em;
 
@@ -22,7 +24,7 @@ $primary-color: #415161;
       .about-site-item {
         padding: 5px;
         margin-top: 1em;
-        color: white;
+        color: $background-color;
         font-weight: bold;
         text-align: center;
 
@@ -35,7 +37,7 @@ $primary-color: #415161;
             text-align: left;
 
             .about-site-highlight {
-                color: #1FA975;
+                color: $highlight-color;
             }
         }
 

@@ -1,7 +1,10 @@
 $primary-color: #415161;
+$background-color: #F7F7F7;
+$link-color: #586D82;
+$link-hover-color: #415161;
 
 .about-me-section {
-    background: #fff;
+    background: $background-color;
     height: 100%;
     padding: 2em 4em 4em 4em;
 
@@ -41,10 +44,10 @@ $primary-color: #415161;
         }
 
         a {
-            color: #586D82;
+            color: $link-color;
 
             &:hover {
-                color: #415161;
+                color: $link-hover-color;
             }
         }
 

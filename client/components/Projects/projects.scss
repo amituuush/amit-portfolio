@@ -24,64 +24,72 @@ $secondary-color: #F7F7F7;
       padding: 0;
       margin: 0;
       list-style: none;
-      display: -webkit-box;
-      display: -moz-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-flex-flow: row wrap;
-      justify-content: space-around;
 
       .projects-item {
-        padding: 5px;
-        margin-top: 1em;
-        margin-bottom: 2em;
+        display: block;
+        padding-top: 4em;
+        padding-bottom: 4em;
         color: white;
         font-weight: bold;
         text-align: center;
 
-        img {
-            width: 100%;
+        &:nth-child(2), &:nth-child(3) {
+            border-top: 1px solid #BCBCBC;
         }
 
-        h3, p {
-            color: $primary-color;
+        .projects-item-image {
+            display: inline-block;
+            width: 35%;
 
+            img {
+                width: 100%;
+                display: inline-block;
+            }
         }
 
-        h3 {
-            font-weight: 400;
-            font-size: 1.75em;
-            margin-top: 0.5em;
-            margin-bottom: 0em;
-        }
+        .projects-item-content {
+            display: inline-block;
+            width: 64%;
 
-        p {
-            font-weight: 100;
-            font-size: 1.2em;
-            width: 100%;
-            margin: 0.5em auto 1em auto;
-        }
+            h3, p {
+                color: $primary-color;
+            }
 
-        button {
-            background: $primary-color;
-            border: none;
-            font-weight: 100;
-            padding: 0.5em 1em;
-            border-radius: 3px;
-            margin-right: 0.75em;
-            color: #fff;
+            h3 {
+                font-weight: 400;
+                font-size: 1.75em;
+                margin-top: 0.5em;
+                margin-bottom: 0em;
+            }
 
-            &:hover {
-                background: lighten($primary-color, 5%);
+            p {
+                font-weight: 100;
+                font-size: 1.2em;
+                width: 100%;
+                margin: 0.5em auto 1em auto;
+            }
+
+            button {
+                background: $primary-color;
+                border: none;
+                font-weight: 100;
+                padding: 0.5em 1em;
+                border-radius: 3px;
+                margin-right: 0.75em;
                 color: #fff;
-                cursor: pointer;
-            }
 
-            &:focus {
-                outline: none;
+                &:hover {
+                    background: lighten($primary-color, 5%);
+                    color: #fff;
+                    cursor: pointer;
+                }
+
+                &:focus {
+                    outline: none;
+                }
             }
         }
+
       }
     }
 }

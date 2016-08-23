@@ -1,5 +1,6 @@
 $primary-color: #415161;
-$background-color: #F7F7F7;
+$background-color: #fff;
+$border-color: #BCBCBC;
 
 .contact-section {
     background: $background-color;
@@ -30,7 +31,7 @@ $background-color: #F7F7F7;
 
       .vertical-divider {
           height: 2em;
-          border-left: 1px solid #BCBCBC;
+          border-left: 1px solid $border-color;
           width: 0em;
           margin: 0 auto;
       }
@@ -38,7 +39,7 @@ $background-color: #F7F7F7;
       .contact-item {
         padding: 5px;
         margin-top: 1em;
-        color: white;
+        color: $background-color;
         font-weight: bold;
         text-align: center;
 
