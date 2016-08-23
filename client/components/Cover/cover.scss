@@ -1,13 +1,14 @@
 $primary-color: #415161;
 
 .cover-section {
-
+    width: 90%;
     text-align: center;
+    margin: 0 auto;
     .cover-left, .cover-right {
 
         display: block;
         text-align: center;
-        padding: 2em 0em 2em 0em;
+        padding: 8em 0em 2em 0em;
     }
 
     .cover-right {
@@ -24,14 +25,41 @@ $primary-color: #415161;
         }
 
         h1 {
-            font-size: 3em;
+            font-size: 2.5em;
             margin-top: 0em;
             margin-bottom: 0em;
         }
         h2 {
-            font-size: 1.75em;
+            font-size: 1.5em;
             margin-top: 0.5em;
         }
 
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .cover-section {
+        .cover-left, .cover-right {
+
+        }
+
+        .cover-right {
+            width: 35em;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .cover-section {
+        .cover-left, .cover-right {
+            display: inline-block;
+        }
+
+        .cover-right {
+            padding-left: 4em;
+            position: relative;
+            top: -3.5em;
+        }
     }
 }

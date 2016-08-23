@@ -5,7 +5,7 @@ var Projects = React.createClass({
     render: function() {
         return (
             <section className="projects-section">
-                <a name="portfolio"><h3 className="projects-title">My work</h3></a>
+                <h3 className="projects-title">My work</h3>
                 <ul className="projects-container">
                     <li className="projects-item">
                         <img src="img/gomocha.jpg" />
@@ -22,7 +22,7 @@ var Projects = React.createClass({
                     <li className="projects-item">
                         <img src="img/bird-strike.jpg" />
                             <h3>Bird Strike</h3>
-                            <p>Online game built in JavaScript on HTML canvas.</p>
+                            <a name="about-me"><p>Online game built in JavaScript on HTML canvas.</p></a>
                             <a href="http://amituuush.github.io/bird-strike/" target="_blank"><button>View</button></a>
                             <a href="https://github.com/amituuush/bird-strike" target="_blank"><button>Repo</button></a>
                     </li>

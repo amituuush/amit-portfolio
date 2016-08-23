@@ -5,7 +5,7 @@ var Contact = React.createClass({
     render: function() {
         return (
             <section className="contact-section">
-                <a name="contact"><h3></h3></a>
+                <h3></h3>
                 <div className="contact-container">
                     <p>Feel free to email me at:</p>
                     <div className="vertical-divider"></div>

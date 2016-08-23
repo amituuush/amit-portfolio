@@ -70,10 +70,17 @@
 	// rewrite about me section
 	// add drowdown with info for each project piece?
 	// add smooth scrolling, back to top
-	// make fixed nav
 	// add dribbble account to contact
-	// responsive issue for my work
-	// responsive issue on contact icons
+	// add favicon
+
+	// its not clear on your portfolio site that you're the one who built it,
+	// your centerpiece project should be the game you built, // gomocha needs a more commercial revamp (similar to the suggestions I gave you),
+	// make clear on gomocha when you're using an api,
+	// need to see something on your portfolio that describes how you approach development projects (basically your thoughts around solving problems)
+
+	// what did he do for CB? show some code/functions that were built
+
+	//no mention of his technical skillset on the portfolio
 
 /***/ },
 /* 1 */
@@ -21985,7 +21992,9 @@
 	                { className: this.props.menuShow ? 'menu-show' : 'menu-hide' },
 	                _react2.default.createElement(
 	                    'a',
-	                    { href: '#home' },
+	                    { href: '#home', onClick: function onClick() {
+	                            _this.props.handleMenuToggle();
+	                        } },
 	                    _react2.default.createElement(
 	                        'li',
 	                        null,
@@ -21994,7 +22003,9 @@
 	                ),
 	                _react2.default.createElement(
 	                    'a',
-	                    { href: '#portfolio' },
+	                    { href: '#portfolio', onClick: function onClick() {
+	                            _this.props.handleMenuToggle();
+	                        } },
 	                    _react2.default.createElement(
 	                        'li',
 	                        null,
@@ -22003,7 +22014,9 @@
 	                ),
 	                _react2.default.createElement(
 	                    'a',
-	                    { href: '#about-me' },
+	                    { href: '#about-me', onClick: function onClick() {
+	                            _this.props.handleMenuToggle();
+	                        } },
 	                    _react2.default.createElement(
 	                        'li',
 	                        null,
@@ -22012,7 +22025,9 @@
 	                ),
 	                _react2.default.createElement(
 	                    'a',
-	                    { href: '#contact' },
+	                    { href: '#contact', onClick: function onClick() {
+	                            _this.props.handleMenuToggle();
+	                        } },
 	                    _react2.default.createElement(
 	                        'li',
 	                        null,
@@ -22070,7 +22085,7 @@
 
 
 	// module
-	exports.push([module.id, "nav {\n  text-align: left;\n  border-bottom: 1px solid #efefef; }\n  nav .menu-bars .fa-bars, nav .menu-bars .fa-times {\n    color: #415161;\n    margin: 0.5em; }\n    nav .menu-bars .fa-bars:hover, nav .menu-bars .fa-times:hover {\n      cursor: pointer; }\n  nav .menu-show {\n    display: block;\n    overflow-x: hidden; }\n  nav .menu-hide {\n    display: none; }\n  nav ul {\n    padding-left: 0em;\n    position: absolute;\n    top: 48px;\n    background: #fff;\n    z-index: 9999;\n    width: 100%; }\n    nav ul a {\n      text-decoration: none;\n      color: #415161; }\n    nav ul li {\n      list-style-type: none;\n      padding: 0.75em;\n      width: 100%;\n      border-bottom: 1px solid #EFEFEF; }\n      nav ul li:first-child {\n        border-top: 1px solid #efefef; }\n", ""]);
+	exports.push([module.id, "nav {\n  text-align: left;\n  border-bottom: 1px solid #efefef;\n  position: fixed;\n  width: 100%;\n  background: #fff; }\n  nav .menu-bars .fa-bars, nav .menu-bars .fa-times {\n    color: #415161;\n    margin: 0.5em; }\n    nav .menu-bars .fa-bars:hover, nav .menu-bars .fa-times:hover {\n      cursor: pointer; }\n  nav .menu-show {\n    display: block;\n    overflow-x: hidden; }\n  nav .menu-hide {\n    display: none; }\n  nav ul {\n    padding-left: 0em;\n    position: absolute;\n    top: 48px;\n    background: #fff;\n    z-index: 9999;\n    width: 100%; }\n    nav ul a {\n      text-decoration: none;\n      color: #415161; }\n    nav ul li {\n      list-style-type: none;\n      padding: 0.75em;\n      width: 100%;\n      border-bottom: 1px solid #EFEFEF; }\n      nav ul li:first-child {\n        border-top: 1px solid #efefef; }\n", ""]);
 
 	// exports
 
@@ -22098,14 +22113,11 @@
 	        return _react2.default.createElement(
 	            'section',
 	            { className: 'cover-section' },
+	            _react2.default.createElement('a', { name: 'home' }),
 	            _react2.default.createElement(
-	                'a',
-	                { name: 'home' },
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: 'cover-left' },
-	                    _react2.default.createElement('img', { src: 'img/amit-circle-pic.png' })
-	                )
+	                'div',
+	                { className: 'cover-left' },
+	                _react2.default.createElement('img', { src: 'img/amit-circle-pic.png' })
 	            ),
 	            _react2.default.createElement(
 	                'div',
@@ -22113,12 +22125,16 @@
 	                _react2.default.createElement(
 	                    'h1',
 	                    null,
-	                    'Hi, I\'m Amit,'
+	                    'Hi, I\'m Amit.'
 	                ),
 	                _react2.default.createElement(
-	                    'h2',
-	                    null,
-	                    'a front end developer.'
+	                    'a',
+	                    { name: 'portfolio' },
+	                    _react2.default.createElement(
+	                        'h2',
+	                        null,
+	                        'Banker turned frontend developer. Recent Thinkful coding bootcamp grad. B.A. in economics from UC Davis. 500 Startups Batch 13.'
+	                    )
 	                )
 	            )
 	        );
@@ -22162,7 +22178,7 @@
 
 
 	// module
-	exports.push([module.id, ".cover-section {\n  text-align: center; }\n  .cover-section .cover-left, .cover-section .cover-right {\n    display: block;\n    text-align: center;\n    padding: 2em 0em 2em 0em; }\n  .cover-section .cover-right {\n    display: block;\n    text-align: center;\n    padding: 0em 0em 2em 0em; }\n  .cover-section .cover-right h1, .cover-section .cover-right h2 {\n    color: #415161;\n    font-weight: 100; }\n  .cover-section .cover-right h1 {\n    font-size: 3em;\n    margin-top: 0em;\n    margin-bottom: 0em; }\n  .cover-section .cover-right h2 {\n    font-size: 1.75em;\n    margin-top: 0.5em; }\n", ""]);
+	exports.push([module.id, ".cover-section {\n  width: 90%;\n  text-align: center;\n  margin: 0 auto; }\n  .cover-section .cover-left, .cover-section .cover-right {\n    display: block;\n    text-align: center;\n    padding: 8em 0em 2em 0em; }\n  .cover-section .cover-right {\n    display: block;\n    text-align: center;\n    padding: 0em 0em 2em 0em; }\n  .cover-section .cover-right h1, .cover-section .cover-right h2 {\n    color: #415161;\n    font-weight: 100; }\n  .cover-section .cover-right h1 {\n    font-size: 2.5em;\n    margin-top: 0em;\n    margin-bottom: 0em; }\n  .cover-section .cover-right h2 {\n    font-size: 1.5em;\n    margin-top: 0.5em; }\n\n@media only screen and (min-width: 700px) {\n  .cover-section .cover-right {\n    width: 35em;\n    margin: 0 auto; } }\n\n@media only screen and (min-width: 1000px) {\n  .cover-section .cover-left, .cover-section .cover-right {\n    display: inline-block; }\n  .cover-section .cover-right {\n    padding-left: 4em;\n    position: relative;\n    top: -3.5em; } }\n", ""]);
 
 	// exports
 
@@ -22191,13 +22207,9 @@
 	            'section',
 	            { className: 'projects-section' },
 	            _react2.default.createElement(
-	                'a',
-	                { name: 'portfolio' },
-	                _react2.default.createElement(
-	                    'h3',
-	                    { className: 'projects-title' },
-	                    'My work'
-	                )
+	                'h3',
+	                { className: 'projects-title' },
+	                'My work'
 	            ),
 	            _react2.default.createElement(
 	                'ul',
@@ -22260,9 +22272,13 @@
 	                        'Bird Strike'
 	                    ),
 	                    _react2.default.createElement(
-	                        'p',
-	                        null,
-	                        'Online game built in JavaScript on HTML canvas.'
+	                        'a',
+	                        { name: 'about-me' },
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            'Online game built in JavaScript on HTML canvas.'
+	                        )
 	                    ),
 	                    _react2.default.createElement(
 	                        'a',
@@ -22360,13 +22376,9 @@
 	                    'li',
 	                    { className: 'about-me-item' },
 	                    _react2.default.createElement(
-	                        'a',
-	                        { name: 'about-me' },
-	                        _react2.default.createElement(
-	                            'h3',
-	                            null,
-	                            'About me'
-	                        )
+	                        'h3',
+	                        null,
+	                        'About me'
 	                    ),
 	                    _react2.default.createElement(
 	                        'p',
@@ -22389,7 +22401,8 @@
 	                    'li',
 	                    { className: 'about-me-item' },
 	                    _react2.default.createElement('img', { src: 'img/amit-canyoning.jpg' })
-	                )
+	                ),
+	                _react2.default.createElement('a', { name: 'contact' })
 	            )
 	        );
 	    }
@@ -22658,11 +22671,7 @@
 	        return _react2.default.createElement(
 	            'section',
 	            { className: 'contact-section' },
-	            _react2.default.createElement(
-	                'a',
-	                { name: 'contact' },
-	                _react2.default.createElement('h3', null)
-	            ),
+	            _react2.default.createElement('h3', null),
 	            _react2.default.createElement(
 	                'div',
 	                { className: 'contact-container' },

@@ -3,6 +3,9 @@ $primary-color: #415161;
 nav {
     text-align: left;
     border-bottom: 1px solid #efefef;
+    position: fixed;
+    width: 100%;
+    background: #fff;
 
     .menu-bars {
 
