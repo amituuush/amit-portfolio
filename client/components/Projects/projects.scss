@@ -34,7 +34,7 @@ $secondary-color: #F7F7F7;
         text-align: center;
 
         &:nth-child(2), &:nth-child(3) {
-            border-top: 1px solid #BCBCBC;
+
         }
 
         .projects-item-image {
@@ -49,7 +49,7 @@ $secondary-color: #F7F7F7;
 
         .projects-item-content {
             display: inline-block;
-            width: 64%;
+            width: 60%;
 
             h3, p {
                 color: $primary-color;
@@ -90,6 +90,20 @@ $secondary-color: #F7F7F7;
             }
         }
 
+        .item-content-gomocha, .item-content-bird-strike {
+            padding-left: 2em;
+        }
+
+        .item-content-cellbreaker {
+            padding-right: 2em;
+            position: relative;
+            top: -8em;
+        }
+
+        .item-content-bird-strike {
+            position: relative;
+            top: -4em;
+        }
       }
     }
 }

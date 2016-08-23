@@ -22238,7 +22238,7 @@
 	                    ),
 	                    _react2.default.createElement(
 	                        'div',
-	                        { className: 'projects-item-content' },
+	                        { className: 'projects-item-content item-content-gomocha' },
 	                        _react2.default.createElement(
 	                            'h3',
 	                            null,
@@ -22247,7 +22247,12 @@
 	                        _react2.default.createElement(
 	                            'p',
 	                            null,
-	                            'Geolocation coffee order application built in React and Node.'
+	                            'GoMocha is a geolocation food and drink ordering application that tracks how long it will take the customer to arrive at the shop. The frontend is built entirely in React, while using webpack as a module bundler and SASS.'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            'The backend is built in Express and uses MongoDB as a database. It is currently deployed on Heroku.'
 	                        ),
 	                        _react2.default.createElement(
 	                            'a',
@@ -22274,7 +22279,7 @@
 	                    { className: 'projects-item' },
 	                    _react2.default.createElement(
 	                        'div',
-	                        { className: 'projects-item-content' },
+	                        { className: 'projects-item-content item-content-cellbreaker' },
 	                        _react2.default.createElement(
 	                            'h3',
 	                            null,
@@ -22283,7 +22288,7 @@
 	                        _react2.default.createElement(
 	                            'p',
 	                            null,
-	                            'Web app for cell phone contract breaking service.'
+	                            'CellBreaker is a web app for a cell phone contract breaking service. I was responsible for designing the landing page and the site\'s education section.'
 	                        )
 	                    ),
 	                    _react2.default.createElement(
@@ -22302,7 +22307,7 @@
 	                    ),
 	                    _react2.default.createElement(
 	                        'div',
-	                        { className: 'projects-item-content' },
+	                        { className: 'projects-item-content item-content-bird-strike' },
 	                        _react2.default.createElement(
 	                            'h3',
 	                            null,
@@ -22314,7 +22319,7 @@
 	                            _react2.default.createElement(
 	                                'p',
 	                                null,
-	                                'Online game built in JavaScript on HTML canvas.'
+	                                'Bird Strike is an online game I built in JavaScript on HTML canvas. It uses gulp as a build system and uses SASS. This is the first complete web app I created aside from basic to do list and quiz apps.'
 	                            )
 	                        ),
 	                        _react2.default.createElement(
@@ -22379,7 +22384,7 @@
 
 
 	// module
-	exports.push([module.id, ".projects-section {\n  background: #F7F7F7;\n  height: 100%;\n  padding: 2em 4em 4em 4em; }\n  .projects-section h2 {\n    color: #415161;\n    font-size: 1.75em; }\n  .projects-section .projects-title {\n    font-weight: 400;\n    font-size: 1.75em;\n    margin-top: 0em;\n    margin-bottom: 0em;\n    text-align: left;\n    color: #415161; }\n  .projects-section .projects-container {\n    padding: 0;\n    margin: 0;\n    list-style: none; }\n    .projects-section .projects-container .projects-item {\n      display: block;\n      padding-top: 4em;\n      padding-bottom: 4em;\n      color: white;\n      font-weight: bold;\n      text-align: center; }\n      .projects-section .projects-container .projects-item:nth-child(2), .projects-section .projects-container .projects-item:nth-child(3) {\n        border-top: 1px solid #BCBCBC; }\n      .projects-section .projects-container .projects-item .projects-item-image {\n        display: inline-block;\n        width: 35%; }\n        .projects-section .projects-container .projects-item .projects-item-image img {\n          width: 100%;\n          display: inline-block; }\n      .projects-section .projects-container .projects-item .projects-item-content {\n        display: inline-block;\n        width: 64%; }\n        .projects-section .projects-container .projects-item .projects-item-content h3, .projects-section .projects-container .projects-item .projects-item-content p {\n          color: #415161; }\n        .projects-section .projects-container .projects-item .projects-item-content h3 {\n          font-weight: 400;\n          font-size: 1.75em;\n          margin-top: 0.5em;\n          margin-bottom: 0em; }\n        .projects-section .projects-container .projects-item .projects-item-content p {\n          font-weight: 100;\n          font-size: 1.2em;\n          width: 100%;\n          margin: 0.5em auto 1em auto; }\n        .projects-section .projects-container .projects-item .projects-item-content button {\n          background: #415161;\n          border: none;\n          font-weight: 100;\n          padding: 0.5em 1em;\n          border-radius: 3px;\n          margin-right: 0.75em;\n          color: #fff; }\n          .projects-section .projects-container .projects-item .projects-item-content button:hover {\n            background: #4b5e70;\n            color: #fff;\n            cursor: pointer; }\n          .projects-section .projects-container .projects-item .projects-item-content button:focus {\n            outline: none; }\n\n@media only screen and (min-width: 570px) {\n  .projects-section .projects-container .projects-item img {\n    max-width: 400px; } }\n", ""]);
+	exports.push([module.id, ".projects-section {\n  background: #F7F7F7;\n  height: 100%;\n  padding: 2em 4em 4em 4em; }\n  .projects-section h2 {\n    color: #415161;\n    font-size: 1.75em; }\n  .projects-section .projects-title {\n    font-weight: 400;\n    font-size: 1.75em;\n    margin-top: 0em;\n    margin-bottom: 0em;\n    text-align: left;\n    color: #415161; }\n  .projects-section .projects-container {\n    padding: 0;\n    margin: 0;\n    list-style: none; }\n    .projects-section .projects-container .projects-item {\n      display: block;\n      padding-top: 4em;\n      padding-bottom: 4em;\n      color: white;\n      font-weight: bold;\n      text-align: center; }\n      .projects-section .projects-container .projects-item .projects-item-image {\n        display: inline-block;\n        width: 35%; }\n        .projects-section .projects-container .projects-item .projects-item-image img {\n          width: 100%;\n          display: inline-block; }\n      .projects-section .projects-container .projects-item .projects-item-content {\n        display: inline-block;\n        width: 60%; }\n        .projects-section .projects-container .projects-item .projects-item-content h3, .projects-section .projects-container .projects-item .projects-item-content p {\n          color: #415161; }\n        .projects-section .projects-container .projects-item .projects-item-content h3 {\n          font-weight: 400;\n          font-size: 1.75em;\n          margin-top: 0.5em;\n          margin-bottom: 0em; }\n        .projects-section .projects-container .projects-item .projects-item-content p {\n          font-weight: 100;\n          font-size: 1.2em;\n          width: 100%;\n          margin: 0.5em auto 1em auto; }\n        .projects-section .projects-container .projects-item .projects-item-content button {\n          background: #415161;\n          border: none;\n          font-weight: 100;\n          padding: 0.5em 1em;\n          border-radius: 3px;\n          margin-right: 0.75em;\n          color: #fff; }\n          .projects-section .projects-container .projects-item .projects-item-content button:hover {\n            background: #4b5e70;\n            color: #fff;\n            cursor: pointer; }\n          .projects-section .projects-container .projects-item .projects-item-content button:focus {\n            outline: none; }\n      .projects-section .projects-container .projects-item .item-content-gomocha, .projects-section .projects-container .projects-item .item-content-bird-strike {\n        padding-left: 2em; }\n      .projects-section .projects-container .projects-item .item-content-cellbreaker {\n        padding-right: 2em;\n        position: relative;\n        top: -8em; }\n      .projects-section .projects-container .projects-item .item-content-bird-strike {\n        position: relative;\n        top: -4em; }\n\n@media only screen and (min-width: 570px) {\n  .projects-section .projects-container .projects-item img {\n    max-width: 400px; } }\n", ""]);
 
 	// exports
 
@@ -23012,7 +23017,7 @@
 
 
 	// module
-	exports.push([module.id, ".tech-skills-section {\n  background: #fff;\n  height: 100%;\n  padding: 2em 4em 4em 4em; }\n  .tech-skills-section h3 {\n    font-weight: 400;\n    font-size: 1.75em;\n    margin-top: 0em;\n    margin-bottom: 0em;\n    text-align: left;\n    color: #415161; }\n  .tech-skills-section .tech-skills-container {\n    padding: 2em 0 0 0;\n    margin: 0;\n    list-style: none; }\n    .tech-skills-section .tech-skills-container .tech-skills-item {\n      display: block;\n      width: 100%;\n      padding: 5px;\n      margin-top: 1em;\n      color: #415161;\n      font-weight: bold;\n      text-align: center; }\n      .tech-skills-section .tech-skills-container .tech-skills-item h3, .tech-skills-section .tech-skills-container .tech-skills-item p {\n        color: #415161; }\n      .tech-skills-section .tech-skills-container .tech-skills-item h3 {\n        font-weight: 400;\n        font-size: 1.25em;\n        margin-top: 0em;\n        margin-bottom: 0em;\n        text-align: left;\n        text-decoration: underline; }\n      .tech-skills-section .tech-skills-container .tech-skills-item p {\n        font-weight: 100;\n        font-size: 1.2em;\n        text-align: left; }\n      .tech-skills-section .tech-skills-container .tech-skills-item img {\n        max-width: 100%; }\n      .tech-skills-section .tech-skills-container .tech-skills-item a {\n        color: #586D82; }\n        .tech-skills-section .tech-skills-container .tech-skills-item a:hover {\n          color: #415161; }\n      .tech-skills-section .tech-skills-container .tech-skills-item:nth-child(2) {\n        text-align: center; }\n\n@media only screen and (min-width: 679px) {\n  .tech-skills-section .tech-skills-container .tech-skills-item-container {\n    display: inline-block; }\n    .tech-skills-section .tech-skills-container .tech-skills-item-container:first-child {\n      padding-right: 4em; }\n    .tech-skills-section .tech-skills-container .tech-skills-item-container:nth-child(2) {\n      border-left: 1px solid #BCBCBC;\n      padding-left: 2em; }\n  .tech-skills-section .tech-skills-container .tech-skills-item {\n    padding-left: 2.25em; } }\n\n@media only screen and (min-width: 1000px) {\n  .tech-skills-section .tech-skills-container .tech-skills-item-container {\n    display: initial; }\n    .tech-skills-section .tech-skills-container .tech-skills-item-container:first-child {\n      padding-right: 0em; }\n    .tech-skills-section .tech-skills-container .tech-skills-item-container:nth-child(2) {\n      border-left: none;\n      padding-left: 0em; }\n  .tech-skills-section .tech-skills-container .tech-skills-item {\n    display: inline-block;\n    width: 22%;\n    padding-left: 0em; }\n    .tech-skills-section .tech-skills-container .tech-skills-item:nth-child(2) {\n      border-left: 1px solid #BCBCBC;\n      padding-left: 1em; }\n  .tech-skills-section .tech-skills-container .tech-skills-tools {\n    border-left: 1px solid #BCBCBC;\n    padding-left: 1em; } }\n", ""]);
+	exports.push([module.id, ".tech-skills-section {\n  background: #fff;\n  height: 100%;\n  padding: 2em 4em 4em 4em; }\n  .tech-skills-section h3 {\n    font-weight: 400;\n    font-size: 1.75em;\n    margin-top: 0em;\n    margin-bottom: 0em;\n    text-align: left;\n    color: #415161; }\n  .tech-skills-section .tech-skills-container {\n    padding: 2em 0 0 0;\n    margin: 0;\n    list-style: none; }\n    .tech-skills-section .tech-skills-container .tech-skills-item {\n      display: block;\n      width: 100%;\n      padding: 5px;\n      margin-top: 1em;\n      color: #415161;\n      font-weight: bold;\n      text-align: center; }\n      .tech-skills-section .tech-skills-container .tech-skills-item h3, .tech-skills-section .tech-skills-container .tech-skills-item p {\n        color: #415161; }\n      .tech-skills-section .tech-skills-container .tech-skills-item h3 {\n        font-weight: 600;\n        font-size: 1.25em;\n        margin-top: 0em;\n        margin-bottom: 0em;\n        text-align: left; }\n      .tech-skills-section .tech-skills-container .tech-skills-item p {\n        font-weight: 100;\n        font-size: 1.2em;\n        text-align: left; }\n      .tech-skills-section .tech-skills-container .tech-skills-item img {\n        max-width: 100%; }\n      .tech-skills-section .tech-skills-container .tech-skills-item a {\n        color: #586D82; }\n        .tech-skills-section .tech-skills-container .tech-skills-item a:hover {\n          color: #415161; }\n      .tech-skills-section .tech-skills-container .tech-skills-item:nth-child(2) {\n        text-align: center; }\n\n@media only screen and (min-width: 679px) {\n  .tech-skills-section .tech-skills-container .tech-skills-item-container {\n    display: inline-block; }\n    .tech-skills-section .tech-skills-container .tech-skills-item-container:first-child {\n      padding-right: 4em; }\n    .tech-skills-section .tech-skills-container .tech-skills-item-container:nth-child(2) {\n      border-left: 1px solid #BCBCBC;\n      padding-left: 2em; }\n  .tech-skills-section .tech-skills-container .tech-skills-item {\n    padding-left: 2.25em; } }\n\n@media only screen and (min-width: 1000px) {\n  .tech-skills-section .tech-skills-container .tech-skills-item-container {\n    display: initial; }\n    .tech-skills-section .tech-skills-container .tech-skills-item-container:first-child {\n      padding-right: 0em; }\n    .tech-skills-section .tech-skills-container .tech-skills-item-container:nth-child(2) {\n      border-left: none;\n      padding-left: 0em; }\n  .tech-skills-section .tech-skills-container .tech-skills-item {\n    display: inline-block;\n    width: 22%;\n    padding-left: 0em; }\n    .tech-skills-section .tech-skills-container .tech-skills-item:nth-child(2) {\n      border-left: 1px solid #BCBCBC;\n      padding-left: 1em; }\n  .tech-skills-section .tech-skills-container .tech-skills-tools {\n    border-left: 1px solid #BCBCBC;\n    padding-left: 1em; } }\n", ""]);
 
 	// exports
 
