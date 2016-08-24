@@ -22247,7 +22247,7 @@
 	                        _react2.default.createElement(
 	                            'p',
 	                            null,
-	                            'GoMocha is a geolocation food and drink ordering application that tracks how long it will take the customer to arrive at the shop. The frontend is built entirely in React, while using webpack as a module bundler and SASS.'
+	                            'GoMocha is a geolocation food and drink ordering application that uses the Google Maps API to track how long it will take the customer to arrive at the shop. The frontend is built entirely in React, while using webpack as a module bundler and SASS.'
 	                        ),
 	                        _react2.default.createElement(
 	                            'p',

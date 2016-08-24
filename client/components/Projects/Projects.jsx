@@ -13,7 +13,7 @@ var Projects = React.createClass({
                         </div>
                         <div className="projects-item-content item-content-gomocha">
                             <h3>GoMocha</h3>
-                            <p>GoMocha is a geolocation food and drink ordering application that tracks how long it will take the customer to arrive at the shop. The frontend is built entirely in React, while using webpack as a module bundler and SASS.</p>
+                            <p>GoMocha is a geolocation food and drink ordering application that uses the Google Maps API to track how long it will take the customer to arrive at the shop. The frontend is built entirely in React, while using webpack as a module bundler and SASS.</p>
                             <p>The backend is built in Express and uses MongoDB as a database. It is currently deployed on Heroku.</p>
                             <a href="https://gomocha.herokuapp.com/" target="_blank"><button>View</button></a>
                             <a href="https://github.com/amituuush/gomocha" target="_blank"><button>Repo</button></a>
