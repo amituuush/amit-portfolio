@@ -90,19 +90,22 @@ $secondary-color: #F7F7F7;
             }
         }
 
-        .item-content-gomocha, .item-content-bird-strike {
+        .item-content-gomocha {
+            position: relative;
+            top: -1em;
             padding-left: 2em;
         }
 
         .item-content-cellbreaker {
             padding-right: 2em;
             position: relative;
-            top: -8em;
+            top: -9em;
         }
 
         .item-content-bird-strike {
             position: relative;
-            top: -4em;
+            top: -5em;
+            padding-left: 2em;
         }
       }
     }
