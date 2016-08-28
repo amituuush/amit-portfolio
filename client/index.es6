@@ -12,6 +12,7 @@ ReactDOM.render(<App />, document.getElementById('root'));
 // add smooth scrolling, back to top
 // add dribbble account to contact
 // add favicon
+// can't access prev or fav orders from SelectShopView
 
 // its not clear on your portfolio site that you're the one who built it,
 // your centerpiece project should be the game you built, // gomocha needs a more commercial revamp (similar to the suggestions I gave you),

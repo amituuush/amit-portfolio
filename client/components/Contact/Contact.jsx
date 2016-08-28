@@ -23,7 +23,7 @@ var Contact = React.createClass({
                             <a href="https://www.facebook.com/amit.ranan" target="_blank"><i className="fa fa-facebook-official fa-3x" aria-hidden="true"></i></a>
                         </div>
                         <div className="contact-icons">
-                            <a href="#" target="_blank"><i className="fa fa-dribbble fa-3x" aria-hidden="true"></i></a>
+                            <a href="https://www.behance.net/rananamit20cb" target="_blank"><i className="fa fa-behance fa-3x" aria-hidden="true"></i></a>
                         </div>
                     </div>
                 </div>

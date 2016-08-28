@@ -34,9 +34,12 @@ var Projects = React.createClass({
                         </div>
                         <div className="projects-item-content item-content-bird-strike">
                             <h3>Bird Strike</h3>
-                            <a name="about-me"><p>Bird Strike is an online game I built in JavaScript on HTML canvas. It uses gulp as a build system and uses SASS. This is the first complete web app I created aside from basic to do list and quiz apps.</p></a>
+                            <p>Bird Strike is an online game I built in JavaScript on HTML canvas. I built it using gulp as a build system and SASS. This is the first complete web app I created aside from basic to do list and quiz apps.
+                            </p>
                             <a href="http://amituuush.github.io/bird-strike/" target="_blank"><button>View</button></a>
+                            <a name="technical-expertise"></a>
                             <a href="https://github.com/amituuush/bird-strike" target="_blank"><button>Repo</button></a>
+
                         </div>
                     </div>
                 </div>

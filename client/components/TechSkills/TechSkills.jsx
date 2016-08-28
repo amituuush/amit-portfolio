@@ -14,6 +14,7 @@ var TechSkills = React.createClass({
                             <p>CSS3</p>
                             <p>JavaScript</p>
                             <p>React</p>
+                            <a name="about-me"></a>
                         </li>
                         <li className="tech-skills-item">
                             <h3>Other Notables</h3>

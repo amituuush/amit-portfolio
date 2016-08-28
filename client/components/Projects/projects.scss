@@ -4,7 +4,7 @@ $secondary-color: #F7F7F7;
 .projects-section {
     background: #F7F7F7;
     height: 100%;
-    padding: 2em 4em 4em 4em;
+    padding: 2em 2em 2em 2em;
 
     h2 {
         color: $primary-color;
@@ -27,19 +27,17 @@ $secondary-color: #F7F7F7;
 
       .projects-item {
         display: block;
-        padding-top: 4em;
+        padding-top: 2em;
         padding-bottom: 4em;
         color: white;
         font-weight: bold;
         text-align: center;
-
-        &:nth-child(2), &:nth-child(3) {
-
-        }
+        border-bottom: 1px solid #415161;
 
         .projects-item-image {
             display: inline-block;
-            width: 35%;
+            width: 100%;
+            text-align: center;
 
             img {
                 width: 100%;
@@ -49,10 +47,12 @@ $secondary-color: #F7F7F7;
 
         .projects-item-content {
             display: inline-block;
-            width: 60%;
+            width: 100%;
+            padding-top: 1em;
 
             h3, p {
                 color: $primary-color;
+                text-align: center;
             }
 
             h3 {
@@ -90,22 +90,13 @@ $secondary-color: #F7F7F7;
             }
         }
 
-        .item-content-gomocha {
-            position: relative;
-            top: -1em;
-            padding-left: 2em;
+        &:nth-child(2) {
+            padding-bottom: 4em;
         }
 
-        .item-content-cellbreaker {
-            padding-right: 2em;
-            position: relative;
-            top: -9em;
-        }
-
-        .item-content-bird-strike {
-            position: relative;
-            top: -5em;
-            padding-left: 2em;
+        &:nth-child(3) {
+            padding-top: 4em;
+            border-bottom: none;
         }
       }
     }
@@ -117,6 +108,33 @@ $secondary-color: #F7F7F7;
             .projects-item {
                 img {
                     max-width: 400px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .projects-section {
+        .projects-container {
+            .projects-item {
+                .projects-item-content, .projects-item-image {
+                    width: 50%;
+                }
+
+                .item-content-gomocha {
+                    position: relative;
+                    top: -1em;
+                }
+
+                .item-content-cellbreaker {
+                    position: relative;
+                    top: -9em;
+                }
+
+                .item-content-bird-strike {
+                    position: relative;
+                    top: -5em;
                 }
             }
         }

@@ -72,6 +72,7 @@
 	// add smooth scrolling, back to top
 	// add dribbble account to contact
 	// add favicon
+	// can't access prev or fav orders from SelectShopView
 
 	// its not clear on your portfolio site that you're the one who built it,
 	// your centerpiece project should be the game you built, // gomocha needs a more commercial revamp (similar to the suggestions I gave you),
@@ -21862,23 +21863,23 @@
 
 	var _Projects2 = _interopRequireDefault(_Projects);
 
-	var _TechSkills = __webpack_require__(203);
+	var _TechSkills = __webpack_require__(191);
 
 	var _TechSkills2 = _interopRequireDefault(_TechSkills);
 
-	var _AboutMe = __webpack_require__(191);
+	var _AboutMe = __webpack_require__(194);
 
 	var _AboutMe2 = _interopRequireDefault(_AboutMe);
 
-	var _Footer = __webpack_require__(194);
+	var _Footer = __webpack_require__(197);
 
 	var _Footer2 = _interopRequireDefault(_Footer);
 
-	var _AboutSite = __webpack_require__(197);
+	var _AboutSite = __webpack_require__(200);
 
 	var _AboutSite2 = _interopRequireDefault(_AboutSite);
 
-	var _Contact = __webpack_require__(200);
+	var _Contact = __webpack_require__(203);
 
 	var _Contact2 = _interopRequireDefault(_Contact);
 
@@ -22019,6 +22020,17 @@
 	                ),
 	                _react2.default.createElement(
 	                    'a',
+	                    { href: '#technical-expertise', onClick: function onClick() {
+	                            _this.props.handleMenuToggle();
+	                        } },
+	                    _react2.default.createElement(
+	                        'li',
+	                        null,
+	                        'Technical Expertise'
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'a',
 	                    { href: '#about-me', onClick: function onClick() {
 	                            _this.props.handleMenuToggle();
 	                        } },
@@ -22090,7 +22102,7 @@
 
 
 	// module
-	exports.push([module.id, "nav {\n  text-align: left;\n  border-bottom: 1px solid #efefef;\n  position: fixed;\n  width: 100%;\n  background: #fff; }\n  nav .menu-bars .fa-bars, nav .menu-bars .fa-times {\n    color: #415161;\n    margin: 0.5em; }\n    nav .menu-bars .fa-bars:hover, nav .menu-bars .fa-times:hover {\n      cursor: pointer; }\n  nav .menu-show {\n    display: block;\n    overflow-x: hidden; }\n  nav .menu-hide {\n    display: none; }\n  nav ul {\n    padding-left: 0em;\n    position: absolute;\n    top: 48px;\n    background: #fff;\n    z-index: 9999;\n    width: 100%; }\n    nav ul a {\n      text-decoration: none;\n      color: #415161; }\n    nav ul li {\n      list-style-type: none;\n      padding: 0.75em;\n      width: 100%;\n      border-bottom: 1px solid #EFEFEF; }\n      nav ul li:first-child {\n        border-top: 1px solid #efefef; }\n", ""]);
+	exports.push([module.id, "nav {\n  text-align: left;\n  border-bottom: 1px solid #efefef;\n  position: fixed;\n  width: 100%;\n  background: #fff;\n  z-index: 99999; }\n  nav .menu-bars .fa-bars, nav .menu-bars .fa-times {\n    color: #415161;\n    margin: 0.5em; }\n    nav .menu-bars .fa-bars:hover, nav .menu-bars .fa-times:hover {\n      cursor: pointer; }\n  nav .menu-show {\n    display: block;\n    overflow-x: hidden; }\n  nav .menu-hide {\n    display: none; }\n  nav ul {\n    padding-left: 0em;\n    position: absolute;\n    top: 48px;\n    background: #fff;\n    z-index: 9999;\n    width: 100%; }\n    nav ul a {\n      text-decoration: none;\n      color: #415161; }\n    nav ul li {\n      list-style-type: none;\n      padding: 0.75em;\n      width: 100%;\n      border-bottom: 1px solid #EFEFEF; }\n      nav ul li:first-child {\n        border-top: 1px solid #efefef; }\n", ""]);
 
 	// exports
 
@@ -22314,13 +22326,9 @@
 	                            'Bird Strike'
 	                        ),
 	                        _react2.default.createElement(
-	                            'a',
-	                            { name: 'about-me' },
-	                            _react2.default.createElement(
-	                                'p',
-	                                null,
-	                                'Bird Strike is an online game I built in JavaScript on HTML canvas. It uses gulp as a build system and uses SASS. This is the first complete web app I created aside from basic to do list and quiz apps.'
-	                            )
+	                            'p',
+	                            null,
+	                            'Bird Strike is an online game I built in JavaScript on HTML canvas. I built it using gulp as a build system and SASS. This is the first complete web app I created aside from basic to do list and quiz apps.'
 	                        ),
 	                        _react2.default.createElement(
 	                            'a',
@@ -22331,6 +22339,7 @@
 	                                'View'
 	                            )
 	                        ),
+	                        _react2.default.createElement('a', { name: 'technical-expertise' }),
 	                        _react2.default.createElement(
 	                            'a',
 	                            { href: 'https://github.com/amituuush/bird-strike', target: '_blank' },
@@ -22384,7 +22393,7 @@
 
 
 	// module
-	exports.push([module.id, ".projects-section {\n  background: #F7F7F7;\n  height: 100%;\n  padding: 2em 4em 4em 4em; }\n  .projects-section h2 {\n    color: #415161;\n    font-size: 1.75em; }\n  .projects-section .projects-title {\n    font-weight: 400;\n    font-size: 1.75em;\n    margin-top: 0em;\n    margin-bottom: 0em;\n    text-align: left;\n    color: #415161; }\n  .projects-section .projects-container {\n    padding: 0;\n    margin: 0;\n    list-style: none; }\n    .projects-section .projects-container .projects-item {\n      display: block;\n      padding-top: 4em;\n      padding-bottom: 4em;\n      color: white;\n      font-weight: bold;\n      text-align: center; }\n      .projects-section .projects-container .projects-item .projects-item-image {\n        display: inline-block;\n        width: 35%; }\n        .projects-section .projects-container .projects-item .projects-item-image img {\n          width: 100%;\n          display: inline-block; }\n      .projects-section .projects-container .projects-item .projects-item-content {\n        display: inline-block;\n        width: 60%; }\n        .projects-section .projects-container .projects-item .projects-item-content h3, .projects-section .projects-container .projects-item .projects-item-content p {\n          color: #415161; }\n        .projects-section .projects-container .projects-item .projects-item-content h3 {\n          font-weight: 400;\n          font-size: 1.75em;\n          margin-top: 0.5em;\n          margin-bottom: 0em; }\n        .projects-section .projects-container .projects-item .projects-item-content p {\n          font-weight: 100;\n          font-size: 1.2em;\n          width: 100%;\n          margin: 0.5em auto 1em auto; }\n        .projects-section .projects-container .projects-item .projects-item-content button {\n          background: #415161;\n          border: none;\n          font-weight: 100;\n          padding: 0.5em 1em;\n          border-radius: 3px;\n          margin-right: 0.75em;\n          color: #fff; }\n          .projects-section .projects-container .projects-item .projects-item-content button:hover {\n            background: #4b5e70;\n            color: #fff;\n            cursor: pointer; }\n          .projects-section .projects-container .projects-item .projects-item-content button:focus {\n            outline: none; }\n      .projects-section .projects-container .projects-item .item-content-gomocha {\n        position: relative;\n        top: -1em;\n        padding-left: 2em; }\n      .projects-section .projects-container .projects-item .item-content-cellbreaker {\n        padding-right: 2em;\n        position: relative;\n        top: -9em; }\n      .projects-section .projects-container .projects-item .item-content-bird-strike {\n        position: relative;\n        top: -5em;\n        padding-left: 2em; }\n\n@media only screen and (min-width: 570px) {\n  .projects-section .projects-container .projects-item img {\n    max-width: 400px; } }\n", ""]);
+	exports.push([module.id, ".projects-section {\n  background: #F7F7F7;\n  height: 100%;\n  padding: 2em 2em 2em 2em; }\n  .projects-section h2 {\n    color: #415161;\n    font-size: 1.75em; }\n  .projects-section .projects-title {\n    font-weight: 400;\n    font-size: 1.75em;\n    margin-top: 0em;\n    margin-bottom: 0em;\n    text-align: left;\n    color: #415161; }\n  .projects-section .projects-container {\n    padding: 0;\n    margin: 0;\n    list-style: none; }\n    .projects-section .projects-container .projects-item {\n      display: block;\n      padding-top: 2em;\n      padding-bottom: 4em;\n      color: white;\n      font-weight: bold;\n      text-align: center;\n      border-bottom: 1px solid #415161; }\n      .projects-section .projects-container .projects-item .projects-item-image {\n        display: inline-block;\n        width: 100%;\n        text-align: center; }\n        .projects-section .projects-container .projects-item .projects-item-image img {\n          width: 100%;\n          display: inline-block; }\n      .projects-section .projects-container .projects-item .projects-item-content {\n        display: inline-block;\n        width: 100%;\n        padding-top: 1em; }\n        .projects-section .projects-container .projects-item .projects-item-content h3, .projects-section .projects-container .projects-item .projects-item-content p {\n          color: #415161;\n          text-align: center; }\n        .projects-section .projects-container .projects-item .projects-item-content h3 {\n          font-weight: 400;\n          font-size: 1.75em;\n          margin-top: 0.5em;\n          margin-bottom: 0em; }\n        .projects-section .projects-container .projects-item .projects-item-content p {\n          font-weight: 100;\n          font-size: 1.2em;\n          width: 100%;\n          margin: 0.5em auto 1em auto; }\n        .projects-section .projects-container .projects-item .projects-item-content button {\n          background: #415161;\n          border: none;\n          font-weight: 100;\n          padding: 0.5em 1em;\n          border-radius: 3px;\n          margin-right: 0.75em;\n          color: #fff; }\n          .projects-section .projects-container .projects-item .projects-item-content button:hover {\n            background: #4b5e70;\n            color: #fff;\n            cursor: pointer; }\n          .projects-section .projects-container .projects-item .projects-item-content button:focus {\n            outline: none; }\n      .projects-section .projects-container .projects-item:nth-child(2) {\n        padding-bottom: 4em; }\n      .projects-section .projects-container .projects-item:nth-child(3) {\n        padding-top: 4em;\n        border-bottom: none; }\n\n@media only screen and (min-width: 570px) {\n  .projects-section .projects-container .projects-item img {\n    max-width: 400px; } }\n\n@media only screen and (min-width: 900px) {\n  .projects-section .projects-container .projects-item .projects-item-content, .projects-section .projects-container .projects-item .projects-item-image {\n    width: 50%; }\n  .projects-section .projects-container .projects-item .item-content-gomocha {\n    position: relative;\n    top: -1em; }\n  .projects-section .projects-container .projects-item .item-content-cellbreaker {\n    position: relative;\n    top: -9em; }\n  .projects-section .projects-container .projects-item .item-content-bird-strike {\n    position: relative;\n    top: -5em; } }\n", ""]);
 
 	// exports
 
@@ -22399,438 +22408,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _aboutMe = __webpack_require__(192);
-
-	var _aboutMe2 = _interopRequireDefault(_aboutMe);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	var AboutMe = _react2.default.createClass({
-	    displayName: 'AboutMe',
-
-	    render: function render() {
-	        return _react2.default.createElement(
-	            'section',
-	            { className: 'about-me-section' },
-	            _react2.default.createElement(
-	                'ul',
-	                { className: 'about-me-container' },
-	                _react2.default.createElement(
-	                    'li',
-	                    { className: 'about-me-item' },
-	                    _react2.default.createElement(
-	                        'h3',
-	                        null,
-	                        'About me'
-	                    ),
-	                    _react2.default.createElement(
-	                        'p',
-	                        null,
-	                        'After graduating from UC Davis with a bachelor\'s in Economics, I worked in finance and soon realized I needed more creativity in my work. I was then exposed to coding and realized I found my niche. I love the way it allows me to organize large amounts of information in my head, and I love the way it challenges me every day.'
-	                    ),
-	                    _react2.default.createElement(
-	                        'p',
-	                        null,
-	                        'I recently graduated from ',
-	                        _react2.default.createElement(
-	                            'a',
-	                            { href: 'https://www.thinkful.com/', target: '_blank' },
-	                            'Thinkful'
-	                        ),
-	                        '\'s coding bootcamp and have been looking to work for a fun and exciting company to continue my endless growth as a software developer.'
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    'li',
-	                    { className: 'about-me-item' },
-	                    _react2.default.createElement('img', { src: 'img/amit-canyoning.jpg' })
-	                ),
-	                _react2.default.createElement('a', { name: 'contact' })
-	            )
-	        );
-	    }
-	});
-
-	module.exports = AboutMe;
-
-/***/ },
-/* 192 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(193);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(4)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/index.js!./about-me.scss", function() {
-				var newContent = require("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/index.js!./about-me.scss");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 193 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(3)();
-	// imports
-
-
-	// module
-	exports.push([module.id, ".about-me-section {\n  background: #F7F7F7;\n  height: 100%;\n  padding: 2em 4em 4em 4em; }\n  .about-me-section .about-me-container {\n    padding: 0;\n    margin: 0;\n    list-style: none; }\n    .about-me-section .about-me-container .about-me-item {\n      padding: 5px;\n      margin-top: 1em;\n      color: #415161;\n      font-weight: bold;\n      text-align: center; }\n      .about-me-section .about-me-container .about-me-item h3, .about-me-section .about-me-container .about-me-item p {\n        color: #415161; }\n      .about-me-section .about-me-container .about-me-item h3 {\n        font-weight: 400;\n        font-size: 1.75em;\n        margin-top: 0em;\n        margin-bottom: 0em;\n        text-align: left; }\n      .about-me-section .about-me-container .about-me-item p {\n        font-weight: 100;\n        font-size: 1.2em;\n        text-align: left; }\n      .about-me-section .about-me-container .about-me-item img {\n        max-width: 100%; }\n      .about-me-section .about-me-container .about-me-item a {\n        color: #586D82; }\n        .about-me-section .about-me-container .about-me-item a:hover {\n          color: #415161; }\n      .about-me-section .about-me-container .about-me-item:nth-child(2) {\n        text-align: center; }\n\n@media only screen and (min-width: 570px) {\n  .about-me-section .about-me-container .about-me-item img {\n    max-width: 430px; } }\n", ""]);
-
-	// exports
-
-
-/***/ },
-/* 194 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var _react = __webpack_require__(5);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _footer = __webpack_require__(195);
-
-	var _footer2 = _interopRequireDefault(_footer);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	var Footer = _react2.default.createClass({
-	    displayName: 'Footer',
-
-	    render: function render() {
-	        return _react2.default.createElement(
-	            'section',
-	            { className: 'footer-section' },
-	            _react2.default.createElement(
-	                'ul',
-	                { className: 'footer-container' },
-	                _react2.default.createElement(
-	                    'li',
-	                    { className: 'footer-item' },
-	                    _react2.default.createElement(
-	                        'h3',
-	                        null,
-	                        'Disclaimer'
-	                    ),
-	                    _react2.default.createElement(
-	                        'p',
-	                        null,
-	                        'This website is to be used by prospective employers or parties with legitimate business interests. Some of the material on this website is owned by their respective trademarked entities. ﻿   Amit Ranan © 2016'
-	                    )
-	                )
-	            )
-	        );
-	    }
-	});
-
-	module.exports = Footer;
-
-/***/ },
-/* 195 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(196);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(4)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/index.js!./footer.scss", function() {
-				var newContent = require("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/index.js!./footer.scss");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 196 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(3)();
-	// imports
-
-
-	// module
-	exports.push([module.id, ".footer-section {\n  background: #415161;\n  padding: 1em 4em 2em 4em; }\n  .footer-section .footer-container {\n    padding: 0;\n    margin: 0;\n    list-style: none; }\n    .footer-section .footer-container .footer-item {\n      padding: 5px;\n      margin-top: 1em;\n      color: white;\n      font-weight: bold;\n      text-align: center; }\n      .footer-section .footer-container .footer-item h3, .footer-section .footer-container .footer-item p {\n        color: #fff; }\n      .footer-section .footer-container .footer-item h3 {\n        font-weight: 400;\n        font-size: 1.25em;\n        margin-top: 0em;\n        margin-bottom: 0em;\n        text-align: left; }\n      .footer-section .footer-container .footer-item p {\n        font-weight: 100;\n        font-size: 1em;\n        text-align: left; }\n", ""]);
-
-	// exports
-
-
-/***/ },
-/* 197 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var _react = __webpack_require__(5);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _aboutSite = __webpack_require__(198);
-
-	var _aboutSite2 = _interopRequireDefault(_aboutSite);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	var AboutSite = _react2.default.createClass({
-	    displayName: 'AboutSite',
-
-	    render: function render() {
-	        return _react2.default.createElement(
-	            'section',
-	            { className: 'about-site-section' },
-	            _react2.default.createElement(
-	                'h3',
-	                null,
-	                'About this site'
-	            ),
-	            _react2.default.createElement(
-	                'ul',
-	                { className: 'about-site-container' },
-	                _react2.default.createElement(
-	                    'li',
-	                    { className: 'about-site-item' },
-	                    _react2.default.createElement(
-	                        'h3',
-	                        null,
-	                        'This site has been designed and built by hand in ',
-	                        _react2.default.createElement(
-	                            'span',
-	                            { className: 'about-site-highlight' },
-	                            'React'
-	                        ),
-	                        ' using ',
-	                        _react2.default.createElement(
-	                            'span',
-	                            { className: 'about-site-highlight' },
-	                            'Sass'
-	                        ),
-	                        ', ',
-	                        _react2.default.createElement(
-	                            'span',
-	                            { className: 'about-site-highlight' },
-	                            'Webpack'
-	                        ),
-	                        ', and a ',
-	                        _react2.default.createElement(
-	                            'span',
-	                            { className: 'about-site-highlight' },
-	                            'mobile-first'
-	                        ),
-	                        ' approach.'
-	                    )
-	                )
-	            )
-	        );
-	    }
-	});
-
-	module.exports = AboutSite;
-
-/***/ },
-/* 198 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(199);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(4)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/index.js!./about-site.scss", function() {
-				var newContent = require("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/index.js!./about-site.scss");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 199 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(3)();
-	// imports
-
-
-	// module
-	exports.push([module.id, ".about-site-section {\n  background: #F7F7F7;\n  height: 100%;\n  padding: 2em 4em 4em 4em; }\n  .about-site-section h3 {\n    font-weight: 400;\n    font-size: 1.75em;\n    margin-top: 0em;\n    margin-bottom: 0em;\n    text-align: left;\n    color: #415161; }\n  .about-site-section .about-site-container {\n    padding: 0;\n    margin: 0;\n    list-style: none; }\n    .about-site-section .about-site-container .about-site-item {\n      padding: 5px;\n      margin-top: 1em;\n      color: #F7F7F7;\n      font-weight: bold;\n      text-align: center; }\n      .about-site-section .about-site-container .about-site-item h3 {\n        color: #415161;\n        font-weight: 100;\n        font-size: 1.2em;\n        margin-top: 0em;\n        margin-bottom: 0em;\n        text-align: left; }\n        .about-site-section .about-site-container .about-site-item h3 .about-site-highlight {\n          color: #1FA975; }\n      .about-site-section .about-site-container .about-site-item p {\n        font-weight: 100;\n        font-size: 1.2em;\n        width: 70%;\n        text-align: left; }\n", ""]);
-
-	// exports
-
-
-/***/ },
-/* 200 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var _react = __webpack_require__(5);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _contact = __webpack_require__(201);
-
-	var _contact2 = _interopRequireDefault(_contact);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	var Contact = _react2.default.createClass({
-	    displayName: 'Contact',
-
-	    render: function render() {
-	        return _react2.default.createElement(
-	            'section',
-	            { className: 'contact-section' },
-	            _react2.default.createElement('h3', null),
-	            _react2.default.createElement(
-	                'div',
-	                { className: 'contact-container' },
-	                _react2.default.createElement(
-	                    'p',
-	                    null,
-	                    'Feel free to email me at:'
-	                ),
-	                _react2.default.createElement('div', { className: 'vertical-divider' }),
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: 'contact-item' },
-	                    _react2.default.createElement(
-	                        'a',
-	                        { href: 'mailto: ranan.amit@gmail.com', className: 'contact-email' },
-	                        'ranan.amit@gmail.com'
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: 'icons-container' },
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'contact-icons' },
-	                        _react2.default.createElement(
-	                            'a',
-	                            { href: 'https://www.linkedin.com/in/amitranan', target: '_blank' },
-	                            _react2.default.createElement('i', { className: 'fa fa-linkedin-square fa-3x', 'aria-hidden': 'true' })
-	                        )
-	                    ),
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'contact-icons' },
-	                        _react2.default.createElement(
-	                            'a',
-	                            { href: 'https://github.com/amituuush', target: '_blank' },
-	                            _react2.default.createElement('i', { className: 'fa fa-github fa-3x', 'aria-hidden': 'true' })
-	                        )
-	                    ),
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'contact-icons' },
-	                        _react2.default.createElement(
-	                            'a',
-	                            { href: 'https://www.facebook.com/amit.ranan', target: '_blank' },
-	                            _react2.default.createElement('i', { className: 'fa fa-facebook-official fa-3x', 'aria-hidden': 'true' })
-	                        )
-	                    ),
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'contact-icons' },
-	                        _react2.default.createElement(
-	                            'a',
-	                            { href: '#', target: '_blank' },
-	                            _react2.default.createElement('i', { className: 'fa fa-dribbble fa-3x', 'aria-hidden': 'true' })
-	                        )
-	                    )
-	                )
-	            )
-	        );
-	    }
-	});
-
-	module.exports = Contact;
-
-/***/ },
-/* 201 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(202);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(4)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/index.js!./contact.scss", function() {
-				var newContent = require("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/index.js!./contact.scss");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 202 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(3)();
-	// imports
-
-
-	// module
-	exports.push([module.id, ".contact-section {\n  background: #fff;\n  height: 100%;\n  padding: 2em 4em 4em 4em; }\n  .contact-section h3 {\n    font-weight: 400;\n    font-size: 1.75em;\n    margin-top: 0em;\n    margin-bottom: 0em;\n    text-align: left;\n    color: #415161; }\n  .contact-section .contact-container {\n    padding: 0;\n    margin: 0 auto;\n    list-style: none;\n    text-align: center; }\n    .contact-section .contact-container p {\n      font-weight: 100;\n      font-size: 2em;\n      color: #415161;\n      margin-bottom: 0.75em; }\n    .contact-section .contact-container .vertical-divider {\n      height: 2em;\n      border-left: 1px solid #BCBCBC;\n      width: 0em;\n      margin: 0 auto; }\n    .contact-section .contact-container .contact-item {\n      padding: 5px;\n      margin-top: 1em;\n      color: #fff;\n      font-weight: bold;\n      text-align: center; }\n      .contact-section .contact-container .contact-item a {\n        color: #556b80;\n        font-weight: 100;\n        font-size: 1.5em;\n        margin-top: 1em;\n        margin-bottom: 0em;\n        text-decoration: none; }\n        .contact-section .contact-container .contact-item a:hover {\n          color: #415161;\n          text-decoration: underline; }\n    .contact-section .contact-container .icons-container .contact-icons {\n      display: inline-block;\n      padding: 0.2em;\n      margin-top: 2em; }\n      .contact-section .contact-container .icons-container .contact-icons .fa-linkedin-square, .contact-section .contact-container .icons-container .contact-icons .fa-github, .contact-section .contact-container .icons-container .contact-icons .fa-facebook-official, .contact-section .contact-container .icons-container .contact-icons .fa-dribbble {\n        display: inline-block;\n        color: #415161; }\n        .contact-section .contact-container .icons-container .contact-icons .fa-linkedin-square:hover, .contact-section .contact-container .icons-container .contact-icons .fa-github:hover, .contact-section .contact-container .icons-container .contact-icons .fa-facebook-official:hover, .contact-section .contact-container .icons-container .contact-icons .fa-dribbble:hover {\n          color: #4b5e70; }\n\n@media only screen and (min-width: 348px) {\n  .contact-section .contact-container .icons-container .contact-icons {\n    padding: 0.4em; } }\n\n@media only screen and (min-width: 421px) {\n  .contact-section .contact-container .icons-container .contact-icons {\n    padding: 1em; } }\n", ""]);
-
-	// exports
-
-
-/***/ },
-/* 203 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var _react = __webpack_require__(5);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _techSkills = __webpack_require__(204);
+	var _techSkills = __webpack_require__(192);
 
 	var _techSkills2 = _interopRequireDefault(_techSkills);
 
@@ -22881,7 +22459,8 @@
 	                            'p',
 	                            null,
 	                            'React'
-	                        )
+	                        ),
+	                        _react2.default.createElement('a', { name: 'about-me' })
 	                    ),
 	                    _react2.default.createElement(
 	                        'li',
@@ -22983,13 +22562,13 @@
 	module.exports = TechSkills;
 
 /***/ },
-/* 204 */
+/* 192 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(205);
+	var content = __webpack_require__(193);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(4)(content, {});
@@ -23009,7 +22588,7 @@
 	}
 
 /***/ },
-/* 205 */
+/* 193 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(3)();
@@ -23018,6 +22597,448 @@
 
 	// module
 	exports.push([module.id, ".tech-skills-section {\n  background: #fff;\n  height: 100%;\n  padding: 2em 4em 4em 4em; }\n  .tech-skills-section h3 {\n    font-weight: 400;\n    font-size: 1.75em;\n    margin-top: 0em;\n    margin-bottom: 0em;\n    text-align: left;\n    color: #415161; }\n  .tech-skills-section .tech-skills-container {\n    padding: 2em 0 0 0;\n    margin: 0;\n    list-style: none; }\n    .tech-skills-section .tech-skills-container .tech-skills-item {\n      display: block;\n      width: 100%;\n      padding: 5px;\n      margin-top: 1em;\n      color: #415161;\n      font-weight: bold;\n      text-align: center; }\n      .tech-skills-section .tech-skills-container .tech-skills-item h3, .tech-skills-section .tech-skills-container .tech-skills-item p {\n        color: #415161; }\n      .tech-skills-section .tech-skills-container .tech-skills-item h3 {\n        font-weight: 600;\n        font-size: 1.25em;\n        margin-top: 0em;\n        margin-bottom: 0em;\n        text-align: left; }\n      .tech-skills-section .tech-skills-container .tech-skills-item p {\n        font-weight: 100;\n        font-size: 1.2em;\n        text-align: left; }\n      .tech-skills-section .tech-skills-container .tech-skills-item img {\n        max-width: 100%; }\n      .tech-skills-section .tech-skills-container .tech-skills-item a {\n        color: #586D82; }\n        .tech-skills-section .tech-skills-container .tech-skills-item a:hover {\n          color: #415161; }\n      .tech-skills-section .tech-skills-container .tech-skills-item:nth-child(2) {\n        text-align: center; }\n\n@media only screen and (min-width: 679px) {\n  .tech-skills-section .tech-skills-container .tech-skills-item-container {\n    display: inline-block; }\n    .tech-skills-section .tech-skills-container .tech-skills-item-container:first-child {\n      padding-right: 4em; }\n    .tech-skills-section .tech-skills-container .tech-skills-item-container:nth-child(2) {\n      border-left: 1px solid #BCBCBC;\n      padding-left: 2em; }\n  .tech-skills-section .tech-skills-container .tech-skills-item {\n    padding-left: 2.25em; } }\n\n@media only screen and (min-width: 1000px) {\n  .tech-skills-section .tech-skills-container .tech-skills-item-container {\n    display: initial; }\n    .tech-skills-section .tech-skills-container .tech-skills-item-container:first-child {\n      padding-right: 0em; }\n    .tech-skills-section .tech-skills-container .tech-skills-item-container:nth-child(2) {\n      border-left: none;\n      padding-left: 0em; }\n  .tech-skills-section .tech-skills-container .tech-skills-item {\n    display: inline-block;\n    width: 22%;\n    padding-left: 0em; }\n    .tech-skills-section .tech-skills-container .tech-skills-item:nth-child(2) {\n      border-left: 1px solid #BCBCBC;\n      padding-left: 1em; }\n  .tech-skills-section .tech-skills-container .tech-skills-tools {\n    border-left: 1px solid #BCBCBC;\n    padding-left: 1em; } }\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 194 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _react = __webpack_require__(5);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _aboutMe = __webpack_require__(195);
+
+	var _aboutMe2 = _interopRequireDefault(_aboutMe);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var AboutMe = _react2.default.createClass({
+	    displayName: 'AboutMe',
+
+	    render: function render() {
+	        return _react2.default.createElement(
+	            'section',
+	            { className: 'about-me-section' },
+	            _react2.default.createElement(
+	                'ul',
+	                { className: 'about-me-container' },
+	                _react2.default.createElement(
+	                    'li',
+	                    { className: 'about-me-item' },
+	                    _react2.default.createElement(
+	                        'h3',
+	                        null,
+	                        'About me'
+	                    ),
+	                    _react2.default.createElement(
+	                        'p',
+	                        null,
+	                        'I graduated from UC Davis with a bachelor\'s in Economics, and proceeded to work in commercial banking. I soon realized I needed more creativity in my work. I picked up coding, and immediately knew it was for me. I love the way it allows me to organize large amounts of information in my head, and I love the logical puzzle challenges it provides.'
+	                    ),
+	                    _react2.default.createElement(
+	                        'p',
+	                        null,
+	                        'I recently graduated from ',
+	                        _react2.default.createElement(
+	                            'a',
+	                            { href: 'https://www.thinkful.com/', target: '_blank' },
+	                            'Thinkful'
+	                        ),
+	                        '\'s coding bootcamp and am working as a freelance developer. I enjoy using my development experience to help companies solve business problems. I also have some design experience, which you can check out ',
+	                        _react2.default.createElement(
+	                            'a',
+	                            { href: 'https://www.behance.net/rananamit20cb', target: '_blank' },
+	                            'here'
+	                        ),
+	                        '.'
+	                    ),
+	                    _react2.default.createElement(
+	                        'p',
+	                        null,
+	                        'If you like my work and are interested in working together, see my contact information below!'
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'li',
+	                    { className: 'about-me-item' },
+	                    _react2.default.createElement('img', { src: 'img/amit-canyoning.jpg' })
+	                ),
+	                _react2.default.createElement('a', { name: 'contact' })
+	            )
+	        );
+	    }
+	});
+
+	module.exports = AboutMe;
+
+/***/ },
+/* 195 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(196);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(4)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/index.js!./about-me.scss", function() {
+				var newContent = require("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/index.js!./about-me.scss");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 196 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(3)();
+	// imports
+
+
+	// module
+	exports.push([module.id, ".about-me-section {\n  background: #F7F7F7;\n  height: 100%;\n  padding: 2em 4em 4em 4em; }\n  .about-me-section .about-me-container {\n    padding: 0;\n    margin: 0;\n    list-style: none; }\n    .about-me-section .about-me-container .about-me-item {\n      padding: 5px;\n      margin-top: 1em;\n      color: #415161;\n      font-weight: bold;\n      text-align: center; }\n      .about-me-section .about-me-container .about-me-item h3, .about-me-section .about-me-container .about-me-item p {\n        color: #415161; }\n      .about-me-section .about-me-container .about-me-item h3 {\n        font-weight: 400;\n        font-size: 1.75em;\n        margin-top: 0em;\n        margin-bottom: 0em;\n        text-align: left; }\n      .about-me-section .about-me-container .about-me-item p {\n        font-weight: 100;\n        font-size: 1.2em;\n        text-align: left; }\n      .about-me-section .about-me-container .about-me-item img {\n        max-width: 100%; }\n      .about-me-section .about-me-container .about-me-item a {\n        color: #586D82; }\n        .about-me-section .about-me-container .about-me-item a:hover {\n          color: #415161; }\n      .about-me-section .about-me-container .about-me-item:nth-child(2) {\n        text-align: center; }\n\n@media only screen and (min-width: 570px) {\n  .about-me-section .about-me-container .about-me-item img {\n    max-width: 430px; } }\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 197 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _react = __webpack_require__(5);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _footer = __webpack_require__(198);
+
+	var _footer2 = _interopRequireDefault(_footer);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var Footer = _react2.default.createClass({
+	    displayName: 'Footer',
+
+	    render: function render() {
+	        return _react2.default.createElement(
+	            'section',
+	            { className: 'footer-section' },
+	            _react2.default.createElement(
+	                'ul',
+	                { className: 'footer-container' },
+	                _react2.default.createElement(
+	                    'li',
+	                    { className: 'footer-item' },
+	                    _react2.default.createElement(
+	                        'h3',
+	                        null,
+	                        'Disclaimer'
+	                    ),
+	                    _react2.default.createElement(
+	                        'p',
+	                        null,
+	                        'This website is to be used by prospective employers or parties with legitimate business interests. Some of the material on this website is owned by their respective trademarked entities. ﻿   Amit Ranan © 2016'
+	                    )
+	                )
+	            )
+	        );
+	    }
+	});
+
+	module.exports = Footer;
+
+/***/ },
+/* 198 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(199);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(4)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/index.js!./footer.scss", function() {
+				var newContent = require("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/index.js!./footer.scss");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 199 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(3)();
+	// imports
+
+
+	// module
+	exports.push([module.id, ".footer-section {\n  background: #415161;\n  padding: 1em 4em 2em 4em; }\n  .footer-section .footer-container {\n    padding: 0;\n    margin: 0;\n    list-style: none; }\n    .footer-section .footer-container .footer-item {\n      padding: 5px;\n      margin-top: 1em;\n      color: white;\n      font-weight: bold;\n      text-align: center; }\n      .footer-section .footer-container .footer-item h3, .footer-section .footer-container .footer-item p {\n        color: #fff; }\n      .footer-section .footer-container .footer-item h3 {\n        font-weight: 400;\n        font-size: 1.25em;\n        margin-top: 0em;\n        margin-bottom: 0em;\n        text-align: left; }\n      .footer-section .footer-container .footer-item p {\n        font-weight: 100;\n        font-size: 1em;\n        text-align: left; }\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 200 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _react = __webpack_require__(5);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _aboutSite = __webpack_require__(201);
+
+	var _aboutSite2 = _interopRequireDefault(_aboutSite);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var AboutSite = _react2.default.createClass({
+	    displayName: 'AboutSite',
+
+	    render: function render() {
+	        return _react2.default.createElement(
+	            'section',
+	            { className: 'about-site-section' },
+	            _react2.default.createElement(
+	                'h3',
+	                null,
+	                'About this site'
+	            ),
+	            _react2.default.createElement(
+	                'ul',
+	                { className: 'about-site-container' },
+	                _react2.default.createElement(
+	                    'li',
+	                    { className: 'about-site-item' },
+	                    _react2.default.createElement(
+	                        'h3',
+	                        null,
+	                        'This site has been designed and built by hand in ',
+	                        _react2.default.createElement(
+	                            'span',
+	                            { className: 'about-site-highlight' },
+	                            'React'
+	                        ),
+	                        ' using ',
+	                        _react2.default.createElement(
+	                            'span',
+	                            { className: 'about-site-highlight' },
+	                            'Sass'
+	                        ),
+	                        ', ',
+	                        _react2.default.createElement(
+	                            'span',
+	                            { className: 'about-site-highlight' },
+	                            'Webpack'
+	                        ),
+	                        ', and a ',
+	                        _react2.default.createElement(
+	                            'span',
+	                            { className: 'about-site-highlight' },
+	                            'mobile-first'
+	                        ),
+	                        ' approach.'
+	                    )
+	                )
+	            )
+	        );
+	    }
+	});
+
+	module.exports = AboutSite;
+
+/***/ },
+/* 201 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(202);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(4)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/index.js!./about-site.scss", function() {
+				var newContent = require("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/index.js!./about-site.scss");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 202 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(3)();
+	// imports
+
+
+	// module
+	exports.push([module.id, ".about-site-section {\n  background: #F7F7F7;\n  height: 100%;\n  padding: 2em 4em 4em 4em; }\n  .about-site-section h3 {\n    font-weight: 400;\n    font-size: 1.75em;\n    margin-top: 0em;\n    margin-bottom: 0em;\n    text-align: left;\n    color: #415161; }\n  .about-site-section .about-site-container {\n    padding: 0;\n    margin: 0;\n    list-style: none; }\n    .about-site-section .about-site-container .about-site-item {\n      padding: 5px;\n      margin-top: 1em;\n      color: #F7F7F7;\n      font-weight: bold;\n      text-align: center; }\n      .about-site-section .about-site-container .about-site-item h3 {\n        color: #415161;\n        font-weight: 100;\n        font-size: 1.2em;\n        margin-top: 0em;\n        margin-bottom: 0em;\n        text-align: left; }\n        .about-site-section .about-site-container .about-site-item h3 .about-site-highlight {\n          color: #1FA975; }\n      .about-site-section .about-site-container .about-site-item p {\n        font-weight: 100;\n        font-size: 1.2em;\n        width: 70%;\n        text-align: left; }\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 203 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _react = __webpack_require__(5);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _contact = __webpack_require__(204);
+
+	var _contact2 = _interopRequireDefault(_contact);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var Contact = _react2.default.createClass({
+	    displayName: 'Contact',
+
+	    render: function render() {
+	        return _react2.default.createElement(
+	            'section',
+	            { className: 'contact-section' },
+	            _react2.default.createElement('h3', null),
+	            _react2.default.createElement(
+	                'div',
+	                { className: 'contact-container' },
+	                _react2.default.createElement(
+	                    'p',
+	                    null,
+	                    'Feel free to email me at:'
+	                ),
+	                _react2.default.createElement('div', { className: 'vertical-divider' }),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'contact-item' },
+	                    _react2.default.createElement(
+	                        'a',
+	                        { href: 'mailto: ranan.amit@gmail.com', className: 'contact-email' },
+	                        'ranan.amit@gmail.com'
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'icons-container' },
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'contact-icons' },
+	                        _react2.default.createElement(
+	                            'a',
+	                            { href: 'https://www.linkedin.com/in/amitranan', target: '_blank' },
+	                            _react2.default.createElement('i', { className: 'fa fa-linkedin-square fa-3x', 'aria-hidden': 'true' })
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'contact-icons' },
+	                        _react2.default.createElement(
+	                            'a',
+	                            { href: 'https://github.com/amituuush', target: '_blank' },
+	                            _react2.default.createElement('i', { className: 'fa fa-github fa-3x', 'aria-hidden': 'true' })
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'contact-icons' },
+	                        _react2.default.createElement(
+	                            'a',
+	                            { href: 'https://www.facebook.com/amit.ranan', target: '_blank' },
+	                            _react2.default.createElement('i', { className: 'fa fa-facebook-official fa-3x', 'aria-hidden': 'true' })
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'contact-icons' },
+	                        _react2.default.createElement(
+	                            'a',
+	                            { href: 'https://www.behance.net/rananamit20cb', target: '_blank' },
+	                            _react2.default.createElement('i', { className: 'fa fa-behance fa-3x', 'aria-hidden': 'true' })
+	                        )
+	                    )
+	                )
+	            )
+	        );
+	    }
+	});
+
+	module.exports = Contact;
+
+/***/ },
+/* 204 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(205);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(4)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/index.js!./contact.scss", function() {
+				var newContent = require("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/index.js!./contact.scss");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 205 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(3)();
+	// imports
+
+
+	// module
+	exports.push([module.id, ".contact-section {\n  background: #fff;\n  height: 100%;\n  padding: 2em 4em 4em 4em; }\n  .contact-section h3 {\n    font-weight: 400;\n    font-size: 1.75em;\n    margin-top: 0em;\n    margin-bottom: 0em;\n    text-align: left;\n    color: #415161; }\n  .contact-section .contact-container {\n    padding: 0;\n    margin: 0 auto;\n    list-style: none;\n    text-align: center; }\n    .contact-section .contact-container p {\n      font-weight: 100;\n      font-size: 2em;\n      color: #415161;\n      margin-bottom: 0.75em; }\n    .contact-section .contact-container .vertical-divider {\n      height: 2em;\n      border-left: 1px solid #BCBCBC;\n      width: 0em;\n      margin: 0 auto; }\n    .contact-section .contact-container .contact-item {\n      padding: 5px;\n      margin-top: 1em;\n      color: #fff;\n      font-weight: bold;\n      text-align: center; }\n      .contact-section .contact-container .contact-item a {\n        color: #556b80;\n        font-weight: 100;\n        font-size: 1.5em;\n        margin-top: 1em;\n        margin-bottom: 0em;\n        text-decoration: none; }\n        .contact-section .contact-container .contact-item a:hover {\n          color: #415161;\n          text-decoration: underline; }\n    .contact-section .contact-container .icons-container .contact-icons {\n      display: inline-block;\n      padding: 0.2em;\n      margin-top: 2em; }\n      .contact-section .contact-container .icons-container .contact-icons .fa-linkedin-square, .contact-section .contact-container .icons-container .contact-icons .fa-github, .contact-section .contact-container .icons-container .contact-icons .fa-facebook-official, .contact-section .contact-container .icons-container .contact-icons .fa-behance {\n        display: inline-block;\n        color: #415161; }\n        .contact-section .contact-container .icons-container .contact-icons .fa-linkedin-square:hover, .contact-section .contact-container .icons-container .contact-icons .fa-github:hover, .contact-section .contact-container .icons-container .contact-icons .fa-facebook-official:hover, .contact-section .contact-container .icons-container .contact-icons .fa-behance:hover {\n          color: #4b5e70; }\n\n@media only screen and (min-width: 348px) {\n  .contact-section .contact-container .icons-container .contact-icons {\n    padding: 0.4em; } }\n\n@media only screen and (min-width: 421px) {\n  .contact-section .contact-container .icons-container .contact-icons {\n    padding: 1em; } }\n", ""]);
 
 	// exports
 
