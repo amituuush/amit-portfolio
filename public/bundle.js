@@ -22342,6 +22342,25 @@
 	                            'p',
 	                            null,
 	                            'This is a to do list I built in React, Redux, Node, and Express.'
+	                        ),
+	                        _react2.default.createElement(
+	                            'a',
+	                            { href: 'http://amituuush.github.io/todo-list/public/', target: '_blank' },
+	                            _react2.default.createElement(
+	                                'button',
+	                                null,
+	                                'View'
+	                            )
+	                        ),
+	                        _react2.default.createElement('a', { name: 'technical-expertise' }),
+	                        _react2.default.createElement(
+	                            'a',
+	                            { href: 'https://github.com/amituuush/todo-list', target: '_blank' },
+	                            _react2.default.createElement(
+	                                'button',
+	                                null,
+	                                'Repo'
+	                            )
 	                        )
 	                    ),
 	                    _react2.default.createElement(
