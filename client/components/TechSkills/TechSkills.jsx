@@ -5,7 +5,7 @@ var TechSkills = React.createClass({
     render: function() {
         return (
             <section className="tech-skills-section">
-                <h3>Technical Expertise</h3>
+                <h3 className="tech-skills-title">Technical Expertise</h3>
                 <ul className="tech-skills-container">
                     <div className="tech-skills-item-container">
                         <li className="tech-skills-item">

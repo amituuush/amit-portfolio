@@ -34,15 +34,15 @@ var Projects = React.createClass({
                         </div>
                     </div>
                     <div className="projects-item">
+                        <div className="projects-item-image">
+                            <img src="img/todo-list.png" />
+                        </div>
                         <div className="projects-item-content item-content-todo-list">
                             <h3>My To Do List</h3>
                             <p>This is a to do list I built in React, Redux, Node, and Express.</p>
                             <a href="http://amituuush.github.io/todo-list/public/" target="_blank"><button>View</button></a>
                             <a name="technical-expertise"></a>
                             <a href="https://github.com/amituuush/todo-list" target="_blank"><button>Repo</button></a>
-                        </div>
-                        <div className="projects-item-image">
-                            <img src="img/todo-list.png" />
                         </div>
                     </div>
                 </div>
