@@ -20,15 +20,6 @@ var Projects = React.createClass({
                         </div>
                     </div>
                     <div className="projects-item">
-                        <div className="projects-item-content item-content-cellbreaker">
-                            <h3>CellBreaker</h3>
-                            <p>CellBreaker is a web app for a cell phone contract breaking service. I was responsible for designing the landing page and the site's education section.</p>
-                        </div>
-                        <div className="projects-item-image">
-                            <img src="img/cellbreaker.jpg" />
-                        </div>
-                    </div>
-                    <div className="projects-item">
                         <div className="projects-item-image">
                             <img src="img/bird-strike.jpg" />
                         </div>
@@ -40,6 +31,15 @@ var Projects = React.createClass({
                             <a name="technical-expertise"></a>
                             <a href="https://github.com/amituuush/bird-strike" target="_blank"><button>Repo</button></a>
 
+                        </div>
+                    </div>
+                    <div className="projects-item">
+                        <div className="projects-item-content item-content-todo-list">
+                            <h3>My To Do List</h3>
+                            <p>This is a to do list I built in React, Redux, Node, and Express.</p>
+                        </div>
+                        <div className="projects-item-image">
+                            <img src="img/todo-list.png" />
                         </div>
                     </div>
                 </div>

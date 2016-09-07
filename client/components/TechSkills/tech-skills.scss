@@ -79,12 +79,23 @@ $primary-color: #415161;
                 }
 
                 &:nth-child(2) {
-                    border-left: 1px solid #BCBCBC;
-                    padding-left: 2em;
+
                 }
             }
             .tech-skills-item {
-                padding-left: 2.25em;
+                // padding-left: 2.25em;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 710px) {
+    .tech-skills-section {
+        .tech-skills-container {
+            .tech-skills-item-container {
+                &:nth-child(2) {
+
+                }
             }
         }
     }
