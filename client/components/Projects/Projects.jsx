@@ -44,7 +44,7 @@ var Projects = React.createClass({
                             <p>This is a to do list application I built when I was harnessing my React skills. My mom uses it sometimes!</p>
                             <p><span>Technologies: </span>React, Redux, Node.js, Express, Travis CI, LESS</p>
                             <a href="http://amituuush.github.io/todo-list/public/" target="_blank"><button>Demo</button></a>
-                            <a name="technical-expertise"></a>
+                            <a name="about-me"></a>
                             <a href="https://github.com/amituuush/todo-list" target="_blank"><button>Repo</button></a>
                         </div>
                     </div>

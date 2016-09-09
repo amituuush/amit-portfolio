@@ -22015,17 +22015,6 @@
 	                ),
 	                _react2.default.createElement(
 	                    'a',
-	                    { href: '#technical-expertise', onClick: function onClick() {
-	                            _this.props.handleMenuToggle();
-	                        } },
-	                    _react2.default.createElement(
-	                        'li',
-	                        null,
-	                        'Technical Expertise'
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    'a',
 	                    { href: '#about-me', onClick: function onClick() {
 	                            _this.props.handleMenuToggle();
 	                        } },
@@ -22381,7 +22370,7 @@
 	                                    'Demo'
 	                                )
 	                            ),
-	                            _react2.default.createElement('a', { name: 'technical-expertise' }),
+	                            _react2.default.createElement('a', { name: 'about-me' }),
 	                            _react2.default.createElement(
 	                                'a',
 	                                { href: 'https://github.com/amituuush/todo-list', target: '_blank' },
