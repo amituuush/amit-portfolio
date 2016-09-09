@@ -14,16 +14,19 @@ var Contact = React.createClass({
                     </div>
                     <div className="icons-container">
                         <div className="contact-icons">
-                            <a href="https://www.linkedin.com/in/amitranan" target="_blank"><i className="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
+                            <a href="https://github.com/amituuush" target="_blank"><i className="fa fa-github fa-3x" aria-hidden="true"></i></a>
                         </div>
                         <div className="contact-icons">
-                            <a href="https://github.com/amituuush" target="_blank"><i className="fa fa-github fa-3x" aria-hidden="true"></i></a>
+                            <a href="https://www.linkedin.com/in/amitranan" target="_blank"><i className="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
                         </div>
                         <div className="contact-icons">
                             <a href="https://www.facebook.com/amit.ranan" target="_blank"><i className="fa fa-facebook-official fa-3x" aria-hidden="true"></i></a>
                         </div>
                         <div className="contact-icons">
                             <a href="https://www.behance.net/rananamit20cb" target="_blank"><i className="fa fa-behance fa-3x" aria-hidden="true"></i></a>
+                        </div>
+                        <div className="contact-icons">
+                            <a href="https://medium.com/@amituuush" target="_blank"><i className="fa fa-medium fa-3x" aria-hidden="true"></i></a>
                         </div>
                     </div>
                 </div>

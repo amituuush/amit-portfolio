@@ -8,6 +8,7 @@ var Nav = React.createClass({
                 <div onClick={() => {this.props.handleMenuToggle()}} className="menu-bars">
                     <i className={this.props.menuShow ? 'fa fa-times fa-2x' : 'fa fa-bars fa-2x' } aria-hidden="true"></i>
                 </div>
+                <img src="img/amit-logo.png" />
                 <ul className={this.props.menuShow ? 'menu-show' : 'menu-hide'}>
                     <a href="#home" onClick={() => {this.props.handleMenuToggle()}}><li>Home</li></a>
                     <a href="#portfolio" onClick={() => {this.props.handleMenuToggle()}}><li>Portfolio</li></a>

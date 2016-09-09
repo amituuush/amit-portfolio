@@ -1,11 +1,19 @@
 $primary-color: #415161;
-$background-color: #F7F7F7;
+$background-color: #fff;
 $highlight-color: #1FA975;
+
+.about-site-wrap {
+    width: 100%;
+    background: $background-color;
+}
 
 .about-site-section {
     background: $background-color;
     height: 100%;
-    padding: 2em 4em 4em 4em;
+    max-width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 2em 2em 2em 2em;
 
     h3 {
         font-weight: 400;
@@ -20,6 +28,12 @@ $highlight-color: #1FA975;
       padding: 0;
       margin: 0;
       list-style: none;
+      width: 100%;
+    //   max-width: 65%;
+    //   display: inline-block;
+    //   top: -2em;
+    //   position: relative;
+
 
       .about-site-item {
         padding: 5px;
@@ -35,6 +49,7 @@ $highlight-color: #1FA975;
             margin-top: 0em;
             margin-bottom: 0em;
             text-align: left;
+            line-height: 1.5em;
 
             .about-site-highlight {
                 color: $highlight-color;
@@ -49,5 +64,34 @@ $highlight-color: #1FA975;
         }
 
       }
+    }
+
+    .about-site-image-container {
+        text-align: center;
+            img {
+                    width: 150px;
+                    margin-top: 1.5em;
+            }
+    }
+}
+
+@media only screen and (min-width: 850px) {
+    .about-site-section {
+
+        .about-site-container {
+          max-width: 65%;
+          display: inline-block;
+          top: -2em;
+          position: relative;
+      }
+
+      .about-site-image-container {
+          display: inline-block;
+          width: 35%;
+
+          img {
+              margin-top: 0;
+          }
+        }
     }
 }

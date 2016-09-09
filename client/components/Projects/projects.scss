@@ -1,9 +1,17 @@
 $primary-color: #415161;
 $secondary-color: #F7F7F7;
 
+.projects-wrap {
+    background: #F7F7F7;
+    width: 100%;
+}
+
 .projects-section {
     background: #F7F7F7;
     height: 100%;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 2em 2em 2em 2em;
 
     h2 {
@@ -32,7 +40,7 @@ $secondary-color: #F7F7F7;
         color: white;
         font-weight: bold;
         text-align: center;
-        border-bottom: 1px solid #415161;
+        border-bottom: 1px solid #C1C1C1;
 
         .projects-item-image {
             display: inline-block;
@@ -53,6 +61,12 @@ $secondary-color: #F7F7F7;
             h3, p {
                 color: $primary-color;
                 text-align: center;
+            }
+
+            span {
+                text-transform: uppercase;
+                font-size: 0.9em;
+                font-weight: 600;
             }
 
             h3 {
@@ -129,12 +143,12 @@ $secondary-color: #F7F7F7;
 
                 .item-content-bird-strike {
                     position: relative;
-                    top: -7em;
+                    top: -4em;
                 }
 
                 .item-content-todo-list {
                     position: relative;
-                    top: -10em;
+                    top: -6em;
                 }
             }
         }

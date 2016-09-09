@@ -1,7 +1,7 @@
 $primary-color: #415161;
 
 nav {
-    text-align: left;
+    text-align: center;
     border-bottom: 1px solid #efefef;
     position: fixed;
     width: 100%;
@@ -9,6 +9,9 @@ nav {
     z-index: 99999;
 
     .menu-bars {
+        display: inline-block;
+        float: left;
+
 
         .fa-bars, .fa-times {
             color: $primary-color;
@@ -27,6 +30,14 @@ nav {
 
     .menu-hide {
         display: none;
+    }
+
+    img {
+        width: 43px;
+        display: inline-block;
+        position: relative;
+        top: 10px;
+        left: -2em;
     }
 
     ul {

@@ -1,11 +1,20 @@
 $primary-color: #415161;
-$background-color: #F7F7F7;
+$background-color: #fff;
 $link-color: #586D82;
 $link-hover-color: #415161;
+
+.about-me-wrap {
+    width: 100%;
+    background: $background-color;
+
+}
 
 .about-me-section {
     background: $background-color;
     height: 100%;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 2em 4em 4em 4em;
 
     .about-me-container {
@@ -44,15 +53,17 @@ $link-hover-color: #415161;
         }
 
         a {
-            color: $link-color;
+            color: #1FA975;
 
             &:hover {
-                color: $link-hover-color;
+                color: lighten(#1FA975, 7%);
             }
         }
 
         &:nth-child(2) {
             text-align: center;
+            position: relative;
+            padding-left: 2em;
         }
 
       }
@@ -64,7 +75,23 @@ $link-hover-color: #415161;
         .about-me-container {
             .about-me-item {
                 img {
-                    max-width: 430px;
+                    max-width: 370px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .about-me-section {
+        .about-me-container {
+            .about-me-item {
+                display: inline-block;
+                width: 45%;
+
+                &:nth-child(2) {
+                    position: relative;
+                    top: -2em;
                 }
             }
         }

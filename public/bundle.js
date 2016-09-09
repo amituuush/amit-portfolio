@@ -21862,10 +21862,6 @@
 
 	var _Projects2 = _interopRequireDefault(_Projects);
 
-	var _TechSkills = __webpack_require__(191);
-
-	var _TechSkills2 = _interopRequireDefault(_TechSkills);
-
 	var _AboutMe = __webpack_require__(194);
 
 	var _AboutMe2 = _interopRequireDefault(_AboutMe);
@@ -21909,7 +21905,6 @@
 	                menuShow: this.state.menuShow }),
 	            _react2.default.createElement(_Cover2.default, null),
 	            _react2.default.createElement(_Projects2.default, null),
-	            _react2.default.createElement(_TechSkills2.default, null),
 	            _react2.default.createElement(_AboutMe2.default, null),
 	            _react2.default.createElement(_Contact2.default, null),
 	            _react2.default.createElement(_AboutSite2.default, null),
@@ -21992,6 +21987,7 @@
 	                    }, className: 'menu-bars' },
 	                _react2.default.createElement('i', { className: this.props.menuShow ? 'fa fa-times fa-2x' : 'fa fa-bars fa-2x', 'aria-hidden': 'true' })
 	            ),
+	            _react2.default.createElement('img', { src: 'img/amit-logo.png' }),
 	            _react2.default.createElement(
 	                'ul',
 	                { className: this.props.menuShow ? 'menu-show' : 'menu-hide' },
@@ -22101,7 +22097,7 @@
 
 
 	// module
-	exports.push([module.id, "nav {\n  text-align: left;\n  border-bottom: 1px solid #efefef;\n  position: fixed;\n  width: 100%;\n  background: #fff;\n  z-index: 99999; }\n  nav .menu-bars .fa-bars, nav .menu-bars .fa-times {\n    color: #415161;\n    margin: 0.5em; }\n    nav .menu-bars .fa-bars:hover, nav .menu-bars .fa-times:hover {\n      cursor: pointer; }\n  nav .menu-show {\n    display: block;\n    overflow-x: hidden; }\n  nav .menu-hide {\n    display: none; }\n  nav ul {\n    padding-left: 0em;\n    position: absolute;\n    top: 48px;\n    background: #fff;\n    z-index: 9999;\n    width: 100%; }\n    nav ul a {\n      text-decoration: none;\n      color: #415161; }\n    nav ul li {\n      list-style-type: none;\n      padding: 0.75em;\n      width: 100%;\n      border-bottom: 1px solid #EFEFEF;\n      font-weight: 400; }\n      nav ul li:first-child {\n        border-top: 1px solid #efefef; }\n", ""]);
+	exports.push([module.id, "nav {\n  text-align: center;\n  border-bottom: 1px solid #efefef;\n  position: fixed;\n  width: 100%;\n  background: #fff;\n  z-index: 99999; }\n  nav .menu-bars {\n    display: inline-block;\n    float: left; }\n    nav .menu-bars .fa-bars, nav .menu-bars .fa-times {\n      color: #415161;\n      margin: 0.5em; }\n      nav .menu-bars .fa-bars:hover, nav .menu-bars .fa-times:hover {\n        cursor: pointer; }\n  nav .menu-show {\n    display: block;\n    overflow-x: hidden; }\n  nav .menu-hide {\n    display: none; }\n  nav img {\n    width: 43px;\n    display: inline-block;\n    position: relative;\n    top: 10px;\n    left: -2em; }\n  nav ul {\n    padding-left: 0em;\n    position: absolute;\n    top: 48px;\n    background: #fff;\n    z-index: 9999;\n    width: 100%; }\n    nav ul a {\n      text-decoration: none;\n      color: #415161; }\n    nav ul li {\n      list-style-type: none;\n      padding: 0.75em;\n      width: 100%;\n      border-bottom: 1px solid #EFEFEF;\n      font-weight: 400; }\n      nav ul li:first-child {\n        border-top: 1px solid #efefef; }\n", ""]);
 
 	// exports
 
@@ -22147,7 +22143,7 @@
 	                _react2.default.createElement(
 	                    'h2',
 	                    null,
-	                    'Banker turned frontend developer. Recent ',
+	                    'Banker turned frontend developer located in LA. Recent ',
 	                    _react2.default.createElement(
 	                        'a',
 	                        { href: 'https://www.thinkful.com/', target: '_blank' },
@@ -22229,142 +22225,171 @@
 
 	    render: function render() {
 	        return _react2.default.createElement(
-	            'section',
-	            { className: 'projects-section' },
+	            'div',
+	            { className: 'projects-wrap' },
 	            _react2.default.createElement(
-	                'h3',
-	                { className: 'projects-title' },
-	                'Portfolio'
-	            ),
-	            _react2.default.createElement(
-	                'div',
-	                { className: 'projects-container' },
+	                'section',
+	                { className: 'projects-section' },
 	                _react2.default.createElement(
-	                    'div',
-	                    { className: 'projects-item' },
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'projects-item-image' },
-	                        _react2.default.createElement('img', { src: 'img/gomocha.jpg' })
-	                    ),
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'projects-item-content item-content-gomocha' },
-	                        _react2.default.createElement(
-	                            'h3',
-	                            null,
-	                            'GoMocha'
-	                        ),
-	                        _react2.default.createElement(
-	                            'p',
-	                            null,
-	                            'GoMocha is a geolocation food and drink ordering application that uses the Google Maps API to track how long it will take the customer to arrive at the shop. The frontend is built entirely in React, while using webpack as a module bundler and SASS.'
-	                        ),
-	                        _react2.default.createElement(
-	                            'p',
-	                            null,
-	                            'The backend is built in Express and uses MongoDB as a database. It is currently deployed on Heroku.'
-	                        ),
-	                        _react2.default.createElement(
-	                            'a',
-	                            { href: 'https://gomocha.herokuapp.com/', target: '_blank' },
-	                            _react2.default.createElement(
-	                                'button',
-	                                null,
-	                                'View'
-	                            )
-	                        ),
-	                        _react2.default.createElement(
-	                            'a',
-	                            { href: 'https://github.com/amituuush/gomocha', target: '_blank' },
-	                            _react2.default.createElement(
-	                                'button',
-	                                null,
-	                                'Repo'
-	                            )
-	                        )
-	                    )
+	                    'h3',
+	                    { className: 'projects-title' },
+	                    'Portfolio'
 	                ),
 	                _react2.default.createElement(
 	                    'div',
-	                    { className: 'projects-item' },
+	                    { className: 'projects-container' },
 	                    _react2.default.createElement(
 	                        'div',
-	                        { className: 'projects-item-image' },
-	                        _react2.default.createElement('img', { src: 'img/bird-strike.jpg' })
-	                    ),
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'projects-item-content item-content-bird-strike' },
+	                        { className: 'projects-item' },
 	                        _react2.default.createElement(
-	                            'h3',
-	                            null,
-	                            'Bird Strike'
+	                            'div',
+	                            { className: 'projects-item-image' },
+	                            _react2.default.createElement('img', { src: 'img/gomocha.jpg' })
 	                        ),
 	                        _react2.default.createElement(
-	                            'p',
-	                            null,
-	                            'Bird Strike is an online game I built in JavaScript on HTML canvas. I built it using gulp as a build system and SASS. This is the first complete web app I created aside from basic to do list and quiz apps.'
-	                        ),
-	                        _react2.default.createElement(
-	                            'a',
-	                            { href: 'http://amituuush.github.io/bird-strike/', target: '_blank' },
+	                            'div',
+	                            { className: 'projects-item-content item-content-gomocha' },
 	                            _react2.default.createElement(
-	                                'button',
+	                                'h3',
 	                                null,
-	                                'View'
-	                            )
-	                        ),
-	                        _react2.default.createElement('a', { name: 'technical-expertise' }),
-	                        _react2.default.createElement(
-	                            'a',
-	                            { href: 'https://github.com/amituuush/bird-strike', target: '_blank' },
+	                                'GoMocha'
+	                            ),
 	                            _react2.default.createElement(
-	                                'button',
+	                                'p',
 	                                null,
-	                                'Repo'
+	                                'GoMocha is a geolocation food and drink ordering application that calculates how long it will take the customer to arrive at the coffee shop for seamless mobile and web ordering. The idea is the order will be ready as soon as the customer arrives. GoMocha is like my child.'
+	                            ),
+	                            _react2.default.createElement(
+	                                'p',
+	                                null,
+	                                _react2.default.createElement(
+	                                    'span',
+	                                    null,
+	                                    'Technologies:'
+	                                ),
+	                                ' React, Node.js, Express, MongoDB, Mongoose, Google Maps API, Heroku, Travis CI, Webpack, SASS'
+	                            ),
+	                            _react2.default.createElement(
+	                                'a',
+	                                { href: 'https://gomocha.herokuapp.com/', target: '_blank' },
+	                                _react2.default.createElement(
+	                                    'button',
+	                                    null,
+	                                    'Demo'
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                'a',
+	                                { href: 'https://github.com/amituuush/gomocha', target: '_blank' },
+	                                _react2.default.createElement(
+	                                    'button',
+	                                    null,
+	                                    'Repo'
+	                                )
 	                            )
 	                        )
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: 'projects-item' },
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'projects-item-image' },
-	                        _react2.default.createElement('img', { src: 'img/todo-list.png' })
 	                    ),
 	                    _react2.default.createElement(
 	                        'div',
-	                        { className: 'projects-item-content item-content-todo-list' },
+	                        { className: 'projects-item' },
 	                        _react2.default.createElement(
-	                            'h3',
-	                            null,
-	                            'My To Do List'
+	                            'div',
+	                            { className: 'projects-item-image' },
+	                            _react2.default.createElement('img', { src: 'img/bird-strike.jpg' })
 	                        ),
 	                        _react2.default.createElement(
-	                            'p',
-	                            null,
-	                            'This is a to do list I built in React, Redux, Node, and Express.'
-	                        ),
-	                        _react2.default.createElement(
-	                            'a',
-	                            { href: 'http://amituuush.github.io/todo-list/public/', target: '_blank' },
+	                            'div',
+	                            { className: 'projects-item-content item-content-bird-strike' },
 	                            _react2.default.createElement(
-	                                'button',
+	                                'h3',
 	                                null,
-	                                'View'
+	                                'Bird Strike'
+	                            ),
+	                            _react2.default.createElement(
+	                                'p',
+	                                null,
+	                                'Bird Strike is an online game I built on HTML Canvas. I don\'t see myself as a video game developer, but I definitely had a great time building this one.'
+	                            ),
+	                            _react2.default.createElement(
+	                                'p',
+	                                null,
+	                                _react2.default.createElement(
+	                                    'span',
+	                                    null,
+	                                    'Technologies: '
+	                                ),
+	                                'JavaScript, HTML Canvas, Gulp, SASS'
+	                            ),
+	                            _react2.default.createElement(
+	                                'a',
+	                                { href: 'http://amituuush.github.io/bird-strike/', target: '_blank' },
+	                                _react2.default.createElement(
+	                                    'button',
+	                                    null,
+	                                    'Demo'
+	                                )
+	                            ),
+	                            _react2.default.createElement('a', { name: 'technical-expertise' }),
+	                            _react2.default.createElement(
+	                                'a',
+	                                { href: 'https://github.com/amituuush/bird-strike', target: '_blank' },
+	                                _react2.default.createElement(
+	                                    'button',
+	                                    null,
+	                                    'Repo'
+	                                )
 	                            )
-	                        ),
-	                        _react2.default.createElement('a', { name: 'technical-expertise' }),
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'projects-item' },
 	                        _react2.default.createElement(
-	                            'a',
-	                            { href: 'https://github.com/amituuush/todo-list', target: '_blank' },
+	                            'div',
+	                            { className: 'projects-item-image' },
+	                            _react2.default.createElement('img', { src: 'img/todo-list.png' })
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'projects-item-content item-content-todo-list' },
 	                            _react2.default.createElement(
-	                                'button',
+	                                'h3',
 	                                null,
-	                                'Repo'
+	                                'My To Do List'
+	                            ),
+	                            _react2.default.createElement(
+	                                'p',
+	                                null,
+	                                'This is a to do list application I built when I was harnessing my React skills. My mom uses it sometimes!'
+	                            ),
+	                            _react2.default.createElement(
+	                                'p',
+	                                null,
+	                                _react2.default.createElement(
+	                                    'span',
+	                                    null,
+	                                    'Technologies: '
+	                                ),
+	                                'React, Redux, Node.js, Express, Travis CI, LESS'
+	                            ),
+	                            _react2.default.createElement(
+	                                'a',
+	                                { href: 'http://amituuush.github.io/todo-list/public/', target: '_blank' },
+	                                _react2.default.createElement(
+	                                    'button',
+	                                    null,
+	                                    'Demo'
+	                                )
+	                            ),
+	                            _react2.default.createElement('a', { name: 'technical-expertise' }),
+	                            _react2.default.createElement(
+	                                'a',
+	                                { href: 'https://github.com/amituuush/todo-list', target: '_blank' },
+	                                _react2.default.createElement(
+	                                    'button',
+	                                    null,
+	                                    'Repo'
+	                                )
 	                            )
 	                        )
 	                    )
@@ -22411,215 +22436,15 @@
 
 
 	// module
-	exports.push([module.id, ".projects-section {\n  background: #F7F7F7;\n  height: 100%;\n  padding: 2em 2em 2em 2em; }\n  .projects-section h2 {\n    color: #415161;\n    font-size: 1.75em; }\n  .projects-section .projects-title {\n    font-weight: 400;\n    font-size: 1.75em;\n    margin-top: 0em;\n    margin-bottom: 0em;\n    text-align: left;\n    color: #415161; }\n  .projects-section .projects-container {\n    padding: 0;\n    margin: 0;\n    list-style: none; }\n    .projects-section .projects-container .projects-item {\n      display: block;\n      padding-top: 2em;\n      padding-bottom: 4em;\n      color: white;\n      font-weight: bold;\n      text-align: center;\n      border-bottom: 1px solid #415161; }\n      .projects-section .projects-container .projects-item .projects-item-image {\n        display: inline-block;\n        width: 100%;\n        text-align: center; }\n        .projects-section .projects-container .projects-item .projects-item-image img {\n          width: 100%;\n          display: inline-block; }\n      .projects-section .projects-container .projects-item .projects-item-content {\n        display: inline-block;\n        width: 100%;\n        padding-top: 1em; }\n        .projects-section .projects-container .projects-item .projects-item-content h3, .projects-section .projects-container .projects-item .projects-item-content p {\n          color: #415161;\n          text-align: center; }\n        .projects-section .projects-container .projects-item .projects-item-content h3 {\n          font-weight: 400;\n          font-size: 1.75em;\n          margin-top: 0.5em;\n          margin-bottom: 0em; }\n        .projects-section .projects-container .projects-item .projects-item-content p {\n          font-weight: 400;\n          font-size: 1.2em;\n          width: 100%;\n          margin: 0.5em auto 1em auto; }\n        .projects-section .projects-container .projects-item .projects-item-content button {\n          background: #415161;\n          border: none;\n          font-weight: 400;\n          padding: 0.5em 1em;\n          border-radius: 3px;\n          margin-right: 0.75em;\n          color: #fff; }\n          .projects-section .projects-container .projects-item .projects-item-content button:hover {\n            background: #4b5e70;\n            color: #fff;\n            cursor: pointer; }\n          .projects-section .projects-container .projects-item .projects-item-content button:focus {\n            outline: none; }\n      .projects-section .projects-container .projects-item:nth-child(2) {\n        padding-bottom: 4em; }\n      .projects-section .projects-container .projects-item:nth-child(3) {\n        padding-top: 4em;\n        border-bottom: none; }\n\n@media only screen and (min-width: 570px) {\n  .projects-section .projects-container .projects-item img {\n    max-width: 400px; } }\n\n@media only screen and (min-width: 900px) {\n  .projects-section .projects-container .projects-item .projects-item-content, .projects-section .projects-container .projects-item .projects-item-image {\n    width: 50%; }\n  .projects-section .projects-container .projects-item .item-content-gomocha {\n    position: relative;\n    top: -1em; }\n  .projects-section .projects-container .projects-item .item-content-bird-strike {\n    position: relative;\n    top: -7em; }\n  .projects-section .projects-container .projects-item .item-content-todo-list {\n    position: relative;\n    top: -10em; } }\n", ""]);
+	exports.push([module.id, ".projects-wrap {\n  background: #F7F7F7;\n  width: 100%; }\n\n.projects-section {\n  background: #F7F7F7;\n  height: 100%;\n  max-width: 960px;\n  margin-left: auto;\n  margin-right: auto;\n  padding: 2em 2em 2em 2em; }\n  .projects-section h2 {\n    color: #415161;\n    font-size: 1.75em; }\n  .projects-section .projects-title {\n    font-weight: 400;\n    font-size: 1.75em;\n    margin-top: 0em;\n    margin-bottom: 0em;\n    text-align: left;\n    color: #415161; }\n  .projects-section .projects-container {\n    padding: 0;\n    margin: 0;\n    list-style: none; }\n    .projects-section .projects-container .projects-item {\n      display: block;\n      padding-top: 2em;\n      padding-bottom: 4em;\n      color: white;\n      font-weight: bold;\n      text-align: center;\n      border-bottom: 1px solid #C1C1C1; }\n      .projects-section .projects-container .projects-item .projects-item-image {\n        display: inline-block;\n        width: 100%;\n        text-align: center; }\n        .projects-section .projects-container .projects-item .projects-item-image img {\n          width: 100%;\n          display: inline-block; }\n      .projects-section .projects-container .projects-item .projects-item-content {\n        display: inline-block;\n        width: 100%;\n        padding-top: 1em; }\n        .projects-section .projects-container .projects-item .projects-item-content h3, .projects-section .projects-container .projects-item .projects-item-content p {\n          color: #415161;\n          text-align: center; }\n        .projects-section .projects-container .projects-item .projects-item-content span {\n          text-transform: uppercase;\n          font-size: 0.9em;\n          font-weight: 600; }\n        .projects-section .projects-container .projects-item .projects-item-content h3 {\n          font-weight: 400;\n          font-size: 1.75em;\n          margin-top: 0.5em;\n          margin-bottom: 0em; }\n        .projects-section .projects-container .projects-item .projects-item-content p {\n          font-weight: 400;\n          font-size: 1.2em;\n          width: 100%;\n          margin: 0.5em auto 1em auto; }\n        .projects-section .projects-container .projects-item .projects-item-content button {\n          background: #415161;\n          border: none;\n          font-weight: 400;\n          padding: 0.5em 1em;\n          border-radius: 3px;\n          margin-right: 0.75em;\n          color: #fff; }\n          .projects-section .projects-container .projects-item .projects-item-content button:hover {\n            background: #4b5e70;\n            color: #fff;\n            cursor: pointer; }\n          .projects-section .projects-container .projects-item .projects-item-content button:focus {\n            outline: none; }\n      .projects-section .projects-container .projects-item:nth-child(2) {\n        padding-bottom: 4em; }\n      .projects-section .projects-container .projects-item:nth-child(3) {\n        padding-top: 4em;\n        border-bottom: none; }\n\n@media only screen and (min-width: 570px) {\n  .projects-section .projects-container .projects-item img {\n    max-width: 400px; } }\n\n@media only screen and (min-width: 900px) {\n  .projects-section .projects-container .projects-item .projects-item-content, .projects-section .projects-container .projects-item .projects-item-image {\n    width: 50%; }\n  .projects-section .projects-container .projects-item .item-content-gomocha {\n    position: relative;\n    top: -1em; }\n  .projects-section .projects-container .projects-item .item-content-bird-strike {\n    position: relative;\n    top: -4em; }\n  .projects-section .projects-container .projects-item .item-content-todo-list {\n    position: relative;\n    top: -6em; } }\n", ""]);
 
 	// exports
 
 
 /***/ },
-/* 191 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var _react = __webpack_require__(5);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _techSkills = __webpack_require__(192);
-
-	var _techSkills2 = _interopRequireDefault(_techSkills);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	var TechSkills = _react2.default.createClass({
-	    displayName: 'TechSkills',
-
-	    render: function render() {
-	        return _react2.default.createElement(
-	            'section',
-	            { className: 'tech-skills-section' },
-	            _react2.default.createElement(
-	                'h3',
-	                { className: 'tech-skills-title' },
-	                'Technical Expertise'
-	            ),
-	            _react2.default.createElement(
-	                'ul',
-	                { className: 'tech-skills-container' },
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: 'tech-skills-item-container' },
-	                    _react2.default.createElement(
-	                        'li',
-	                        { className: 'tech-skills-item' },
-	                        _react2.default.createElement(
-	                            'h3',
-	                            null,
-	                            'Professional Skillset'
-	                        ),
-	                        _react2.default.createElement(
-	                            'p',
-	                            null,
-	                            'HTML5'
-	                        ),
-	                        _react2.default.createElement(
-	                            'p',
-	                            null,
-	                            'CSS3'
-	                        ),
-	                        _react2.default.createElement(
-	                            'p',
-	                            null,
-	                            'JavaScript'
-	                        ),
-	                        _react2.default.createElement(
-	                            'p',
-	                            null,
-	                            'React'
-	                        ),
-	                        _react2.default.createElement('a', { name: 'about-me' })
-	                    ),
-	                    _react2.default.createElement(
-	                        'li',
-	                        { className: 'tech-skills-item' },
-	                        _react2.default.createElement(
-	                            'h3',
-	                            null,
-	                            'Other Notables'
-	                        ),
-	                        _react2.default.createElement(
-	                            'p',
-	                            null,
-	                            'Redux'
-	                        ),
-	                        _react2.default.createElement(
-	                            'p',
-	                            null,
-	                            'SASS/LESS'
-	                        ),
-	                        _react2.default.createElement(
-	                            'p',
-	                            null,
-	                            'Compass/Bourbon'
-	                        ),
-	                        _react2.default.createElement(
-	                            'p',
-	                            null,
-	                            'jQuery'
-	                        )
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: 'tech-skills-item-container' },
-	                    _react2.default.createElement(
-	                        'li',
-	                        { className: 'tech-skills-item tech-skills-tools' },
-	                        _react2.default.createElement(
-	                            'h3',
-	                            null,
-	                            'Tools'
-	                        ),
-	                        _react2.default.createElement(
-	                            'p',
-	                            null,
-	                            'Photoshop & Sketch'
-	                        ),
-	                        _react2.default.createElement(
-	                            'p',
-	                            null,
-	                            'Webpack/Gulp'
-	                        ),
-	                        _react2.default.createElement(
-	                            'p',
-	                            null,
-	                            'Atom'
-	                        ),
-	                        _react2.default.createElement(
-	                            'p',
-	                            null,
-	                            'Babel'
-	                        )
-	                    ),
-	                    _react2.default.createElement(
-	                        'li',
-	                        { className: 'tech-skills-item' },
-	                        _react2.default.createElement(
-	                            'h3',
-	                            null,
-	                            'Working Knowledge'
-	                        ),
-	                        _react2.default.createElement(
-	                            'p',
-	                            null,
-	                            'Node.js'
-	                        ),
-	                        _react2.default.createElement(
-	                            'p',
-	                            null,
-	                            'Express'
-	                        ),
-	                        _react2.default.createElement(
-	                            'p',
-	                            null,
-	                            'MongoDB'
-	                        ),
-	                        _react2.default.createElement(
-	                            'p',
-	                            null,
-	                            'Mongoose'
-	                        )
-	                    )
-	                )
-	            )
-	        );
-	    }
-	});
-
-	module.exports = TechSkills;
-
-/***/ },
-/* 192 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(193);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(4)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/index.js!./tech-skills.scss", function() {
-				var newContent = require("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/index.js!./tech-skills.scss");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 193 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(3)();
-	// imports
-
-
-	// module
-	exports.push([module.id, ".tech-skills-section {\n  background: #fff;\n  height: 100%;\n  padding: 2em 4em 4em 4em; }\n  .tech-skills-section h3 {\n    font-weight: 400;\n    font-size: 1.75em;\n    margin-top: 0em;\n    margin-bottom: 0em;\n    text-align: left;\n    color: #415161;\n    text-transform: uppercase; }\n  .tech-skills-section .tech-skills-title {\n    text-transform: none; }\n  .tech-skills-section .tech-skills-container {\n    padding: 2em 0 0 0;\n    margin: 0;\n    list-style: none; }\n    .tech-skills-section .tech-skills-container .tech-skills-item {\n      display: block;\n      width: 100%;\n      padding: 5px;\n      margin-top: 1em;\n      color: #415161;\n      font-weight: bold;\n      text-align: center; }\n      .tech-skills-section .tech-skills-container .tech-skills-item h3, .tech-skills-section .tech-skills-container .tech-skills-item p {\n        color: #415161; }\n      .tech-skills-section .tech-skills-container .tech-skills-item h3 {\n        font-weight: 600;\n        font-size: 1.25em;\n        margin-top: 0em;\n        margin-bottom: 0em;\n        text-align: left; }\n      .tech-skills-section .tech-skills-container .tech-skills-item p {\n        font-weight: 400;\n        font-size: 1.2em;\n        text-align: left; }\n      .tech-skills-section .tech-skills-container .tech-skills-item img {\n        max-width: 100%; }\n      .tech-skills-section .tech-skills-container .tech-skills-item a {\n        color: #586D82; }\n        .tech-skills-section .tech-skills-container .tech-skills-item a:hover {\n          color: #415161; }\n      .tech-skills-section .tech-skills-container .tech-skills-item:nth-child(2) {\n        text-align: center; }\n\n@media only screen and (min-width: 679px) {\n  .tech-skills-section .tech-skills-container .tech-skills-item-container {\n    display: inline-block; }\n    .tech-skills-section .tech-skills-container .tech-skills-item-container:first-child {\n      padding-right: 4em; } }\n\n@media only screen and (min-width: 1000px) {\n  .tech-skills-section .tech-skills-container .tech-skills-item-container {\n    display: initial; }\n    .tech-skills-section .tech-skills-container .tech-skills-item-container:first-child {\n      padding-right: 0em; }\n    .tech-skills-section .tech-skills-container .tech-skills-item-container:nth-child(2) {\n      border-left: none;\n      padding-left: 0em; }\n  .tech-skills-section .tech-skills-container .tech-skills-item {\n    display: inline-block;\n    width: 22%;\n    padding-left: 0em; }\n    .tech-skills-section .tech-skills-container .tech-skills-item:nth-child(2) {\n      border-left: 1px solid #BCBCBC;\n      padding-left: 1em; }\n  .tech-skills-section .tech-skills-container .tech-skills-tools {\n    border-left: 1px solid #BCBCBC;\n    padding-left: 1em; } }\n", ""]);
-
-	// exports
-
-
-/***/ },
+/* 191 */,
+/* 192 */,
+/* 193 */,
 /* 194 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -22640,53 +22465,57 @@
 
 	    render: function render() {
 	        return _react2.default.createElement(
-	            'section',
-	            { className: 'about-me-section' },
+	            'div',
+	            { className: 'about-me-wrap' },
 	            _react2.default.createElement(
-	                'ul',
-	                { className: 'about-me-container' },
+	                'section',
+	                { className: 'about-me-section' },
 	                _react2.default.createElement(
-	                    'li',
-	                    { className: 'about-me-item' },
+	                    'ul',
+	                    { className: 'about-me-container' },
 	                    _react2.default.createElement(
-	                        'h3',
-	                        null,
-	                        'About Me'
-	                    ),
-	                    _react2.default.createElement(
-	                        'p',
-	                        null,
-	                        'I graduated from UC Davis with a bachelor\'s in Economics, and proceeded to work in commercial banking. I soon realized I needed more creativity in my work. I picked up coding, and immediately knew it was for me. I love the way it allows me to organize large amounts of information in my head, and I love the logical puzzle challenges it provides.'
-	                    ),
-	                    _react2.default.createElement(
-	                        'p',
-	                        null,
-	                        'I recently graduated from ',
+	                        'li',
+	                        { className: 'about-me-item' },
 	                        _react2.default.createElement(
-	                            'a',
-	                            { href: 'https://www.thinkful.com/', target: '_blank' },
-	                            'Thinkful'
+	                            'h3',
+	                            null,
+	                            'About Me'
 	                        ),
-	                        '\'s coding bootcamp and am working as a freelance developer. I enjoy using my development experience to help companies solve business problems. I also have some design experience, which you can check out ',
 	                        _react2.default.createElement(
-	                            'a',
-	                            { href: 'https://www.behance.net/rananamit20cb', target: '_blank' },
-	                            'here'
+	                            'p',
+	                            null,
+	                            'I graduated from UC Davis with a bachelor\'s in Economics, and proceeded to work in commercial banking. I soon realized I needed more creativity in my work. I picked up coding, and immediately knew it was for me. I love the way it allows me to organize large amounts of information in my head, and I love the logical puzzle challenges it provides.'
 	                        ),
-	                        '.'
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            'I recently graduated from ',
+	                            _react2.default.createElement(
+	                                'a',
+	                                { href: 'https://www.thinkful.com/', target: '_blank' },
+	                                'Thinkful'
+	                            ),
+	                            '\'s coding bootcamp and am looking to join a fun and passionate company. I enjoy using my development experience to help companies solve business problems. I also have some design experience, which you can check out ',
+	                            _react2.default.createElement(
+	                                'a',
+	                                { href: 'https://www.behance.net/rananamit20cb', target: '_blank' },
+	                                'here'
+	                            ),
+	                            '.'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            'I love anything that has to do with the NBA, being outdoors, playing guitar, and my mom\'s vegan cooking. If you think we\'d be a good fit, see my contact information below!'
+	                        )
 	                    ),
 	                    _react2.default.createElement(
-	                        'p',
-	                        null,
-	                        'If you like my work and are interested in working together, see my contact information below!'
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    'li',
-	                    { className: 'about-me-item' },
-	                    _react2.default.createElement('img', { src: 'img/amit-canyoning.jpg' })
-	                ),
-	                _react2.default.createElement('a', { name: 'contact' })
+	                        'li',
+	                        { className: 'about-me-item' },
+	                        _react2.default.createElement('img', { src: 'img/amit-canyoning.jpg' })
+	                    ),
+	                    _react2.default.createElement('a', { name: 'contact' })
+	                )
 	            )
 	        );
 	    }
@@ -22729,7 +22558,7 @@
 
 
 	// module
-	exports.push([module.id, ".about-me-section {\n  background: #F7F7F7;\n  height: 100%;\n  padding: 2em 4em 4em 4em; }\n  .about-me-section .about-me-container {\n    padding: 0;\n    margin: 0;\n    list-style: none; }\n    .about-me-section .about-me-container .about-me-item {\n      padding: 5px;\n      margin-top: 1em;\n      color: #415161;\n      font-weight: bold;\n      text-align: center; }\n      .about-me-section .about-me-container .about-me-item h3, .about-me-section .about-me-container .about-me-item p {\n        color: #415161; }\n      .about-me-section .about-me-container .about-me-item h3 {\n        font-weight: 400;\n        font-size: 1.75em;\n        margin-top: 0em;\n        margin-bottom: 0em;\n        text-align: left; }\n      .about-me-section .about-me-container .about-me-item p {\n        font-weight: 400;\n        font-size: 1.2em;\n        text-align: left; }\n      .about-me-section .about-me-container .about-me-item img {\n        max-width: 100%; }\n      .about-me-section .about-me-container .about-me-item a {\n        color: #586D82; }\n        .about-me-section .about-me-container .about-me-item a:hover {\n          color: #415161; }\n      .about-me-section .about-me-container .about-me-item:nth-child(2) {\n        text-align: center; }\n\n@media only screen and (min-width: 570px) {\n  .about-me-section .about-me-container .about-me-item img {\n    max-width: 430px; } }\n", ""]);
+	exports.push([module.id, ".about-me-wrap {\n  width: 100%;\n  background: #fff; }\n\n.about-me-section {\n  background: #fff;\n  height: 100%;\n  max-width: 960px;\n  margin-left: auto;\n  margin-right: auto;\n  padding: 2em 4em 4em 4em; }\n  .about-me-section .about-me-container {\n    padding: 0;\n    margin: 0;\n    list-style: none; }\n    .about-me-section .about-me-container .about-me-item {\n      padding: 5px;\n      margin-top: 1em;\n      color: #415161;\n      font-weight: bold;\n      text-align: center; }\n      .about-me-section .about-me-container .about-me-item h3, .about-me-section .about-me-container .about-me-item p {\n        color: #415161; }\n      .about-me-section .about-me-container .about-me-item h3 {\n        font-weight: 400;\n        font-size: 1.75em;\n        margin-top: 0em;\n        margin-bottom: 0em;\n        text-align: left; }\n      .about-me-section .about-me-container .about-me-item p {\n        font-weight: 400;\n        font-size: 1.2em;\n        text-align: left; }\n      .about-me-section .about-me-container .about-me-item img {\n        max-width: 100%; }\n      .about-me-section .about-me-container .about-me-item a {\n        color: #1FA975; }\n        .about-me-section .about-me-container .about-me-item a:hover {\n          color: #25c78a; }\n      .about-me-section .about-me-container .about-me-item:nth-child(2) {\n        text-align: center;\n        position: relative;\n        padding-left: 2em; }\n\n@media only screen and (min-width: 570px) {\n  .about-me-section .about-me-container .about-me-item img {\n    max-width: 370px; } }\n\n@media only screen and (min-width: 960px) {\n  .about-me-section .about-me-container .about-me-item {\n    display: inline-block;\n    width: 45%; }\n    .about-me-section .about-me-container .about-me-item:nth-child(2) {\n      position: relative;\n      top: -2em; } }\n", ""]);
 
 	// exports
 
@@ -22816,7 +22645,7 @@
 
 
 	// module
-	exports.push([module.id, ".footer-section {\n  background: #415161;\n  padding: 1em 4em 2em 4em; }\n  .footer-section .footer-container {\n    padding: 0;\n    margin: 0;\n    list-style: none; }\n    .footer-section .footer-container .footer-item {\n      padding: 5px;\n      margin-top: 1em;\n      color: white;\n      font-weight: bold;\n      text-align: center; }\n      .footer-section .footer-container .footer-item h3, .footer-section .footer-container .footer-item p {\n        color: #fff; }\n      .footer-section .footer-container .footer-item h3 {\n        font-weight: 400;\n        font-size: 1em;\n        margin-top: 0em;\n        margin-bottom: 0em;\n        text-align: left; }\n      .footer-section .footer-container .footer-item p {\n        font-weight: 400;\n        font-size: 0.75em;\n        text-align: left; }\n", ""]);
+	exports.push([module.id, ".footer-section {\n  background: #415161;\n  padding: 1em 4em 2em 4em; }\n  .footer-section .footer-container {\n    padding: 0;\n    margin: 0;\n    list-style: none; }\n    .footer-section .footer-container .footer-item {\n      padding: 5px;\n      margin-top: 1em;\n      color: white;\n      font-weight: bold;\n      text-align: center; }\n      .footer-section .footer-container .footer-item h3, .footer-section .footer-container .footer-item p {\n        color: #fff; }\n      .footer-section .footer-container .footer-item h3 {\n        font-weight: 400;\n        font-size: 1em;\n        margin-top: 0em;\n        margin-bottom: 0em;\n        text-align: left; }\n      .footer-section .footer-container .footer-item p {\n        font-weight: 400;\n        font-size: 0.9em;\n        text-align: left; }\n", ""]);
 
 	// exports
 
@@ -22842,42 +22671,51 @@
 
 	    render: function render() {
 	        return _react2.default.createElement(
-	            'section',
-	            { className: 'about-site-section' },
+	            'div',
+	            { className: 'about-site-wrap' },
 	            _react2.default.createElement(
-	                'h3',
-	                null,
-	                'About this site'
-	            ),
-	            _react2.default.createElement(
-	                'ul',
-	                { className: 'about-site-container' },
+	                'section',
+	                { className: 'about-site-section' },
 	                _react2.default.createElement(
-	                    'li',
-	                    { className: 'about-site-item' },
+	                    'h3',
+	                    null,
+	                    'About This Site'
+	                ),
+	                _react2.default.createElement(
+	                    'ul',
+	                    { className: 'about-site-container' },
 	                    _react2.default.createElement(
-	                        'h3',
-	                        null,
-	                        'This responsive site has been designed, developed, and maintained by me. It\'s built in ',
+	                        'li',
+	                        { className: 'about-site-item' },
 	                        _react2.default.createElement(
-	                            'span',
-	                            { className: 'about-site-highlight' },
-	                            'React'
-	                        ),
-	                        ' using ',
-	                        _react2.default.createElement(
-	                            'span',
-	                            { className: 'about-site-highlight' },
-	                            'Sass'
-	                        ),
-	                        ' as a CSS extension language, and ',
-	                        _react2.default.createElement(
-	                            'span',
-	                            { className: 'about-site-highlight' },
-	                            'Webpack'
-	                        ),
-	                        ' as a module bundler.'
+	                            'h3',
+	                            null,
+	                            'This responsive site has been designed, developed, and maintained by me. It\'s built in ',
+	                            _react2.default.createElement(
+	                                'span',
+	                                { className: 'about-site-highlight' },
+	                                'React'
+	                            ),
+	                            ' using ',
+	                            _react2.default.createElement(
+	                                'span',
+	                                { className: 'about-site-highlight' },
+	                                'Sass'
+	                            ),
+	                            ' as a CSS extension language, and ',
+	                            _react2.default.createElement(
+	                                'span',
+	                                { className: 'about-site-highlight' },
+	                                'Webpack'
+	                            ),
+	                            ' as a module bundler.'
+	                        )
 	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'about-site-image-container' },
+	                    _react2.default.createElement('img', { src: 'img/amit-logo.png' })
 	                )
 	            )
 	        );
@@ -22921,7 +22759,7 @@
 
 
 	// module
-	exports.push([module.id, ".about-site-section {\n  background: #F7F7F7;\n  height: 100%;\n  padding: 2em 4em 4em 4em; }\n  .about-site-section h3 {\n    font-weight: 400;\n    font-size: 1.75em;\n    margin-top: 0em;\n    margin-bottom: 0em;\n    text-align: left;\n    color: #415161; }\n  .about-site-section .about-site-container {\n    padding: 0;\n    margin: 0;\n    list-style: none; }\n    .about-site-section .about-site-container .about-site-item {\n      padding: 5px;\n      margin-top: 1em;\n      color: #F7F7F7;\n      font-weight: bold;\n      text-align: center; }\n      .about-site-section .about-site-container .about-site-item h3 {\n        color: #415161;\n        font-weight: 400;\n        font-size: 1.2em;\n        margin-top: 0em;\n        margin-bottom: 0em;\n        text-align: left; }\n        .about-site-section .about-site-container .about-site-item h3 .about-site-highlight {\n          color: #1FA975; }\n      .about-site-section .about-site-container .about-site-item p {\n        font-weight: 400;\n        font-size: 1.2em;\n        width: 70%;\n        text-align: left; }\n", ""]);
+	exports.push([module.id, ".about-site-wrap {\n  width: 100%;\n  background: #fff; }\n\n.about-site-section {\n  background: #fff;\n  height: 100%;\n  max-width: 960px;\n  margin-right: auto;\n  margin-left: auto;\n  padding: 2em 2em 2em 2em; }\n  .about-site-section h3 {\n    font-weight: 400;\n    font-size: 1.75em;\n    margin-top: 0em;\n    margin-bottom: 0em;\n    text-align: left;\n    color: #415161; }\n  .about-site-section .about-site-container {\n    padding: 0;\n    margin: 0;\n    list-style: none;\n    width: 100%; }\n    .about-site-section .about-site-container .about-site-item {\n      padding: 5px;\n      margin-top: 1em;\n      color: #fff;\n      font-weight: bold;\n      text-align: center; }\n      .about-site-section .about-site-container .about-site-item h3 {\n        color: #415161;\n        font-weight: 400;\n        font-size: 1.2em;\n        margin-top: 0em;\n        margin-bottom: 0em;\n        text-align: left;\n        line-height: 1.5em; }\n        .about-site-section .about-site-container .about-site-item h3 .about-site-highlight {\n          color: #1FA975; }\n      .about-site-section .about-site-container .about-site-item p {\n        font-weight: 400;\n        font-size: 1.2em;\n        width: 70%;\n        text-align: left; }\n  .about-site-section .about-site-image-container {\n    text-align: center; }\n    .about-site-section .about-site-image-container img {\n      width: 150px;\n      margin-top: 1.5em; }\n\n@media only screen and (min-width: 850px) {\n  .about-site-section .about-site-container {\n    max-width: 65%;\n    display: inline-block;\n    top: -2em;\n    position: relative; }\n  .about-site-section .about-site-image-container {\n    display: inline-block;\n    width: 35%; }\n    .about-site-section .about-site-image-container img {\n      margin-top: 0; } }\n", ""]);
 
 	// exports
 
@@ -22976,8 +22814,8 @@
 	                        { className: 'contact-icons' },
 	                        _react2.default.createElement(
 	                            'a',
-	                            { href: 'https://www.linkedin.com/in/amitranan', target: '_blank' },
-	                            _react2.default.createElement('i', { className: 'fa fa-linkedin-square fa-3x', 'aria-hidden': 'true' })
+	                            { href: 'https://github.com/amituuush', target: '_blank' },
+	                            _react2.default.createElement('i', { className: 'fa fa-github fa-3x', 'aria-hidden': 'true' })
 	                        )
 	                    ),
 	                    _react2.default.createElement(
@@ -22985,8 +22823,8 @@
 	                        { className: 'contact-icons' },
 	                        _react2.default.createElement(
 	                            'a',
-	                            { href: 'https://github.com/amituuush', target: '_blank' },
-	                            _react2.default.createElement('i', { className: 'fa fa-github fa-3x', 'aria-hidden': 'true' })
+	                            { href: 'https://www.linkedin.com/in/amitranan', target: '_blank' },
+	                            _react2.default.createElement('i', { className: 'fa fa-linkedin-square fa-3x', 'aria-hidden': 'true' })
 	                        )
 	                    ),
 	                    _react2.default.createElement(
@@ -23005,6 +22843,15 @@
 	                            'a',
 	                            { href: 'https://www.behance.net/rananamit20cb', target: '_blank' },
 	                            _react2.default.createElement('i', { className: 'fa fa-behance fa-3x', 'aria-hidden': 'true' })
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'contact-icons' },
+	                        _react2.default.createElement(
+	                            'a',
+	                            { href: 'https://medium.com/@amituuush', target: '_blank' },
+	                            _react2.default.createElement('i', { className: 'fa fa-medium fa-3x', 'aria-hidden': 'true' })
 	                        )
 	                    )
 	                )
@@ -23050,7 +22897,7 @@
 
 
 	// module
-	exports.push([module.id, ".contact-section {\n  background: #fff;\n  height: 100%;\n  padding: 2em 4em 4em 4em; }\n  .contact-section h3 {\n    font-weight: 400;\n    font-size: 1.75em;\n    margin-top: 0em;\n    margin-bottom: 0em;\n    text-align: left;\n    color: #415161; }\n  .contact-section .contact-container {\n    padding: 0;\n    margin: 0 auto;\n    list-style: none;\n    text-align: center; }\n    .contact-section .contact-container p {\n      font-weight: 400;\n      font-size: 2em;\n      color: #415161;\n      margin-bottom: 0.75em; }\n    .contact-section .contact-container .vertical-divider {\n      height: 2em;\n      border-left: 1px solid #BCBCBC;\n      width: 0em;\n      margin: 0 auto; }\n    .contact-section .contact-container .contact-item {\n      padding: 5px;\n      margin-top: 1em;\n      color: #fff;\n      font-weight: bold;\n      text-align: center; }\n      .contact-section .contact-container .contact-item a {\n        color: #556b80;\n        font-weight: 400;\n        font-size: 1.5em;\n        margin-top: 1em;\n        margin-bottom: 0em;\n        text-decoration: none; }\n        .contact-section .contact-container .contact-item a:hover {\n          color: #415161;\n          text-decoration: underline; }\n    .contact-section .contact-container .icons-container .contact-icons {\n      display: inline-block;\n      padding: 0.2em;\n      margin-top: 2em; }\n      .contact-section .contact-container .icons-container .contact-icons .fa-linkedin-square, .contact-section .contact-container .icons-container .contact-icons .fa-github, .contact-section .contact-container .icons-container .contact-icons .fa-facebook-official, .contact-section .contact-container .icons-container .contact-icons .fa-behance {\n        display: inline-block;\n        color: #415161; }\n        .contact-section .contact-container .icons-container .contact-icons .fa-linkedin-square:hover, .contact-section .contact-container .icons-container .contact-icons .fa-github:hover, .contact-section .contact-container .icons-container .contact-icons .fa-facebook-official:hover, .contact-section .contact-container .icons-container .contact-icons .fa-behance:hover {\n          color: #4b5e70; }\n\n@media only screen and (min-width: 348px) {\n  .contact-section .contact-container .icons-container .contact-icons {\n    padding: 0.4em; } }\n\n@media only screen and (min-width: 421px) {\n  .contact-section .contact-container .icons-container .contact-icons {\n    padding: 1em; } }\n", ""]);
+	exports.push([module.id, ".contact-section {\n  background: #F7F7F7;\n  height: 100%;\n  padding: 2em 2em 4em 2em; }\n  .contact-section h3 {\n    font-weight: 400;\n    font-size: 1.75em;\n    margin-top: 0em;\n    margin-bottom: 0em;\n    text-align: left;\n    color: #415161; }\n  .contact-section .contact-container {\n    padding: 0;\n    margin: 0 auto;\n    list-style: none;\n    text-align: center; }\n    .contact-section .contact-container p {\n      font-weight: 400;\n      font-size: 2em;\n      color: #415161;\n      margin-bottom: 0.75em; }\n    .contact-section .contact-container .vertical-divider {\n      height: 2em;\n      border-left: 1px solid #BCBCBC;\n      width: 0em;\n      margin: 0 auto; }\n    .contact-section .contact-container .contact-item {\n      padding: 5px;\n      margin-top: 1em;\n      color: #F7F7F7;\n      font-weight: bold;\n      text-align: center; }\n      .contact-section .contact-container .contact-item a {\n        color: #556b80;\n        font-weight: 400;\n        font-size: 1.5em;\n        margin-top: 1em;\n        margin-bottom: 0em;\n        text-decoration: none; }\n        .contact-section .contact-container .contact-item a:hover {\n          color: #415161;\n          text-decoration: underline; }\n    .contact-section .contact-container .icons-container .contact-icons {\n      display: inline-block;\n      padding: 0.2em;\n      margin-top: 2em; }\n      .contact-section .contact-container .icons-container .contact-icons .fa-linkedin-square, .contact-section .contact-container .icons-container .contact-icons .fa-github, .contact-section .contact-container .icons-container .contact-icons .fa-facebook-official, .contact-section .contact-container .icons-container .contact-icons .fa-behance, .contact-section .contact-container .icons-container .contact-icons .fa-medium {\n        display: inline-block;\n        color: #415161; }\n        .contact-section .contact-container .icons-container .contact-icons .fa-linkedin-square:hover, .contact-section .contact-container .icons-container .contact-icons .fa-github:hover, .contact-section .contact-container .icons-container .contact-icons .fa-facebook-official:hover, .contact-section .contact-container .icons-container .contact-icons .fa-behance:hover, .contact-section .contact-container .icons-container .contact-icons .fa-medium:hover {\n          color: #1FA975; }\n\n@media only screen and (min-width: 348px) {\n  .contact-section .contact-container .icons-container .contact-icons {\n    padding: 0.4em; } }\n\n@media only screen and (min-width: 421px) {\n  .contact-section .contact-container .icons-container .contact-icons {\n    padding: 1em; } }\n", ""]);
 
 	// exports
 
