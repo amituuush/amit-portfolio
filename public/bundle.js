@@ -22143,7 +22143,7 @@
 	                _react2.default.createElement(
 	                    'h2',
 	                    null,
-	                    'Banker turned frontend developer located in LA. Recent ',
+	                    'Banker turned front end developer located in LA. Recent ',
 	                    _react2.default.createElement(
 	                        'a',
 	                        { href: 'https://www.thinkful.com/', target: '_blank' },
