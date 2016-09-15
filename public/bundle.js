@@ -21862,19 +21862,19 @@
 
 	var _Projects2 = _interopRequireDefault(_Projects);
 
-	var _AboutMe = __webpack_require__(194);
+	var _AboutMe = __webpack_require__(191);
 
 	var _AboutMe2 = _interopRequireDefault(_AboutMe);
 
-	var _Footer = __webpack_require__(197);
+	var _Footer = __webpack_require__(194);
 
 	var _Footer2 = _interopRequireDefault(_Footer);
 
-	var _AboutSite = __webpack_require__(200);
+	var _AboutSite = __webpack_require__(197);
 
 	var _AboutSite2 = _interopRequireDefault(_AboutSite);
 
-	var _Contact = __webpack_require__(203);
+	var _Contact = __webpack_require__(200);
 
 	var _Contact2 = _interopRequireDefault(_Contact);
 
@@ -22241,12 +22241,12 @@
 	                            _react2.default.createElement(
 	                                'h3',
 	                                null,
-	                                'GoMocha'
+	                                'GoMocha Consumer'
 	                            ),
 	                            _react2.default.createElement(
 	                                'p',
 	                                null,
-	                                'GoMocha is a geolocation food and drink ordering application that calculates how long it will take the customer to arrive at the coffee shop for seamless mobile and web ordering. The idea is the order will be ready as soon as the customer arrives. GoMocha is like my child.'
+	                                'GoMocha Consumer is a geolocation food and drink ordering application that calculates how long it will take the customer to arrive at the coffee shop for seamless mobile and web ordering. The idea is the order will be ready as soon as the customer arrives. GoMocha is like my child.'
 	                            ),
 	                            _react2.default.createElement(
 	                                'p',
@@ -22275,6 +22275,39 @@
 	                                    null,
 	                                    'Repo'
 	                                )
+	                            )
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'projects-item' },
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'projects-item-image' },
+	                            _react2.default.createElement('img', { src: 'img/gomocha-ba.png' })
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'projects-item-content item-content-gomocha' },
+	                            _react2.default.createElement(
+	                                'h3',
+	                                null,
+	                                'GoMocha Business Admin (WIP)'
+	                            ),
+	                            _react2.default.createElement(
+	                                'p',
+	                                null,
+	                                'GoMocha Business Admin is the other component that receives the orders placed on GoMocha Consumer. This would be the coffee shop interface in a real world setting. GoMocha as a whole is a monolithic app. Therefore, the consumer and business admin interfaces both have their own front ends and share the same backend and database.'
+	                            ),
+	                            _react2.default.createElement(
+	                                'p',
+	                                null,
+	                                _react2.default.createElement(
+	                                    'span',
+	                                    null,
+	                                    'Technologies:'
+	                                ),
+	                                ' React, Node.js, Express, MongoDB, Mongoose, Google Maps API, Heroku, Travis CI, Webpack, SASS'
 	                            )
 	                        )
 	                    ),
@@ -22349,7 +22382,7 @@
 	                            _react2.default.createElement(
 	                                'p',
 	                                null,
-	                                'This is a to do list application I built when I was harnessing my React skills. My mom uses it sometimes!'
+	                                'This is a to do list application I built in React using Redux. My mom uses it sometimes!'
 	                            ),
 	                            _react2.default.createElement(
 	                                'p',
@@ -22425,16 +22458,13 @@
 
 
 	// module
-	exports.push([module.id, ".projects-wrap {\n  background: #F7F7F7;\n  width: 100%; }\n\n.projects-section {\n  background: #F7F7F7;\n  height: 100%;\n  max-width: 960px;\n  margin-left: auto;\n  margin-right: auto;\n  padding: 2em 2em 2em 2em; }\n  .projects-section h2 {\n    color: #415161;\n    font-size: 1.75em; }\n  .projects-section .projects-title {\n    font-weight: 400;\n    font-size: 1.75em;\n    margin-top: 0em;\n    margin-bottom: 0em;\n    text-align: left;\n    color: #415161; }\n  .projects-section .projects-container {\n    padding: 0;\n    margin: 0;\n    list-style: none; }\n    .projects-section .projects-container .projects-item {\n      display: block;\n      padding-top: 2em;\n      padding-bottom: 4em;\n      color: white;\n      font-weight: bold;\n      text-align: center;\n      border-bottom: 1px solid #C1C1C1; }\n      .projects-section .projects-container .projects-item .projects-item-image {\n        display: inline-block;\n        width: 100%;\n        text-align: center; }\n        .projects-section .projects-container .projects-item .projects-item-image img {\n          width: 100%;\n          display: inline-block; }\n      .projects-section .projects-container .projects-item .projects-item-content {\n        display: inline-block;\n        width: 100%;\n        padding-top: 1em; }\n        .projects-section .projects-container .projects-item .projects-item-content h3, .projects-section .projects-container .projects-item .projects-item-content p {\n          color: #415161;\n          text-align: center; }\n        .projects-section .projects-container .projects-item .projects-item-content span {\n          text-transform: uppercase;\n          font-size: 0.9em;\n          font-weight: 600; }\n        .projects-section .projects-container .projects-item .projects-item-content h3 {\n          font-weight: 400;\n          font-size: 1.75em;\n          margin-top: 0.5em;\n          margin-bottom: 0em; }\n        .projects-section .projects-container .projects-item .projects-item-content p {\n          font-weight: 400;\n          font-size: 1.2em;\n          width: 100%;\n          margin: 0.5em auto 1em auto; }\n        .projects-section .projects-container .projects-item .projects-item-content button {\n          background: #415161;\n          border: none;\n          font-weight: 400;\n          padding: 0.5em 1em;\n          border-radius: 3px;\n          margin-right: 0.75em;\n          color: #fff; }\n          .projects-section .projects-container .projects-item .projects-item-content button:hover {\n            background: #4b5e70;\n            color: #fff;\n            cursor: pointer; }\n          .projects-section .projects-container .projects-item .projects-item-content button:focus {\n            outline: none; }\n      .projects-section .projects-container .projects-item:nth-child(2) {\n        padding-bottom: 4em; }\n      .projects-section .projects-container .projects-item:nth-child(3) {\n        padding-top: 4em;\n        border-bottom: none; }\n\n@media only screen and (min-width: 570px) {\n  .projects-section .projects-container .projects-item img {\n    max-width: 400px; } }\n\n@media only screen and (min-width: 900px) {\n  .projects-section .projects-container .projects-item .projects-item-content, .projects-section .projects-container .projects-item .projects-item-image {\n    width: 50%; }\n  .projects-section .projects-container .projects-item .item-content-gomocha {\n    position: relative;\n    top: -1em; }\n  .projects-section .projects-container .projects-item .item-content-bird-strike {\n    position: relative;\n    top: -4em; }\n  .projects-section .projects-container .projects-item .item-content-todo-list {\n    position: relative;\n    top: -6em; } }\n", ""]);
+	exports.push([module.id, ".projects-wrap {\n  background: #F7F7F7;\n  width: 100%; }\n\n.projects-section {\n  background: #F7F7F7;\n  height: 100%;\n  max-width: 960px;\n  margin-left: auto;\n  margin-right: auto;\n  padding: 2em 2em 2em 2em; }\n  .projects-section h2 {\n    color: #415161;\n    font-size: 1.75em; }\n  .projects-section .projects-title {\n    font-weight: 400;\n    font-size: 1.75em;\n    margin-top: 0em;\n    margin-bottom: 0em;\n    text-align: left;\n    color: #415161; }\n  .projects-section .projects-container {\n    padding: 0;\n    margin: 0;\n    list-style: none; }\n    .projects-section .projects-container .projects-item {\n      display: block;\n      padding-top: 2em;\n      padding-bottom: 4em;\n      color: white;\n      font-weight: bold;\n      text-align: center;\n      border-bottom: 1px solid #C1C1C1; }\n      .projects-section .projects-container .projects-item .projects-item-image {\n        display: inline-block;\n        width: 100%;\n        text-align: center; }\n        .projects-section .projects-container .projects-item .projects-item-image img {\n          width: 100%;\n          display: inline-block; }\n      .projects-section .projects-container .projects-item .projects-item-content {\n        display: inline-block;\n        width: 100%;\n        padding-top: 1em; }\n        .projects-section .projects-container .projects-item .projects-item-content h3, .projects-section .projects-container .projects-item .projects-item-content p {\n          color: #415161;\n          text-align: center; }\n        .projects-section .projects-container .projects-item .projects-item-content span {\n          text-transform: uppercase;\n          font-size: 0.9em;\n          font-weight: 600; }\n        .projects-section .projects-container .projects-item .projects-item-content h3 {\n          font-weight: 400;\n          font-size: 1.75em;\n          margin-top: 0.5em;\n          margin-bottom: 0em; }\n        .projects-section .projects-container .projects-item .projects-item-content p {\n          font-weight: 400;\n          font-size: 1.2em;\n          width: 100%;\n          margin: 0.5em auto 1em auto; }\n        .projects-section .projects-container .projects-item .projects-item-content button {\n          background: #415161;\n          border: none;\n          font-weight: 400;\n          padding: 0.5em 1em;\n          border-radius: 3px;\n          margin-right: 0.75em;\n          color: #fff; }\n          .projects-section .projects-container .projects-item .projects-item-content button:hover {\n            background: #4b5e70;\n            color: #fff;\n            cursor: pointer; }\n          .projects-section .projects-container .projects-item .projects-item-content button:focus {\n            outline: none; }\n      .projects-section .projects-container .projects-item:nth-child(2) {\n        padding-bottom: 4em; }\n      .projects-section .projects-container .projects-item:nth-child(3) {\n        padding-top: 4em; }\n      .projects-section .projects-container .projects-item:nth-child(4) {\n        padding-top: 4em;\n        border-bottom: none; }\n\n@media only screen and (min-width: 570px) {\n  .projects-section .projects-container .projects-item img {\n    max-width: 400px; } }\n\n@media only screen and (min-width: 900px) {\n  .projects-section .projects-container .projects-item .projects-item-content, .projects-section .projects-container .projects-item .projects-item-image {\n    width: 50%; }\n  .projects-section .projects-container .projects-item .item-content-gomocha {\n    position: relative;\n    top: -1em; }\n  .projects-section .projects-container .projects-item .item-content-bird-strike {\n    position: relative;\n    top: -4em; }\n  .projects-section .projects-container .projects-item .item-content-todo-list {\n    position: relative;\n    top: -6em; } }\n", ""]);
 
 	// exports
 
 
 /***/ },
-/* 191 */,
-/* 192 */,
-/* 193 */,
-/* 194 */
+/* 191 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22443,7 +22473,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _aboutMe = __webpack_require__(195);
+	var _aboutMe = __webpack_require__(192);
 
 	var _aboutMe2 = _interopRequireDefault(_aboutMe);
 
@@ -22473,18 +22503,18 @@
 	                        _react2.default.createElement(
 	                            'p',
 	                            null,
-	                            'I graduated from UC Davis with a bachelor\'s in Economics, and proceeded to work in commercial banking. I soon realized I needed more creativity in my work. I picked up coding, and immediately knew it was for me. I love the way it allows me to organize complex information in my head, and I love the logical puzzle challenges it provides.'
-	                        ),
-	                        _react2.default.createElement(
-	                            'p',
-	                            null,
-	                            'I recently graduated from ',
+	                            'I graduated from UC Davis with a bachelor\'s in Economics, and proceeded to work in commercial banking. I soon realized I needed more creativity in my work. I picked up coding and graduated from ',
 	                            _react2.default.createElement(
 	                                'a',
 	                                { href: 'https://www.thinkful.com/', target: '_blank' },
 	                                'Thinkful'
 	                            ),
-	                            '\'s coding bootcamp and am looking to join a fun and passionate company. I enjoy using my development experience to help companies solve business problems. I also have design experience, which you can check out ',
+	                            '\'s coding bootcamp. I love the way it allows me to organize complex information in my head, and I love the logical puzzle challenges it provides. More recently, I\'ve been working on a coffee and food ordering application that tells the coffee shop the arrival time of the user using geolocation.'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            'I\'m currently looking to join a fun and passionate company. I enjoy using my development experience to help companies solve business problems. I also have design experience, which you can check out ',
 	                            _react2.default.createElement(
 	                                'a',
 	                                { href: 'https://www.behance.net/rananamit20cb', target: '_blank' },
@@ -22513,13 +22543,13 @@
 	module.exports = AboutMe;
 
 /***/ },
-/* 195 */
+/* 192 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(196);
+	var content = __webpack_require__(193);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(4)(content, {});
@@ -22539,7 +22569,7 @@
 	}
 
 /***/ },
-/* 196 */
+/* 193 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(3)();
@@ -22553,7 +22583,7 @@
 
 
 /***/ },
-/* 197 */
+/* 194 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22562,7 +22592,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _footer = __webpack_require__(198);
+	var _footer = __webpack_require__(195);
 
 	var _footer2 = _interopRequireDefault(_footer);
 
@@ -22600,13 +22630,13 @@
 	module.exports = Footer;
 
 /***/ },
-/* 198 */
+/* 195 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(199);
+	var content = __webpack_require__(196);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(4)(content, {});
@@ -22626,7 +22656,7 @@
 	}
 
 /***/ },
-/* 199 */
+/* 196 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(3)();
@@ -22640,7 +22670,7 @@
 
 
 /***/ },
-/* 200 */
+/* 197 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22649,7 +22679,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _aboutSite = __webpack_require__(201);
+	var _aboutSite = __webpack_require__(198);
 
 	var _aboutSite2 = _interopRequireDefault(_aboutSite);
 
@@ -22714,13 +22744,13 @@
 	module.exports = AboutSite;
 
 /***/ },
-/* 201 */
+/* 198 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(202);
+	var content = __webpack_require__(199);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(4)(content, {});
@@ -22740,7 +22770,7 @@
 	}
 
 /***/ },
-/* 202 */
+/* 199 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(3)();
@@ -22754,7 +22784,7 @@
 
 
 /***/ },
-/* 203 */
+/* 200 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22763,7 +22793,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _contact = __webpack_require__(204);
+	var _contact = __webpack_require__(201);
 
 	var _contact2 = _interopRequireDefault(_contact);
 
@@ -22852,13 +22882,13 @@
 	module.exports = Contact;
 
 /***/ },
-/* 204 */
+/* 201 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(205);
+	var content = __webpack_require__(202);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(4)(content, {});
@@ -22878,7 +22908,7 @@
 	}
 
 /***/ },
-/* 205 */
+/* 202 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(3)();
