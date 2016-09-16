@@ -14,7 +14,7 @@ var Projects = React.createClass({
                         </div>
                         <div className="projects-item-content item-content-gomocha">
                             <h3>GoMocha Consumer</h3>
-                            <p>GoMocha Consumer is a geolocation food and drink ordering application that calculates how long it will take the customer to arrive at the coffee shop for seamless mobile and web ordering. The idea is the order will be ready as soon as the customer arrives. GoMocha is like my child.</p>
+                            <p>GoMocha Consumer is a geolocation food and drink ordering application that tells the coffee shop exactly when their customer is going to arrive so their drink is hot and ready on arrival. It does this using the Google Maps API to calculate the time it will take the customer to arrive based on their selected method of transportation. GoMocha is like my child.</p>
                             <p><span>Technologies:</span> React, Node.js, Express, MongoDB, Mongoose, Google Maps API, Heroku, Travis CI, Webpack, SASS</p>
                             <a href="https://gomocha.herokuapp.com/" target="_blank"><button>Demo</button></a>
                             <a href="https://github.com/amituuush/gomocha" target="_blank"><button>Repo</button></a>
@@ -26,7 +26,7 @@ var Projects = React.createClass({
                         </div>
                         <div className="projects-item-content item-content-gomocha">
                             <h3>GoMocha Business Admin (WIP)</h3>
-                            <p>GoMocha Business Admin is the other component that receives the orders placed on GoMocha Consumer. This would be the coffee shop interface in a real world setting. GoMocha as a whole is a monolithic app. Therefore, the consumer and business admin interfaces both have their own front ends and share the same backend and database.</p>
+                            <p>GoMocha Business Admin is the other component that receives the orders placed on GoMocha Consumer. This would be the coffee shop interface in a real world setting. GoMocha as a whole is a monolithic app. The consumer and business admin apps both have their own front ends and share the same back end and database.</p>
                             <p><span>Technologies:</span> React, Node.js, Express, MongoDB, Mongoose, Google Maps API, Heroku, Travis CI, Webpack, SASS</p>
                         </div>
                     </div>
