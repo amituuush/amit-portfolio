@@ -14,7 +14,7 @@ var Projects = React.createClass({
                         </div>
                         <div className="projects-item-content item-content-gomocha">
                             <h3>GoMocha Consumer</h3>
-                            <p>GoMocha Consumer is a geolocation food and drink ordering application that tells the coffee shop exactly when their customer is going to arrive so their drink is hot and ready on arrival. It does this using the Google Maps API to calculate the time it will take the customer to arrive based on their selected method of transportation. GoMocha is like my child.</p>
+                            <p>GoMocha Consumer is a geolocation food and drink ordering application that tells the coffee shop exactly when their customer is going to arrive so their drink is hot and ready on arrival. It does this using the Google Places API Web Service and the Google Maps Distance Matrix API to calculate the time it will take the customer to arrive based on their selected method of transportation. GoMocha is like my child.</p>
                             <p><span>Technologies:</span> React, Node.js, Express, MongoDB, Mongoose, Google Maps API, Heroku, Travis CI, Webpack, SASS</p>
                             <a href="https://gomocha.herokuapp.com/" target="_blank"><button>Demo</button></a>
                             <a href="https://github.com/amituuush/gomocha" target="_blank"><button>Repo</button></a>
