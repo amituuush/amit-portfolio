@@ -5,10 +5,8 @@ var Contact = React.createClass({
     render: function() {
         return (
             <section className="contact-section">
-                <h3></h3>
                 <div className="contact-container">
                     <p>Feel free to email me at:</p>
-                    <div className="vertical-divider"></div>
                     <div className="contact-item">
                         <a href="mailto: ranan.amit@gmail.com" className="contact-email">ranan.amit@gmail.com</a>
                     </div>

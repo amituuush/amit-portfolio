@@ -9,7 +9,7 @@ var AboutSite = React.createClass({
                 <h3>About This Site</h3>
                 <ul className="about-site-container">
                     <li className="about-site-item">
-                        <h3>This responsive site has been designed, developed, and maintained by me. It's built in <span className="about-site-highlight">React</span> using <span className="about-site-highlight">Sass</span> as a CSS extension language, and <span className="about-site-highlight">Webpack</span> as a module bundler.
+                        <h3 id="about-site-content">This responsive site has been designed, developed, and maintained by me. It's built in <span className="about-site-highlight">React</span> using <span className="about-site-highlight">Sass</span> as a CSS extension language, and <span className="about-site-highlight">Webpack</span> as a module bundler.
                         </h3>
                     </li>
                 </ul>
