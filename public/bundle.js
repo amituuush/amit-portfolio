@@ -22377,12 +22377,12 @@
 	                            _react2.default.createElement(
 	                                'h3',
 	                                null,
-	                                'My To Do List'
+	                                'Lyst'
 	                            ),
 	                            _react2.default.createElement(
 	                                'p',
 	                                null,
-	                                'This is a to do list application I built in React using Redux. I\'m currently in the process of adding a backend in Node.js, database using MongoDB and Mongoose, and user authentication using Passport.'
+	                                'Lyst is a to do list application I built in React and Redux. I\'m currently in the process of adding a backend in Node.js, database using MongoDB and Mongoose, and user authentication using Passport.'
 	                            ),
 	                            _react2.default.createElement(
 	                                'p',
@@ -22396,7 +22396,7 @@
 	                            ),
 	                            _react2.default.createElement(
 	                                'a',
-	                                { href: 'http://amituuush.github.io/todo-list/public/', target: '_blank' },
+	                                { href: 'http://amituuush.github.io/lyst/public/', target: '_blank' },
 	                                _react2.default.createElement(
 	                                    'button',
 	                                    null,
@@ -22406,7 +22406,7 @@
 	                            _react2.default.createElement('a', { name: 'about-me' }),
 	                            _react2.default.createElement(
 	                                'a',
-	                                { href: 'https://github.com/amituuush/todo-list', target: '_blank' },
+	                                { href: 'https://github.com/amituuush/lyst', target: '_blank' },
 	                                _react2.default.createElement(
 	                                    'button',
 	                                    null,

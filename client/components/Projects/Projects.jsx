@@ -50,12 +50,12 @@ var Projects = React.createClass({
                             <img src="img/todo-list.png" />
                         </div>
                         <div className="projects-item-content item-content-todo-list">
-                            <h3>My To Do List</h3>
-                            <p>This is a to do list application I built in React using Redux. I'm currently in the process of adding a backend in Node.js, database using MongoDB and Mongoose, and user authentication using Passport.</p>
+                            <h3>Lyst</h3>
+                            <p>Lyst is a to do list application I built in React and Redux. I'm currently in the process of adding a backend in Node.js, database using MongoDB and Mongoose, and user authentication using Passport.</p>
                             <p><span>Technologies: </span>React, Redux, Node.js, Express, MongoDB, Mongoose, Passport, Travis CI, LESS</p>
-                            <a href="http://amituuush.github.io/todo-list/public/" target="_blank"><button>Demo</button></a>
+                            <a href="http://amituuush.github.io/lyst/public/" target="_blank"><button>Demo</button></a>
                             <a name="about-me"></a>
-                            <a href="https://github.com/amituuush/todo-list" target="_blank"><button>Repo</button></a>
+                            <a href="https://github.com/amituuush/lyst" target="_blank"><button>Repo</button></a>
                         </div>
                     </div>
                 </div>
