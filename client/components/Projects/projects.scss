@@ -44,7 +44,7 @@ $secondary-color: #F7F7F7;
         .projects-item-image {
             display: inline-block;
             width: 100%;
-            text-align: left;
+            text-align: center;
 
             img {
                 width: 100%;
@@ -126,6 +126,7 @@ $secondary-color: #F7F7F7;
     .projects-section {
         .projects-container {
             .projects-item {
+
                 img {
                     max-width: 400px;
                 }
@@ -140,6 +141,10 @@ $secondary-color: #F7F7F7;
             .projects-item {
                 .projects-item-content, .projects-item-image {
                     width: 50%;
+                }
+
+                .projects-item-image {
+                    text-align: left;
                 }
 
                 .item-content-gomocha {

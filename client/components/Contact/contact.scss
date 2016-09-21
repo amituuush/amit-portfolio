@@ -44,7 +44,7 @@ $border-color: #BCBCBC;
         text-align: center;
 
         a {
-            color: lighten($primary-color, 10%);
+            color: #1FA975;
             font-weight: 400;
             font-size: 1.5em;
             margin-top: 1em;
@@ -52,7 +52,7 @@ $border-color: #BCBCBC;
             text-decoration: none;
 
             &:hover {
-                color: $primary-color;
+                color: darken(#1FA975, 5%);
                 text-decoration: underline;
             }
         }
