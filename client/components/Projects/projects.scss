@@ -12,7 +12,7 @@ $secondary-color: #F7F7F7;
     max-width: 960px;
     margin-left: auto;
     margin-right: auto;
-    padding: 2em 2em 2em 2em;
+    padding: 2em;
 
     h2 {
         color: $primary-color;
@@ -36,20 +36,21 @@ $secondary-color: #F7F7F7;
       .projects-item {
         display: block;
         padding-top: 2em;
-        padding-bottom: 4em;
+        padding-bottom: 8em;
         color: white;
         font-weight: bold;
-        text-align: center;
-        border-bottom: 1px solid #C1C1C1;
+        text-align: left;
 
         .projects-item-image {
             display: inline-block;
             width: 100%;
-            text-align: center;
+            text-align: left;
 
             img {
                 width: 100%;
                 display: inline-block;
+                border-radius: 15px;
+                box-shadow: 0 0 7px #9ea3a7;
             }
         }
 
@@ -60,20 +61,21 @@ $secondary-color: #F7F7F7;
 
             h3, p {
                 color: $primary-color;
-                text-align: center;
+                text-align: left;
             }
 
             span {
                 text-transform: uppercase;
                 font-size: 0.9em;
-                font-weight: 600;
+                font-weight: 700;
             }
 
             h3 {
                 font-weight: 400;
-                font-size: 1.75em;
+                font-size: 2em;
                 margin-top: 0.5em;
                 margin-bottom: 0em;
+                color: #1FA975;
             }
 
             p {
@@ -142,7 +144,12 @@ $secondary-color: #F7F7F7;
 
                 .item-content-gomocha {
                     position: relative;
-                    top: -1em;
+                    top: 1em;
+                }
+
+                .item-content-gomocha-ba {
+                    position: relative;
+                    top: -1.5em;
                 }
 
                 .item-content-bird-strike {

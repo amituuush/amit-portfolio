@@ -3,12 +3,13 @@ $background-color: #415161;
 
 .footer-section {
     background: $background-color;
-    padding: 1em 2em 2em 2em;
+    width: 100%;
 
     .footer-container {
-      padding: 0;
-      margin: 0;
+      padding: 2em;
+      margin: 0 auto;
       list-style: none;
+      max-width: 960px;
 
       .footer-item {
         padding: 5px;

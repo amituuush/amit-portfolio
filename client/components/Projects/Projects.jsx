@@ -24,7 +24,7 @@ var Projects = React.createClass({
                         <div className="projects-item-image">
                             <img src="img/gomocha-ba.png" />
                         </div>
-                        <div className="projects-item-content item-content-gomocha">
+                        <div className="projects-item-content item-content-gomocha-ba">
                             <h3>GoMocha Business Admin (WIP)</h3>
                             <p>GoMocha Business Admin is the other component that receives the orders placed on GoMocha Consumer. This would be the coffee shop interface in a real world setting. GoMocha as a whole is a monolithic app. The consumer and business admin apps both have their own front ends and share the same back end and database.</p>
                             <p><span>Technologies:</span> React, Node.js, Express, MongoDB, Mongoose, Google Maps API, Heroku, Travis CI, Webpack, SASS</p>
