@@ -22317,6 +22317,58 @@
 	                        _react2.default.createElement(
 	                            'div',
 	                            { className: 'projects-item-image' },
+	                            _react2.default.createElement('img', { src: 'img/todo-list.png' })
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'projects-item-content item-content-todo-list' },
+	                            _react2.default.createElement(
+	                                'h3',
+	                                null,
+	                                'Lyst'
+	                            ),
+	                            _react2.default.createElement(
+	                                'p',
+	                                null,
+	                                'Lyst is a to do list application I built in React and Redux. I\'m currently in the process of adding a backend in Node.js, database using MongoDB and Mongoose, and user authentication using Passport.'
+	                            ),
+	                            _react2.default.createElement(
+	                                'p',
+	                                null,
+	                                _react2.default.createElement(
+	                                    'span',
+	                                    null,
+	                                    'Technologies: '
+	                                ),
+	                                'React, Redux, Node.js, Express, MongoDB, Mongoose, Passport, Travis CI, LESS'
+	                            ),
+	                            _react2.default.createElement(
+	                                'a',
+	                                { href: 'https://lyst-app.herokuapp.com/', target: '_blank' },
+	                                _react2.default.createElement(
+	                                    'button',
+	                                    null,
+	                                    'Demo'
+	                                )
+	                            ),
+	                            _react2.default.createElement('a', { name: 'about-me' }),
+	                            _react2.default.createElement(
+	                                'a',
+	                                { href: 'https://github.com/amituuush/lyst', target: '_blank' },
+	                                _react2.default.createElement(
+	                                    'button',
+	                                    null,
+	                                    'Repo'
+	                                )
+	                            )
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'projects-item' },
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'projects-item-image' },
 	                            _react2.default.createElement('img', { src: 'img/bird-strike.jpg' })
 	                        ),
 	                        _react2.default.createElement(
@@ -22355,58 +22407,6 @@
 	                            _react2.default.createElement(
 	                                'a',
 	                                { href: 'https://github.com/amituuush/bird-strike', target: '_blank' },
-	                                _react2.default.createElement(
-	                                    'button',
-	                                    null,
-	                                    'Repo'
-	                                )
-	                            )
-	                        )
-	                    ),
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'projects-item' },
-	                        _react2.default.createElement(
-	                            'div',
-	                            { className: 'projects-item-image' },
-	                            _react2.default.createElement('img', { src: 'img/todo-list.png' })
-	                        ),
-	                        _react2.default.createElement(
-	                            'div',
-	                            { className: 'projects-item-content item-content-todo-list' },
-	                            _react2.default.createElement(
-	                                'h3',
-	                                null,
-	                                'Lyst'
-	                            ),
-	                            _react2.default.createElement(
-	                                'p',
-	                                null,
-	                                'Lyst is a to do list application I built in React and Redux. I\'m currently in the process of adding a backend in Node.js, database using MongoDB and Mongoose, and user authentication using Passport.'
-	                            ),
-	                            _react2.default.createElement(
-	                                'p',
-	                                null,
-	                                _react2.default.createElement(
-	                                    'span',
-	                                    null,
-	                                    'Technologies: '
-	                                ),
-	                                'React, Redux, Node.js, Express, MongoDB, Mongoose, Passport, Travis CI, LESS'
-	                            ),
-	                            _react2.default.createElement(
-	                                'a',
-	                                { href: 'http://amituuush.github.io/lyst/public/', target: '_blank' },
-	                                _react2.default.createElement(
-	                                    'button',
-	                                    null,
-	                                    'Demo'
-	                                )
-	                            ),
-	                            _react2.default.createElement('a', { name: 'about-me' }),
-	                            _react2.default.createElement(
-	                                'a',
-	                                { href: 'https://github.com/amituuush/lyst', target: '_blank' },
 	                                _react2.default.createElement(
 	                                    'button',
 	                                    null,
