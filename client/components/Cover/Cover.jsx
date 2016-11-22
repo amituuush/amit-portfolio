@@ -12,7 +12,7 @@ var Cover = React.createClass({
                 <div className="cover-right">
                     <h1>Hi, I'm Amit.</h1>
                     <a name="portfolio"></a>
-                    <h2>Banker turned front end developer located in Los Angeles. B.A. in economics from UC Davis. <a href="http://500.co/" target="_blank">500 Startups</a> Batch 13.</h2>
+                    <h2>Banker turned front end developer moving to SF. B.A. in economics from UC Davis. <a href="http://500.co/" target="_blank">500 Startups</a> Batch 13.</h2>
                 </div>
             </section>
         )

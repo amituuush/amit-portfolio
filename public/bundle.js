@@ -22132,7 +22132,7 @@
 	                _react2.default.createElement(
 	                    'h2',
 	                    null,
-	                    'Banker turned front end developer located in Los Angeles. B.A. in economics from UC Davis. ',
+	                    'Banker turned front end developer moving to SF. B.A. in economics from UC Davis. ',
 	                    _react2.default.createElement(
 	                        'a',
 	                        { href: 'http://500.co/', target: '_blank' },
