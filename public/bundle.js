@@ -22132,13 +22132,7 @@
 	                _react2.default.createElement(
 	                    'h2',
 	                    null,
-	                    'Banker turned front end developer located in LA. ',
-	                    _react2.default.createElement(
-	                        'a',
-	                        { href: 'https://www.thinkful.com/', target: '_blank' },
-	                        'Thinkful'
-	                    ),
-	                    ' coding bootcamp grad. B.A. in economics from UC Davis. ',
+	                    'Banker turned front end developer located in Los Angeles. B.A. in economics from UC Davis. ',
 	                    _react2.default.createElement(
 	                        'a',
 	                        { href: 'http://500.co/', target: '_blank' },
