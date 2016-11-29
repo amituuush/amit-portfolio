@@ -22369,7 +22369,6 @@
 	                                    'Demo'
 	                                )
 	                            ),
-	                            _react2.default.createElement('a', { name: 'about-me' }),
 	                            _react2.default.createElement(
 	                                'a',
 	                                { href: 'https://github.com/amituuush/lyst', target: '_blank' },
@@ -22423,7 +22422,7 @@
 	                            )
 	                        )
 	                    ),
-	                    _react2.default.createElement('a', { name: 'technical-expertise' })
+	                    _react2.default.createElement('a', { name: 'about-me' })
 	                )
 	            )
 	        );

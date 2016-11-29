@@ -41,7 +41,6 @@ var Projects = React.createClass({
                         <p>Lyst is a multiple to do list application with priority, due date, and filter settings. The front end is built in React and Redux, and uses LESS as a css pre-processor. The back end is build in Node, Express, and Mongoose, and uses a MongoDB database. Authentication middleware is handled with Passport.</p>
                     <p><span>Technologies: </span>React, Redux, Node.js, Express, MongoDB, Mongoose, Passport, Heroku, Travis CI, LESS</p>
                             <a href="https://lyst-app.herokuapp.com/" target="_blank"><button>Demo</button></a>
-                            <a name="about-me"></a>
                             <a href="https://github.com/amituuush/lyst" target="_blank"><button>Repo</button></a>
                         </div>
                     </div>
@@ -73,9 +72,10 @@ var Projects = React.createClass({
 
                         </div>
                     </div> */}
-                    <a name="technical-expertise"></a>
+                    <a name="about-me"></a>
                 </div>
             </section>
+                {/* <a name="technical-expertise"></a> */}
         </div>
         )
     }
