@@ -22412,7 +22412,6 @@
 	                                ),
 	                                'JavaScript, React, Redux, Webpack, Bootstrap'
 	                            ),
-	                            _react2.default.createElement('a', { name: 'technical-expertise' }),
 	                            _react2.default.createElement(
 	                                'a',
 	                                { href: 'https://github.com/amituuush/whether', target: '_blank' },
@@ -22423,7 +22422,8 @@
 	                                )
 	                            )
 	                        )
-	                    )
+	                    ),
+	                    _react2.default.createElement('a', { name: 'technical-expertise' })
 	                )
 	            )
 	        );

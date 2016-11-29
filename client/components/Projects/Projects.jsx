@@ -55,7 +55,6 @@ var Projects = React.createClass({
                             </p>
                             <p><span>Technologies: </span>JavaScript, React, Redux, Webpack, Bootstrap</p>
                             {/* <a href="http://amituuush.github.io/bird-strike/" target="_blank"><button>Demo</button></a> */}
-                            <a name="technical-expertise"></a>
                             <a href="https://github.com/amituuush/whether" target="_blank"><button>Repo</button></a>
                         </div>
                     </div>
@@ -74,7 +73,7 @@ var Projects = React.createClass({
 
                         </div>
                     </div> */}
-
+                    <a name="technical-expertise"></a>
                 </div>
             </section>
         </div>
