@@ -42,15 +42,26 @@ $link-hover-color: #415161;
             text-align: left;
         }
 
+        h4 {
+            font-weight: 400;
+            font-size: 1.4em;
+            margin-top: 0em;
+            margin-bottom: 0em;
+            text-align: left;
+        }
+
         p {
             font-weight: 400;
             font-size: 1.2em;
             text-align: left;
             color: #626262;
+            margin-top: 0.5em;
         }
 
         img {
             max-width: 100%;
+            float: none;
+            padding: 1em 0em 1em 1em;
         }
 
         a {
@@ -83,12 +94,24 @@ $link-hover-color: #415161;
     }
 }
 
+@media only screen and (min-width: 720px) {
+    .about-me-section {
+        .about-me-container {
+            .about-me-item {
+                img {
+                    float: right;
+                }
+            }
+        }
+    }
+}
+
 @media only screen and (min-width: 960px) {
     .about-me-section {
         .about-me-container {
             .about-me-item {
                 display: inline-block;
-                width: 45%;
+                width: 75%;
 
                 &:nth-child(2) {
                     position: relative;

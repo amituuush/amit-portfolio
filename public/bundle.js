@@ -22132,7 +22132,13 @@
 	                _react2.default.createElement(
 	                    'h2',
 	                    null,
-	                    'Banker turned front end developer moving to SF. B.A. in economics from UC Davis. ',
+	                    'Front end ',
+	                    _react2.default.createElement(
+	                        'span',
+	                        null,
+	                        'React/Redux'
+	                    ),
+	                    ' developer with 2 years of UI/UX development experience. B.A. in Economics from UC Davis. ',
 	                    _react2.default.createElement(
 	                        'a',
 	                        { href: 'http://500.co/', target: '_blank' },
@@ -22182,7 +22188,7 @@
 
 
 	// module
-	exports.push([module.id, ".cover-section {\n  width: 90%;\n  text-align: center;\n  margin: 0 auto; }\n  .cover-section .cover-left, .cover-section .cover-right {\n    display: block;\n    text-align: center;\n    padding: 8em 0em 2em 0em; }\n  .cover-section .cover-right {\n    display: block;\n    text-align: center;\n    padding: 0em 0em 2em 0em; }\n  .cover-section .cover-right h1, .cover-section .cover-right h2 {\n    color: #415161;\n    font-weight: 500; }\n  .cover-section .cover-right h1 {\n    font-size: 2.5em;\n    margin-top: 0em;\n    margin-bottom: 0em;\n    color: #1FA975; }\n  .cover-section .cover-right h2 {\n    font-size: 1.5em;\n    margin-top: 0.5em; }\n  .cover-section .cover-right a {\n    color: #586D82; }\n    .cover-section .cover-right a:hover {\n      color: #415161; }\n\n@media only screen and (min-width: 700px) {\n  .cover-section .cover-right {\n    width: 35em;\n    margin: 0 auto; } }\n\n@media only screen and (min-width: 1000px) {\n  .cover-section .cover-left, .cover-section .cover-right {\n    display: inline-block; }\n  .cover-section .cover-right {\n    padding-left: 4em;\n    position: relative;\n    top: -3.5em; } }\n", ""]);
+	exports.push([module.id, ".cover-section {\n  width: 90%;\n  text-align: center;\n  margin: 0 auto; }\n  .cover-section .cover-left, .cover-section .cover-right {\n    display: block;\n    text-align: center;\n    padding: 8em 0em 2em 0em; }\n  .cover-section .cover-right {\n    display: block;\n    text-align: center;\n    padding: 0em 0em 2em 0em; }\n  .cover-section .cover-right h1, .cover-section .cover-right h2 {\n    color: #415161;\n    font-weight: 500; }\n  .cover-section .cover-right h1 {\n    font-size: 2.5em;\n    margin-top: 0em;\n    margin-bottom: 0em;\n    color: #1FA975; }\n  .cover-section .cover-right h2 {\n    font-size: 1.5em;\n    margin-top: 0.5em; }\n    .cover-section .cover-right h2 span {\n      color: #1FA975; }\n  .cover-section .cover-right a {\n    color: #586D82; }\n    .cover-section .cover-right a:hover {\n      color: #415161; }\n\n@media only screen and (min-width: 700px) {\n  .cover-section .cover-right {\n    width: 35em;\n    margin: 0 auto; } }\n\n@media only screen and (min-width: 1000px) {\n  .cover-section .cover-left, .cover-section .cover-right {\n    display: inline-block; }\n  .cover-section .cover-right {\n    padding-left: 4em;\n    position: relative;\n    top: -3.5em; } }\n", ""]);
 
 	// exports
 
@@ -22381,7 +22387,7 @@
 	                        _react2.default.createElement(
 	                            'div',
 	                            { className: 'projects-item-image' },
-	                            _react2.default.createElement('img', { src: 'img/bird-strike.jpg' })
+	                            _react2.default.createElement('img', { src: 'img/whether.png' })
 	                        ),
 	                        _react2.default.createElement(
 	                            'div',
@@ -22389,12 +22395,12 @@
 	                            _react2.default.createElement(
 	                                'h3',
 	                                null,
-	                                'Bird Strike'
+	                                'Whether'
 	                            ),
 	                            _react2.default.createElement(
 	                                'p',
 	                                null,
-	                                'Bird Strike is an online game I built on HTML Canvas. I don\'t see myself as a video game developer, but I definitely had a great time building this one.'
+	                                'Whether is a 5-day weather forecaster built in React/Redux. A user can search by city, and check the temperature, humidity, and pressure for the next 5 days. It uses the Google Maps and OpenWeatherMap API\'s.'
 	                            ),
 	                            _react2.default.createElement(
 	                                'p',
@@ -22404,21 +22410,12 @@
 	                                    null,
 	                                    'Technologies: '
 	                                ),
-	                                'JavaScript, HTML Canvas, Gulp, SASS'
-	                            ),
-	                            _react2.default.createElement(
-	                                'a',
-	                                { href: 'http://amituuush.github.io/bird-strike/', target: '_blank' },
-	                                _react2.default.createElement(
-	                                    'button',
-	                                    null,
-	                                    'Demo'
-	                                )
+	                                'JavaScript, React, Redux, Webpack, Bootstrap'
 	                            ),
 	                            _react2.default.createElement('a', { name: 'technical-expertise' }),
 	                            _react2.default.createElement(
 	                                'a',
-	                                { href: 'https://github.com/amituuush/bird-strike', target: '_blank' },
+	                                { href: 'https://github.com/amituuush/whether', target: '_blank' },
 	                                _react2.default.createElement(
 	                                    'button',
 	                                    null,
@@ -22512,38 +22509,66 @@
 	                            null,
 	                            'About Me'
 	                        ),
+	                        _react2.default.createElement('img', { src: 'img/amit-canyoning.jpg' }),
 	                        _react2.default.createElement(
 	                            'p',
 	                            null,
-	                            'I graduated from UC Davis with a bachelor\'s in Economics, and proceeded to work in commercial banking. I soon realized I needed more creativity in my work. I picked up coding and graduated from ',
-	                            _react2.default.createElement(
-	                                'a',
-	                                { href: 'https://www.thinkful.com/', target: '_blank' },
-	                                'Thinkful'
-	                            ),
-	                            '\'s coding bootcamp. I love the way it allows me to organize complex information in my head, and I love the logical puzzle challenges it provides. More recently, I\'ve been working on a coffee and food ordering application that tells the coffee shop the arrival time of the user using geolocation.'
+	                            'I\'m a front end React/Redux developer skilled in developing responsive and functional SPA\'s while finding solutions to front end problems. I have 2 years of UI/UX development experience at startups, one of which was in the startup accelerator, 500 Startups. I\'m passionate about the constantly evolving world of tech, and I love working on personal projects and learning new technologies in order to build beautiful and intuitive user experiences.'
 	                        ),
 	                        _react2.default.createElement(
 	                            'p',
 	                            null,
-	                            'I\'m currently looking to join a fun and passionate company. I enjoy using my development experience to help companies solve business problems. I also have design experience, which you can check out ',
-	                            _react2.default.createElement(
-	                                'a',
-	                                { href: 'https://www.behance.net/rananamit20cb', target: '_blank' },
-	                                'here'
-	                            ),
-	                            '.'
+	                            'Before coding, I worked in economic analyses at the U.S. Department of Labor and in commercial banking. I believe my blend of business/marketing and development skills make me a unique developer, and allow me to translate a company\'s strategic goals into functional design.'
+	                        ),
+	                        _react2.default.createElement('br', null),
+	                        _react2.default.createElement(
+	                            'h4',
+	                            null,
+	                            'What I’ve worked on'
 	                        ),
 	                        _react2.default.createElement(
 	                            'p',
 	                            null,
-	                            'I love anything that has to do with the NBA, being outdoors, playing guitar, and my mom\'s vegan cooking. If you think we\'d be a good fit, see my contact information below!'
+	                            'I\'ve built several full-stack single page web applications in React and Redux (see portfolio section for more detail).'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            'I\'ve designed and developed countless responsive and mobile first interfaces for a team gaming platform application and an app that got people out of their cell phone contracts without paying early termination fees (while working at Isometry Labs and CellBreaker).'
+	                        ),
+	                        _react2.default.createElement('br', null),
+	                        _react2.default.createElement(
+	                            'h4',
+	                            null,
+	                            'Side Projects'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            'I\'m currently working on a pair programming matching application with a team of 5 developers. The app matches developers using an algorithm based on their indicated preferences so they can pair program together.'
+	                        ),
+	                        _react2.default.createElement('br', null),
+	                        _react2.default.createElement(
+	                            'h4',
+	                            null,
+	                            'What I\'m really good at'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            'I\'m really good at translating a company\'s goals and vision into functional design.'
+	                        ),
+	                        _react2.default.createElement('br', null),
+	                        _react2.default.createElement(
+	                            'h4',
+	                            null,
+	                            'What I’m looking to do next'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            'I\'m currently working as a freelance front end React developer for an ecommerce marketing company, which ends in January, and am looking to join a passionate and mission driven company while working in React/Redux.'
 	                        )
-	                    ),
-	                    _react2.default.createElement(
-	                        'li',
-	                        { className: 'about-me-item' },
-	                        _react2.default.createElement('img', { src: 'img/amit-canyoning.jpg' })
 	                    ),
 	                    _react2.default.createElement('a', { name: 'contact' })
 	                )
@@ -22589,7 +22614,7 @@
 
 
 	// module
-	exports.push([module.id, ".about-me-wrap {\n  width: 100%;\n  background: #fff; }\n\n.about-me-section {\n  background: #fff;\n  height: 100%;\n  max-width: 1024px;\n  margin-left: auto;\n  margin-right: auto;\n  padding: 2em 2em 4em 2em; }\n  .about-me-section .about-me-container {\n    padding: 0;\n    margin: 0;\n    list-style: none; }\n    .about-me-section .about-me-container .about-me-item {\n      padding: 5px;\n      margin-top: 1em;\n      color: #415161;\n      font-weight: bold;\n      text-align: center; }\n      .about-me-section .about-me-container .about-me-item h3, .about-me-section .about-me-container .about-me-item p {\n        color: #415161; }\n      .about-me-section .about-me-container .about-me-item h3 {\n        font-weight: 400;\n        font-size: 1.75em;\n        margin-top: 0em;\n        margin-bottom: 0em;\n        text-align: left; }\n      .about-me-section .about-me-container .about-me-item p {\n        font-weight: 400;\n        font-size: 1.2em;\n        text-align: left;\n        color: #626262; }\n      .about-me-section .about-me-container .about-me-item img {\n        max-width: 100%; }\n      .about-me-section .about-me-container .about-me-item a {\n        color: #1FA975; }\n        .about-me-section .about-me-container .about-me-item a:hover {\n          color: #25c78a; }\n      .about-me-section .about-me-container .about-me-item:nth-child(2) {\n        text-align: center;\n        position: relative;\n        padding-left: 2em; }\n\n@media only screen and (min-width: 570px) {\n  .about-me-section .about-me-container .about-me-item img {\n    max-width: 370px; } }\n\n@media only screen and (min-width: 960px) {\n  .about-me-section .about-me-container .about-me-item {\n    display: inline-block;\n    width: 45%; }\n    .about-me-section .about-me-container .about-me-item:nth-child(2) {\n      position: relative;\n      top: -3em; } }\n", ""]);
+	exports.push([module.id, ".about-me-wrap {\n  width: 100%;\n  background: #fff; }\n\n.about-me-section {\n  background: #fff;\n  height: 100%;\n  max-width: 1024px;\n  margin-left: auto;\n  margin-right: auto;\n  padding: 2em 2em 4em 2em; }\n  .about-me-section .about-me-container {\n    padding: 0;\n    margin: 0;\n    list-style: none; }\n    .about-me-section .about-me-container .about-me-item {\n      padding: 5px;\n      margin-top: 1em;\n      color: #415161;\n      font-weight: bold;\n      text-align: center; }\n      .about-me-section .about-me-container .about-me-item h3, .about-me-section .about-me-container .about-me-item p {\n        color: #415161; }\n      .about-me-section .about-me-container .about-me-item h3 {\n        font-weight: 400;\n        font-size: 1.75em;\n        margin-top: 0em;\n        margin-bottom: 0em;\n        text-align: left; }\n      .about-me-section .about-me-container .about-me-item h4 {\n        font-weight: 400;\n        font-size: 1.4em;\n        margin-top: 0em;\n        margin-bottom: 0em;\n        text-align: left; }\n      .about-me-section .about-me-container .about-me-item p {\n        font-weight: 400;\n        font-size: 1.2em;\n        text-align: left;\n        color: #626262;\n        margin-top: 0.5em; }\n      .about-me-section .about-me-container .about-me-item img {\n        max-width: 100%;\n        float: none;\n        padding: 1em 0em 1em 1em; }\n      .about-me-section .about-me-container .about-me-item a {\n        color: #1FA975; }\n        .about-me-section .about-me-container .about-me-item a:hover {\n          color: #25c78a; }\n      .about-me-section .about-me-container .about-me-item:nth-child(2) {\n        text-align: center;\n        position: relative;\n        padding-left: 2em; }\n\n@media only screen and (min-width: 570px) {\n  .about-me-section .about-me-container .about-me-item img {\n    max-width: 370px; } }\n\n@media only screen and (min-width: 720px) {\n  .about-me-section .about-me-container .about-me-item img {\n    float: right; } }\n\n@media only screen and (min-width: 960px) {\n  .about-me-section .about-me-container .about-me-item {\n    display: inline-block;\n    width: 75%; }\n    .about-me-section .about-me-container .about-me-item:nth-child(2) {\n      position: relative;\n      top: -3em; } }\n", ""]);
 
 	// exports
 

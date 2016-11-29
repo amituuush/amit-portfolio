@@ -47,6 +47,20 @@ var Projects = React.createClass({
                     </div>
                     <div className="projects-item">
                         <div className="projects-item-image">
+                            <img src="img/whether.png" />
+                        </div>
+                        <div className="projects-item-content item-content-bird-strike">
+                            <h3>Whether</h3>
+                            <p>Whether is a 5-day weather forecaster built in React/Redux. A user can search by city, and check the temperature, humidity, and pressure for the next 5 days. It uses the Google Maps and OpenWeatherMap API's.
+                            </p>
+                            <p><span>Technologies: </span>JavaScript, React, Redux, Webpack, Bootstrap</p>
+                            {/* <a href="http://amituuush.github.io/bird-strike/" target="_blank"><button>Demo</button></a> */}
+                            <a name="technical-expertise"></a>
+                            <a href="https://github.com/amituuush/whether" target="_blank"><button>Repo</button></a>
+                        </div>
+                    </div>
+                    {/* <div className="projects-item">
+                        <div className="projects-item-image">
                             <img src="img/bird-strike.jpg" />
                         </div>
                         <div className="projects-item-content item-content-bird-strike">
@@ -59,7 +73,7 @@ var Projects = React.createClass({
                             <a href="https://github.com/amituuush/bird-strike" target="_blank"><button>Repo</button></a>
 
                         </div>
-                    </div>
+                    </div> */}
 
                 </div>
             </section>
