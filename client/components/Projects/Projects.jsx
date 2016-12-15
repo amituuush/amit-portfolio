@@ -53,7 +53,7 @@ var Projects = React.createClass({
                             <p>Whether is a 5-day weather forecaster built in React/Redux. A user can search by city, and check the temperature, humidity, and pressure for the next 5 days. It uses the Google Maps and OpenWeatherMap API's.
                             </p>
                             <p><span>Technologies: </span>JavaScript, React, Redux, Webpack, Bootstrap</p>
-                            {/* <a href="http://amituuush.github.io/bird-strike/" target="_blank"><button>Demo</button></a> */}
+                            <a href="http://whether.herokuapp.com/" target="_blank"><button>Demo</button></a>
                             <a href="https://github.com/amituuush/whether" target="_blank"><button>Repo</button></a>
                         </div>
                     </div>
