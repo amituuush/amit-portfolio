@@ -22126,7 +22126,7 @@
 	                _react2.default.createElement(
 	                    'h1',
 	                    null,
-	                    'Hi, I\'m Amit.'
+	                    'Amit Ranan'
 	                ),
 	                _react2.default.createElement('a', { name: 'portfolio' }),
 	                _react2.default.createElement(
@@ -22138,7 +22138,7 @@
 	                        null,
 	                        'React/Redux'
 	                    ),
-	                    ' developer with 2 years of UI/UX development experience. B.A. in Economics from UC Davis. ',
+	                    ' developer with 2.5 years of experience. B.A. in Economics from UC Davis. ',
 	                    _react2.default.createElement(
 	                        'a',
 	                        { href: 'http://500.co/', target: '_blank' },
@@ -22413,6 +22413,15 @@
 	                            ),
 	                            _react2.default.createElement(
 	                                'a',
+	                                { href: 'http://whether.herokuapp.com/', target: '_blank' },
+	                                _react2.default.createElement(
+	                                    'button',
+	                                    null,
+	                                    'Demo'
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                'a',
 	                                { href: 'https://github.com/amituuush/whether', target: '_blank' },
 	                                _react2.default.createElement(
 	                                    'button',
@@ -22539,7 +22548,7 @@
 	                        _react2.default.createElement(
 	                            'p',
 	                            null,
-	                            'I\'ve designed and developed countless responsive and mobile first interfaces for a team gaming platform application and an app that got people out of their cell phone contracts without paying early termination fees (while working at Isometry Labs and CellBreaker).'
+	                            'While I was a UI/UX developer, I designed and developed countless responsive and mobile first interfaces for a team gaming platform application and an app that got people out of their cell phone contracts without paying early termination fees.'
 	                        ),
 	                        _react2.default.createElement('br', null),
 	                        _react2.default.createElement(
@@ -22572,7 +22581,7 @@
 	                        _react2.default.createElement(
 	                            'p',
 	                            null,
-	                            'I\'m currently working as a freelance front end React developer for an ecommerce marketing company, which ends in January, and am looking to join a passionate and mission driven company while working in React/Redux.'
+	                            'I\'m currently working as a freelance front end React developer for an ecommerce marketing company, and am open to both part-time and full-time opportunities.'
 	                        )
 	                    ),
 	                    _react2.default.createElement('a', { name: 'contact' })
