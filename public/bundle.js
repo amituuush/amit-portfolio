@@ -22136,7 +22136,7 @@
 	                    _react2.default.createElement(
 	                        'span',
 	                        null,
-	                        'React/Redux'
+	                        'React'
 	                    ),
 	                    ' developer with 2.5 years of experience. B.A. in Economics from UC Davis. ',
 	                    _react2.default.createElement(
