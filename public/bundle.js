@@ -22156,6 +22156,15 @@
 	                        '500 Startups'
 	                    ),
 	                    ' Batch 13.'
+	                ),
+	                _react2.default.createElement(
+	                    'a',
+	                    { href: './img/amit-ranan-resume.pdf', target: '_blank' },
+	                    _react2.default.createElement(
+	                        'button',
+	                        null,
+	                        'Resume'
+	                    )
 	                )
 	            )
 	        );
@@ -22199,7 +22208,7 @@
 
 
 	// module
-	exports.push([module.id, ".cover-section {\n  width: 90%;\n  text-align: center;\n  margin: 0 auto; }\n  .cover-section .cover-left, .cover-section .cover-right {\n    display: block;\n    text-align: center;\n    padding: 8em 0em 2em 0em; }\n  .cover-section .cover-right {\n    display: block;\n    text-align: center;\n    padding: 0em 0em 2em 0em; }\n  .cover-section .cover-right h1, .cover-section .cover-right h2 {\n    color: #415161;\n    font-weight: 500; }\n  .cover-section .cover-right h1 {\n    font-size: 2.5em;\n    margin-top: 0em;\n    margin-bottom: 0em;\n    color: #1FA975; }\n  .cover-section .cover-right h2 {\n    font-size: 1.5em;\n    margin-top: 0.5em; }\n    .cover-section .cover-right h2 span {\n      color: #1FA975; }\n  .cover-section .cover-right a {\n    color: #586D82; }\n    .cover-section .cover-right a:hover {\n      color: #415161; }\n\n@media only screen and (min-width: 700px) {\n  .cover-section .cover-right {\n    width: 35em;\n    margin: 0 auto; } }\n\n@media only screen and (min-width: 1000px) {\n  .cover-section .cover-left, .cover-section .cover-right {\n    display: inline-block; }\n  .cover-section .cover-right {\n    padding-left: 4em;\n    position: relative;\n    top: -3.5em; } }\n", ""]);
+	exports.push([module.id, ".cover-section {\n  width: 90%;\n  text-align: center;\n  margin: 0 auto; }\n  .cover-section .cover-left, .cover-section .cover-right {\n    display: block;\n    text-align: center;\n    padding: 8em 0em 2em 0em; }\n  .cover-section .cover-right {\n    display: block;\n    text-align: center;\n    padding: 0em 0em 2em 0em; }\n  .cover-section .cover-right h1, .cover-section .cover-right h2 {\n    color: #415161;\n    font-weight: 500; }\n  .cover-section .cover-right h1 {\n    font-size: 2.5em;\n    margin-top: 0em;\n    margin-bottom: 0em;\n    color: #1FA975; }\n  .cover-section .cover-right h2 {\n    font-size: 1.5em;\n    margin-top: 0.5em; }\n    .cover-section .cover-right h2 span {\n      color: #1FA975; }\n  .cover-section .cover-right a {\n    color: #586D82; }\n    .cover-section .cover-right a:hover {\n      color: #415161; }\n  .cover-section .cover-right button {\n    background: #415161;\n    border: none;\n    font-weight: 400;\n    padding: 0.5em 1em;\n    border-radius: 3px;\n    margin-right: 0.75em;\n    color: #fff; }\n    .cover-section .cover-right button:hover {\n      background: #4b5e70;\n      color: #fff;\n      cursor: pointer; }\n    .cover-section .cover-right button:focus {\n      outline: none; }\n\n@media only screen and (min-width: 700px) {\n  .cover-section .cover-right {\n    width: 35em;\n    margin: 0 auto; } }\n\n@media only screen and (min-width: 1000px) {\n  .cover-section .cover-left, .cover-section .cover-right {\n    display: inline-block; }\n  .cover-section .cover-right {\n    padding-left: 4em;\n    position: relative;\n    top: -3.5em; } }\n", ""]);
 
 	// exports
 
