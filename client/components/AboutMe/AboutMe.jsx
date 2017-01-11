@@ -17,16 +17,16 @@ var AboutMe = React.createClass({
                         <h4>What I’ve worked on</h4>
                         <p>I've built several full-stack single page web applications in React and Redux (see portfolio section for more detail).</p>
 
-                        <p>While I was a UI/UX developer, I designed and developed countless responsive and mobile first interfaces for a team gaming platform application and an app that got people out of their cell phone contracts without paying early termination fees.</p><br />
+                        <p>While I was a UI/UX developer, I designed and developed countless responsive and mobile first interfaces for a team gaming  application and an app that got people out of their cell phone contracts without paying early termination fees.</p><br />
 
                         <h4>Side Projects</h4>
-                        <p>I'm currently working on a pair programming matching application with a team of 5 developers. The app matches developers using an algorithm based on their indicated preferences so they can pair program together.</p><br />
+                        <p>I'm currently working on a pair programming matching application with a team of 5 developers. The app matches developers using an algorithm based on their indicated preferences so they can find someone to pair program with.</p><br />
 
                         <h4>What I'm really good at</h4>
                         <p>I'm really good at translating a company's goals and vision into functional design.</p><br />
 
                         <h4>What I’m looking to do next</h4>
-                        <p>I'm currently working as a freelance front end React developer for an ecommerce marketing company, and am open to both part-time and full-time opportunities.</p>
+                        <p>I'm currently working as a freelance front end React developer for an ecommerce marketing company, and am open to both part-time, full-time, and contract based opportunities.</p>
 
 
 
