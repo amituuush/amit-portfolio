@@ -22563,13 +22563,13 @@
 	                        _react2.default.createElement(
 	                            'p',
 	                            null,
-	                            'I\'m a front end React/Redux developer skilled in developing responsive and functional SPA\'s while finding solutions to front end problems. I have working knowledge of Node.js, Express, MongoDB, and Mongoose.js. I also have 2 years of UI/UX development experience at startups, one of which was in the startup accelerator, 500 Startups. You can check out my design portfolio ',
+	                            'I\'m a front end React developer with over 2 years of experience developing responsive and functional SPA\'s. I have working knowledge of Node.js, Express, MongoDB, and Mongoose.js. I also have 2 years of UI/UX development experience at startups, one of which was in the startup accelerator, 500 Startups. You can check out my design portfolio ',
 	                            _react2.default.createElement(
 	                                'a',
 	                                { href: 'https://www.behance.net/rananamit20cb', target: '_blank' },
 	                                'here'
 	                            ),
-	                            '. I\'m passionate about the constantly evolving world of tech, and I love working on personal projects and learning new technologies in order to build beautiful and intuitive user experiences.'
+	                            '. I\'m passionate about the constantly evolving world of tech, and love working on personal projects and learning new technologies to build beautiful and intuitive user experiences.'
 	                        ),
 	                        _react2.default.createElement(
 	                            'p',
