@@ -57,7 +57,7 @@ var Projects = React.createClass({
                             <a href="https://github.com/amituuush/whether" target="_blank"><button>Repo</button></a>
                         </div>
                     </div>
-                    <div className="projects-item">
+                    {/* <div className="projects-item">
                         <div className="projects-item-image">
                             <img src="img/whether.png" />
                         </div>
@@ -66,10 +66,9 @@ var Projects = React.createClass({
                             <p>This is a full-stack dating app for developers to find a pair programming partner. I'm currently working on it with a few other developers. I designed the mockups, built out the entire front end including auth and worked on creating back end routes.
                             </p>
                             <p><span>Technologies: </span>JavaScript, React, Redux, Node, Express, Mongoose, MongoDB, Passport, Webpack, Semantic UI React</p>
-                            {/* <a href="http://whether.herokuapp.com/" target="_blank"><button>Demo</button></a> */}
                             <a href="https://github.com/Thinkful-ReactStudyGroup" target="_blank"><button>Repo</button></a>
                         </div>
-                    </div>
+                    </div> */}
 
                     <a name="about-me"></a>
                 </div>
