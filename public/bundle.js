@@ -22431,6 +22431,57 @@
 	                            )
 	                        )
 	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'projects-item' },
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'projects-item-image' },
+	                            _react2.default.createElement('img', { src: 'img/whether.png' })
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'projects-item-content item-content-bird-strike' },
+	                            _react2.default.createElement(
+	                                'h3',
+	                                null,
+	                                'Pair Programming Matching App (WIP)'
+	                            ),
+	                            _react2.default.createElement(
+	                                'p',
+	                                null,
+	                                'This is a full-stack app I\'m currently working on with a few other developers. It\'s essentially a dating app for developers to find a pair programmign partner.'
+	                            ),
+	                            _react2.default.createElement(
+	                                'p',
+	                                null,
+	                                _react2.default.createElement(
+	                                    'span',
+	                                    null,
+	                                    'Technologies: '
+	                                ),
+	                                'JavaScript, React, Redux, Node, Express, Mongoose, MongoDB, Passport, Webpack, Semantic UI React'
+	                            ),
+	                            _react2.default.createElement(
+	                                'a',
+	                                { href: 'http://whether.herokuapp.com/', target: '_blank' },
+	                                _react2.default.createElement(
+	                                    'button',
+	                                    null,
+	                                    'Demo'
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                'a',
+	                                { href: 'https://github.com/amituuush/whether', target: '_blank' },
+	                                _react2.default.createElement(
+	                                    'button',
+	                                    null,
+	                                    'Repo'
+	                                )
+	                            )
+	                        )
+	                    ),
 	                    _react2.default.createElement('a', { name: 'about-me' })
 	                )
 	            )

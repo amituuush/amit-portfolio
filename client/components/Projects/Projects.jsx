@@ -57,21 +57,20 @@ var Projects = React.createClass({
                             <a href="https://github.com/amituuush/whether" target="_blank"><button>Repo</button></a>
                         </div>
                     </div>
-                    {/* <div className="projects-item">
+                    <div className="projects-item">
                         <div className="projects-item-image">
-                            <img src="img/bird-strike.jpg" />
+                            <img src="img/whether.png" />
                         </div>
                         <div className="projects-item-content item-content-bird-strike">
-                            <h3>Bird Strike</h3>
-                            <p>Bird Strike is an online game I built on HTML Canvas. I don't see myself as a video game developer, but I definitely had a great time building this one.
+                            <h3>Pair Programming Matching App (WIP)</h3>
+                            <p>This is a full-stack app I'm currently working on with a few other developers. It's essentially a dating app for developers to find a pair programmign partner.
                             </p>
-                            <p><span>Technologies: </span>JavaScript, HTML Canvas, Gulp, SASS</p>
-                            <a href="http://amituuush.github.io/bird-strike/" target="_blank"><button>Demo</button></a>
-                            <a name="technical-expertise"></a>
-                            <a href="https://github.com/amituuush/bird-strike" target="_blank"><button>Repo</button></a>
-
+                            <p><span>Technologies: </span>JavaScript, React, Redux, Node, Express, Mongoose, MongoDB, Passport, Webpack, Semantic UI React</p>
+                            <a href="http://whether.herokuapp.com/" target="_blank"><button>Demo</button></a>
+                            <a href="https://github.com/amituuush/whether" target="_blank"><button>Repo</button></a>
                         </div>
-                    </div> */}
+                    </div>
+
                     <a name="about-me"></a>
                 </div>
             </section>
