@@ -22450,7 +22450,7 @@
 	                            _react2.default.createElement(
 	                                'p',
 	                                null,
-	                                'This is a full-stack app I\'m currently working on with a few other developers. It\'s essentially a dating app for developers to find a pair programmign partner.'
+	                                'This is a full-stack dating app for developers to find a pair programming partner. I\'m currently working on it with a few other developers. I designed the mockups, built out the entire front end including auth and worked on creating back end routes.'
 	                            ),
 	                            _react2.default.createElement(
 	                                'p',
@@ -22464,16 +22464,7 @@
 	                            ),
 	                            _react2.default.createElement(
 	                                'a',
-	                                { href: 'http://whether.herokuapp.com/', target: '_blank' },
-	                                _react2.default.createElement(
-	                                    'button',
-	                                    null,
-	                                    'Demo'
-	                                )
-	                            ),
-	                            _react2.default.createElement(
-	                                'a',
-	                                { href: 'https://github.com/amituuush/whether', target: '_blank' },
+	                                { href: 'https://github.com/Thinkful-ReactStudyGroup', target: '_blank' },
 	                                _react2.default.createElement(
 	                                    'button',
 	                                    null,

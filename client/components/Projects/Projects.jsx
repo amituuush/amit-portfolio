@@ -63,11 +63,11 @@ var Projects = React.createClass({
                         </div>
                         <div className="projects-item-content item-content-bird-strike">
                             <h3>Pair Programming Matching App (WIP)</h3>
-                            <p>This is a full-stack app I'm currently working on with a few other developers. It's essentially a dating app for developers to find a pair programmign partner.
+                            <p>This is a full-stack dating app for developers to find a pair programming partner. I'm currently working on it with a few other developers. I designed the mockups, built out the entire front end including auth and worked on creating back end routes.
                             </p>
                             <p><span>Technologies: </span>JavaScript, React, Redux, Node, Express, Mongoose, MongoDB, Passport, Webpack, Semantic UI React</p>
-                            <a href="http://whether.herokuapp.com/" target="_blank"><button>Demo</button></a>
-                            <a href="https://github.com/amituuush/whether" target="_blank"><button>Repo</button></a>
+                            {/* <a href="http://whether.herokuapp.com/" target="_blank"><button>Demo</button></a> */}
+                            <a href="https://github.com/Thinkful-ReactStudyGroup" target="_blank"><button>Repo</button></a>
                         </div>
                     </div>
 
