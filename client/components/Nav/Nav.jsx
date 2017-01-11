@@ -17,7 +17,7 @@ var Nav = React.createClass({
                     <a href="https://www.linkedin.com/in/amitranan" target="_blank">
                         <li>LinkedIn</li>
                     </a>
-                    <a href="./img/amit-ranan-resume.pdf" onClick={() => {this.props.handleMenuToggle()}}><li>Resume</li></a>
+                    <a href="./img/amit-ranan-resume.pdf" target="_blank" onClick={() => {this.props.handleMenuToggle()}}><li>Resume</li></a>
                 </ul>
             </nav>
         )
