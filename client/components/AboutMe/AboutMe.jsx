@@ -28,12 +28,6 @@ var AboutMe = React.createClass({
                         <h4>What I’m looking to do next</h4>
                         <p>I'm currently working as a freelance front end React developer for an ecommerce marketing company, and am open to both part-time, full-time, and contract based opportunities.</p>
 
-
-
-
-
-
-
                     {/* <p>I'm currently looking to join a fun and passionate company. I enjoy using my development experience to help companies solve business problems. I also have design experience, which you can check out <a href="https://www.behance.net/rananamit20cb" target="_blank">here</a>.</p>
                     <p>I love anything that has to do with the NBA, being outdoors, playing guitar, and my mom's vegan cooking. If you think we'd be a good fit, see my contact information below!</p> */}
                     </li>
