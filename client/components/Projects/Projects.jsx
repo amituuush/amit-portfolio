@@ -73,7 +73,6 @@ var Projects = React.createClass({
                     <a name="about-me"></a>
                 </div>
             </section>
-                {/* <a name="technical-expertise"></a> */}
         </div>
         )
     }
