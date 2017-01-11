@@ -22574,7 +22574,7 @@
 	                        _react2.default.createElement(
 	                            'p',
 	                            null,
-	                            'Before coding, I worked in economic analyses at the U.S. Department of Labor and in commercial banking. I believe my blend of business/marketing and development skills make me a unique developer, and allow me to translate a company\'s strategic goals into functional design.'
+	                            'Before coding, I worked in economic analyses at the U.S. Department of Labor and in commercial banking at MUFG Union Bank. I believe my blend of business/marketing and development skills make me a unique developer, and allow me to translate a company\'s strategic goals into functional design.'
 	                        ),
 	                        _react2.default.createElement('br', null),
 	                        _react2.default.createElement(

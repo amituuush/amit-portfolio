@@ -12,7 +12,7 @@ var AboutMe = React.createClass({
                         <img src="img/amit-canyoning.jpg" />
                         <p>I'm a front end React developer with over 2 years of experience developing responsive and functional SPA's. I have working knowledge of Node.js, Express, MongoDB, and Mongoose.js. I also have 2 years of UI/UX development experience at startups, one of which was in the startup accelerator, 500 Startups. You can check out my design portfolio <a href="https://www.behance.net/rananamit20cb" target="_blank">here</a>. I'm passionate about the constantly evolving world of tech, and love working on personal projects and learning new technologies to build beautiful and intuitive user experiences.</p>
 
-                        <p>Before coding, I worked in economic analyses at the U.S. Department of Labor and in commercial banking. I believe my blend of business/marketing and development skills make me a unique developer, and allow me to translate a company's strategic goals into functional design.</p><br />
+                        <p>Before coding, I worked in economic analyses at the U.S. Department of Labor and in commercial banking at MUFG Union Bank. I believe my blend of business/marketing and development skills make me a unique developer, and allow me to translate a company's strategic goals into functional design.</p><br />
 
                         <h4>What I’ve worked on</h4>
                         <p>I've built several full-stack single page web applications in React and Redux (see portfolio section for more detail).</p>
