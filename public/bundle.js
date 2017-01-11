@@ -22043,6 +22043,17 @@
 	                        null,
 	                        'LinkedIn'
 	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'a',
+	                    { href: './img/amit-ranan-resume.pdf', onClick: function onClick() {
+	                            _this.props.handleMenuToggle();
+	                        } },
+	                    _react2.default.createElement(
+	                        'li',
+	                        null,
+	                        'Resume'
+	                    )
 	                )
 	            )
 	        );
