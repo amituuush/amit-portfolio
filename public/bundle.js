@@ -22149,7 +22149,7 @@
 	                        null,
 	                        'React'
 	                    ),
-	                    ' developer with 2.5 years of experience. B.A. in Economics from UC Davis. ',
+	                    ' engineer with 2.5 years of experience. B.A. in Economics from UC Davis. ',
 	                    _react2.default.createElement(
 	                        'a',
 	                        { href: 'http://500.co/', target: '_blank' },
@@ -22541,7 +22541,7 @@
 	                        _react2.default.createElement(
 	                            'p',
 	                            null,
-	                            'I\'m a front end React developer with over 2 years of experience developing responsive and functional SPA\'s. I have working knowledge of Node.js, Express, MongoDB, and Mongoose.js. I also have 2 years of UI/UX development experience at startups, one of which was in the startup accelerator, 500 Startups. You can check out my design portfolio ',
+	                            'I\'m a front end React engineer with over 2.5 years of experience developing responsive and functional SPA\'s. I have also built several full-stack apps with Node.js, Express, MongoDB, and Mongoose.js. I have 2 years of UI/UX development experience at startups, one of which was in the startup accelerator, 500 Startups. You can check out my design portfolio ',
 	                            _react2.default.createElement(
 	                                'a',
 	                                { href: 'https://www.behance.net/rananamit20cb', target: '_blank' },
@@ -22563,7 +22563,7 @@
 	                        _react2.default.createElement(
 	                            'p',
 	                            null,
-	                            'I\'ve built several full-stack single page web applications in React and Redux (see portfolio section for more detail).'
+	                            'I\'ve built several full-stack single page web applications in React/Redux and Node/Express (see portfolio section for more detail).'
 	                        ),
 	                        _react2.default.createElement(
 	                            'p',
@@ -22601,7 +22601,12 @@
 	                        _react2.default.createElement(
 	                            'p',
 	                            null,
-	                            'I\'m currently working as a freelance front end React developer for an ecommerce marketing company, and am open to both part-time, full-time, and contract based opportunities.'
+	                            'I\'m currently working as a freelance front end engineer for an ecommerce marketing company, and am open to both part-time, full-time, and contract based opportunities.'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            'I love anything that has to do with the NBA, being outdoors, playing guitar, and my mom\'s vegan cooking. If you think we\'d be a good fit, shoot me an email!'
 	                        )
 	                    ),
 	                    _react2.default.createElement('a', { name: 'contact' })

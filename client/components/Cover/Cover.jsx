@@ -12,7 +12,7 @@ var Cover = React.createClass({
                 <div className="cover-right">
                     <h1>Amit Ranan</h1>
                     <a name="portfolio"></a>
-                    <h2>Front end <span>React</span> developer with 2.5 years of experience. B.A. in Economics from UC Davis. <a href="http://500.co/" target="_blank">500 Startups</a> Batch 13.</h2>
+                    <h2>Front end <span>React</span> engineer with 2.5 years of experience. B.A. in Economics from UC Davis. <a href="http://500.co/" target="_blank">500 Startups</a> Batch 13.</h2>
                     <a href="./img/amit-ranan-resume.pdf" target="_blank"><button>Resume</button></a>
                 </div>
             </section>
