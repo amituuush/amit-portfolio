@@ -22143,13 +22143,7 @@
 	                _react2.default.createElement(
 	                    'h2',
 	                    null,
-	                    'Front end ',
-	                    _react2.default.createElement(
-	                        'span',
-	                        null,
-	                        'React'
-	                    ),
-	                    ' engineer with 2.5 years of experience. B.A. in Economics from UC Davis. ',
+	                    'Front end engineer with 2.5 years of experience. B.A. in Economics from UC Davis. ',
 	                    _react2.default.createElement(
 	                        'a',
 	                        { href: 'http://500.co/', target: '_blank' },
@@ -22541,13 +22535,18 @@
 	                        _react2.default.createElement(
 	                            'p',
 	                            null,
-	                            'I\'m a front end React engineer with over 2.5 years of experience developing responsive and functional SPA\'s. I have also built several full-stack apps with Node.js, Express, MongoDB, and Mongoose.js. I have 2 years of UI/UX development experience at startups, one of which was in the startup accelerator, 500 Startups. You can check out my design portfolio ',
+	                            'I\'m a front end engineer with over 2.5 years of experience developing responsive and functional SPA\'s. I have also built several full-stack apps with React/Redux, Node/Express and MongoDB/Mongoose. I have 2 years of UI/UX development experience at startups, one of which was in the startup accelerator, 500 Startups. You can check out my design portfolio ',
 	                            _react2.default.createElement(
 	                                'a',
 	                                { href: 'https://www.behance.net/rananamit20cb', target: '_blank' },
 	                                'here'
 	                            ),
-	                            '. I\'m passionate about the constantly evolving world of tech, and love working on personal projects and learning new technologies to build beautiful and intuitive user experiences.'
+	                            '. I\'m also up to date on the latest and great technologies in the JavaScript ecosystem (ES6, RESTful API\'s, Webpack, SASS/LESS, Mocha, Jasmine).'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            'I\'m passionate about the constantly evolving world of tech, and love working on personal projects and learning new technologies to build beautiful and intuitive user experiences.'
 	                        ),
 	                        _react2.default.createElement(
 	                            'p',
@@ -22563,12 +22562,12 @@
 	                        _react2.default.createElement(
 	                            'p',
 	                            null,
-	                            'I\'ve built several full-stack single page web applications in React/Redux and Node/Express (see portfolio section for more detail).'
+	                            'I\'ve built several full-stack single page web applications in React/Redux, Node/Express, MongoDB/Mongoose (see portfolio section for more detail).'
 	                        ),
 	                        _react2.default.createElement(
 	                            'p',
 	                            null,
-	                            'While I was a UI/UX developer, I designed and developed countless responsive and mobile first interfaces for a team gaming  application and an app that got people out of their cell phone contracts without paying early termination fees.'
+	                            'While I was a UI/UX developer, I designed and developed  responsive and mobile first team gaming application and an app that got people out of their cell phone contracts without paying early termination fees.'
 	                        ),
 	                        _react2.default.createElement('br', null),
 	                        _react2.default.createElement(
@@ -22579,7 +22578,7 @@
 	                        _react2.default.createElement(
 	                            'p',
 	                            null,
-	                            'I\'m currently working on a pair programming matching application with a team of 5 developers. The app matches developers using an algorithm based on their indicated preferences so they can find someone to pair program with.'
+	                            'I\'m currently working on making GoMocha a commercially viable product!'
 	                        ),
 	                        _react2.default.createElement('br', null),
 	                        _react2.default.createElement(
@@ -22601,7 +22600,7 @@
 	                        _react2.default.createElement(
 	                            'p',
 	                            null,
-	                            'I\'m currently working as a freelance front end engineer for an ecommerce marketing company, and am open to both part-time, full-time, and contract based opportunities.'
+	                            'I\'m currently working as a front end engineer for an ecommerce marketing company, and am open to both part-time, full-time, and contract based opportunities.'
 	                        ),
 	                        _react2.default.createElement(
 	                            'p',
