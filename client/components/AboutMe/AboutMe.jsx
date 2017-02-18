@@ -18,7 +18,7 @@ var AboutMe = React.createClass({
                         <h4>What I’ve worked on</h4>
                         <p>I've built several full-stack single page web applications in React/Redux, Node/Express, MongoDB/Mongoose (see portfolio section for more detail).</p>
 
-                        <p>While I was a UI/UX developer, I designed and developed  responsive and mobile first team gaming application and an app that got people out of their cell phone contracts without paying early termination fees.</p><br />
+                        <p>While I was a UI/UX developer, I designed and developed a responsive and mobile first team gaming application and an app that got people out of their cell phone contracts without paying early termination fees.</p><br />
 
                         <h4>Side Projects</h4>
                         <p>I'm currently working on making GoMocha a commercially viable product!</p><br />

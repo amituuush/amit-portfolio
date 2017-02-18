@@ -22567,7 +22567,7 @@
 	                        _react2.default.createElement(
 	                            'p',
 	                            null,
-	                            'While I was a UI/UX developer, I designed and developed  responsive and mobile first team gaming application and an app that got people out of their cell phone contracts without paying early termination fees.'
+	                            'While I was a UI/UX developer, I designed and developed a responsive and mobile first team gaming application and an app that got people out of their cell phone contracts without paying early termination fees.'
 	                        ),
 	                        _react2.default.createElement('br', null),
 	                        _react2.default.createElement(
