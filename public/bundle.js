@@ -22400,6 +22400,57 @@
 	                        _react2.default.createElement(
 	                            'div',
 	                            { className: 'projects-item-image' },
+	                            _react2.default.createElement('img', { src: 'img/chat-app.png' })
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'projects-item-content item-content-todo-list' },
+	                            _react2.default.createElement(
+	                                'h3',
+	                                null,
+	                                'Instant Message App'
+	                            ),
+	                            _react2.default.createElement(
+	                                'p',
+	                                null,
+	                                'This is a multi-room real-time chat application. I built as a project for a company. I built the front end, while the back end and design were provided to me. '
+	                            ),
+	                            _react2.default.createElement(
+	                                'p',
+	                                null,
+	                                _react2.default.createElement(
+	                                    'span',
+	                                    null,
+	                                    'Technologies: '
+	                                ),
+	                                'React, Redux, SASS'
+	                            ),
+	                            _react2.default.createElement(
+	                                'a',
+	                                { href: 'https://arcane-spire-77903.herokuapp.com/', target: '_blank' },
+	                                _react2.default.createElement(
+	                                    'button',
+	                                    null,
+	                                    'Demo'
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                'a',
+	                                { href: 'https://github.com/amituuush/ChatApp', target: '_blank' },
+	                                _react2.default.createElement(
+	                                    'button',
+	                                    null,
+	                                    'Repo'
+	                                )
+	                            )
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'projects-item' },
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'projects-item-image' },
 	                            _react2.default.createElement('img', { src: 'img/whether.png' })
 	                        ),
 	                        _react2.default.createElement(

@@ -46,6 +46,18 @@ var Projects = React.createClass({
                     </div>
                     <div className="projects-item">
                         <div className="projects-item-image">
+                            <img src="img/chat-app.png" />
+                        </div>
+                        <div className="projects-item-content item-content-todo-list">
+                            <h3>Instant Message App</h3>
+                        <p>This is a multi-room real-time chat application. I built as a project for a company. I built the front end, while the back end and design were provided to me. </p>
+                    <p><span>Technologies: </span>React, Redux, SASS</p>
+                            <a href="https://arcane-spire-77903.herokuapp.com/" target="_blank"><button>Demo</button></a>
+                            <a href="https://github.com/amituuush/ChatApp" target="_blank"><button>Repo</button></a>
+                        </div>
+                    </div>
+                    <div className="projects-item">
+                        <div className="projects-item-image">
                             <img src="img/whether.png" />
                         </div>
                         <div className="projects-item-content item-content-bird-strike">
