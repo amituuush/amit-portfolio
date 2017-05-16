@@ -22413,7 +22413,7 @@
 	                            _react2.default.createElement(
 	                                'p',
 	                                null,
-	                                'This is a multi-room real-time chat application. I built as a project for a company. I built the front end, while the back end and design were provided to me. '
+	                                'This is a multi-room real-time chat application I built as a project for a company. Open an incognito browser window and normal window and watch the chat update in real time! I built the front end, while the back end and design were provided to me. '
 	                            ),
 	                            _react2.default.createElement(
 	                                'p',
