@@ -107,6 +107,10 @@ $secondary-color: #F7F7F7;
             }
         }
 
+        .chat-app-content {
+            vertical-align: top;
+        }
+
         &:nth-child(2) {
             padding-bottom: 4em;
         }
@@ -123,6 +127,8 @@ $secondary-color: #F7F7F7;
       }
     }
 }
+
+
 
 @media only screen and (min-width: 570px) {
     .projects-section {
