@@ -48,7 +48,7 @@ var Projects = React.createClass({
                         <div className="projects-item-image">
                             <img src="img/chat-app.png" />
                         </div>
-                        <div className="projects-item-content item-content-todo-list">
+                        <div className="projects-item-content">
                             <h3>Instant Message App</h3>
                         <p>This is a multi-room real-time chat application. I built as a project for a company. I built the front end, while the back end and design were provided to me. </p>
                     <p><span>Technologies: </span>React, Redux, SASS</p>
