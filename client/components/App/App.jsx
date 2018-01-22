@@ -30,7 +30,7 @@ var App = React.createClass({
                     menuShow={this.state.menuShow} />
                 <Cover />
                 <Projects />
-                <AboutMe />
+                {/* <AboutMe /> */}
                 <Contact />
                 <AboutSite />
                 <Footer />
