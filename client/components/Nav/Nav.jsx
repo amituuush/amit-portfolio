@@ -12,7 +12,7 @@ var Nav = React.createClass({
                 <ul className={this.props.menuShow ? 'menu-show' : 'menu-hide'}>
                     <a href="#home" onClick={() => { this.props.handleMenuToggle() }}><li>Home</li></a>
                     <a href="#portfolio" onClick={() => { this.props.handleMenuToggle() }}><li>Portfolio</li></a>
-                    <a href="#about-me" onClick={() => { this.props.handleMenuToggle() }}><li>About Me</li></a>
+                    {/* <a href="#about-me" onClick={() => { this.props.handleMenuToggle() }}><li>About Me</li></a> */}
                     <a href="#contact" onClick={() => { this.props.handleMenuToggle() }}><li>Contact</li></a>
                     <a href="https://www.linkedin.com/in/amitranan" target="_blank">
                         <li>LinkedIn</li>
