@@ -10,19 +10,19 @@ import Contact from '../Contact/Contact'
 
 var App = React.createClass({
 
-    getInitialState: function() {
+    getInitialState: function () {
         return {
             menuShow: false
         }
     },
 
-    _handleMenuToggle: function() {
+    _handleMenuToggle: function () {
         this.setState({
             menuShow: !this.state.menuShow
         });
     },
 
-    render: function() {
+    render: function () {
         return (
             <div>
                 <Nav
@@ -32,7 +32,7 @@ var App = React.createClass({
                 <Projects />
                 {/* <AboutMe /> */}
                 <Contact />
-                <AboutSite />
+                { /*<AboutSite /> */}
                 <Footer />
             </div>
         )
