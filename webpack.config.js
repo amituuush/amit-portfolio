@@ -1,7 +1,7 @@
 module.exports = {
     entry: './client/index.es6',
     output: {
-        path: 'public',
+        path: 'docs',
         filename: 'bundle.js'
     },
     module: {
