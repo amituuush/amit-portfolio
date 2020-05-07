@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Amit's Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="img/favicon.png" type="image/png" />
+  <link rel="shortcut icon" href="img/favicon.ico" />
+  <script src="https://use.fontawesome.com/90f100baae.js"></script>
+</head>
+
+<body>
+  <nav class="">
+    <div class="nav-button">
+      <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+    </div>
+    <img src="img/amit-logo.png" />
+    <ul class="nav-menu hidden">
+      <a href="#home">
+        <li>Home</li>
+      </a>
+      <a href="#portfolio">
+        <li>Portfolio</li>
+      </a>
+      <a href="#contact">
+        <li>Contact</li>
+      </a>
+      <a href="https://www.linkedin.com/in/amitranan" target="_blank">
+        <li>LinkedIn</li>
+      </a>
+      <!-- <a href="./img/amit_ranan_resume.pdf" target="_blank">
+        <li>Resume
+        </li>
+      </a> -->
+    </ul>
+  </nav>
+
+  <section class="cover-section">
+    <a name="home"></a>
+    <div class="cover-left">
+      <img class="cover-image" src="img/amit_pic.jpg" />
+    </div>
+    <div class="cover-right">
+      <h1>Amit Ranan</h1>
+      <a name="portfolio"></a>
+      <h2><span class="cover-title">Full-Stack Software Engineer</span> with 5 years
+        experience building web apps in <div><span class="cover-pill">Ruby/Ruby on Rails</span>, <span
+            class="cover-pill">JavaScript/React</span>, <span class="cover-pill">Elixir/Phoenix</span>, <span
+            class="cover-pill">Node.js/Express</span>.</div>
+      </h2>
+      <!-- <a href="./img/amit_ranan_resume.pdf" target="_blank"><button>Resume</button></a> -->
+    </div>
+  </section>
+
+  <div class="projects-wrap">
+    <section class="projects-section">
+      <h3 class="projects-title">Portfolio</h3>
+      <div class="projects-container">
+        <div class="projects-item">
+          <div class="projects-item-image">
+            <img src="img/gomocha.jpg" />
+          </div>
+          <div class="projects-item-content item-content-gomocha">
+            <h3>GoMocha Consumer</h3>
+            <p>GoMocha Consumer is a geolocation food and drink ordering application that tells the coffee shop exactly
+              when their customer is going to arrive so their drink is hot and ready on arrival. It does this using the
+              Google Places API Web Service and the Google Maps Distance Matrix API to calculate the time it will take
+              the customer to arrive based on their selected method of transportation. GoMocha is like my child.</p>
+            <p><span>Technologies:</span> React, Node.js, Express, MongoDB, Mongoose, Google Maps API, Heroku, Travis
+              CI, Webpack, SASS</p>
+            <a href="https://gomocha.herokuapp.com/" target="_blank"><button>Demo</button></a>
+            <a href="https://github.com/amituuush/gomocha" target="_blank"><button>Repo</button></a>
+          </div>
+        </div>
+        <div class="projects-item">
+          <div class="projects-item-image">
+            <img src="img/gomocha-ba.png" />
+          </div>
+          <div class="projects-item-content item-content-gomocha-ba">
+            <h3>GoMocha Business Admin</h3>
+            <p>GoMocha Business Admin is the component that receives the orders placed on GoMocha Consumer. This would
+              be the coffee shop interface in a real world setting. GoMocha as a whole is a monolithic app. The consumer
+              and business admin apps both have their own front ends and share the same back end and database.</p>
+            <p><span>Technologies:</span> React, Node.js, Express, MongoDB, Mongoose, Google Maps API, Heroku, Travis
+              CI, Webpack, SASS</p>
+            <a href="https://gomocha.herokuapp.com/admin" target="_blank"><button>Demo</button></a>
+            <a href="https://github.com/amituuush/gomocha" target="_blank"><button>Repo</button></a>
+          </div>
+        </div>
+        <div class="projects-item">
+          <div class="projects-item-image">
+            <img src="img/lyst.png" />
+          </div>
+          <div class="projects-item-content item-content-todo-list">
+            <h3>Lyst</h3>
+            <p>Lyst is a multiple to do list application with priority, due date, and filter settings. The front end is
+              built in React and Redux, and uses LESS as a css pre-processor. The back end is build in Node, Express,
+              and Mongoose, and uses a MongoDB database. Authentication middleware is handled with Passport.</p>
+            <p><span>Technologies: </span>React, Redux, Node.js, Express, MongoDB, Mongoose, Passport, Heroku, Travis
+              CI, LESS</p>
+            <a href="https://lyst-app.herokuapp.com/" target="_blank"><button>Demo</button></a>
+            <a href="https://github.com/amituuush/lyst" target="_blank"><button>Repo</button></a>
+          </div>
+        </div>
+        <div class="projects-item">
+          <div class="projects-item-image">
+            <img src="img/chat-app.png" />
+          </div>
+          <div class="projects-item-content chat-app-content">
+            <h3>Instant Message App</h3>
+            <p>This is a multi-room real-time chat application I built as a project for a company. Open an incognito
+              browser window and normal window and watch the chat update in real time! I built the front end, while the
+              back end and design were provided to me. </p>
+            <p><span>Technologies: </span>React, Redux, SASS</p>
+            <a href="https://arcane-spire-77903.herokuapp.com/" target="_blank"><button>Demo</button></a>
+            <a href="https://github.com/amituuush/ChatApp" target="_blank"><button>Repo</button></a>
+          </div>
+        </div>
+        <div class="projects-item">
+          <div class="projects-item-image">
+            <img src="img/dish-app.png" />
+          </div>
+          <div class="projects-item-content item-content-bird-strike">
+            <h3>Dish</h3>
+            <p>Find the cheapest dish in your city!</p>
+            <p><span>Technologies: </span>JavaScript, React, Redux, Google Maps API, Foursquare API</p>
+            <a href="https://amituuush.github.io/dish-app/" target="_blank"><button>Demo</button></a>
+            <a href="https://github.com/amituuush/dish" target="_blank"><button>Repo</button></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section class="contact-section">
+    <a name="contact"></a>
+    <div class="contact-container">
+      <p>Feel free to email me at:</p>
+      <div class="contact-item">
+        <a href="mailto: ranan.amit@gmail.com" class="contact-email">ranan.amit@gmail.com</a>
+      </div>
+      <div class="icons-container">
+        <div class="contact-icons">
+          <a href="https://github.com/amituuush" target="_blank"><i class="fa fa-github fa-3x"
+              aria-hidden="true"></i></a>
+        </div>
+        <div class="contact-icons">
+          <a href="https://www.linkedin.com/in/amitranan" target="_blank"><i class="fa fa-linkedin-square fa-3x"
+              aria-hidden="true"></i></a>
+        </div>
+        <div class="contact-icons">
+          <a href="https://www.facebook.com/amit.ranan" target="_blank"><i class="fa fa-facebook-official fa-3x"
+              aria-hidden="true"></i></a>
+        </div>
+        <div class="contact-icons">
+          <a href="https://medium.com/@amituuush" target="_blank"><i class="fa fa-medium fa-3x"
+              aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="footer-section">
+    <ul class="footer-container">
+      <li class="footer-item">
+        <h3>Disclaimer</h3>
+        <p>This website is to be used by prospective employers or parties with legitimate business interests. Some of
+          the material on this website is owned by their respective trademarked entities. ﻿ Amit Ranan © <span
+            class="footer-year"></span></p>
+      </li>
+    </ul>
+  </section>
+
+
+  <script src="app.js" type="text/javascript"></script>
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-65837094-2', 'auto');
+    ga('send', 'pageview');
+  </script>
+</body>
+
+</html>

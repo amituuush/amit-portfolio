@@ -22631,7 +22631,7 @@
 
 	var _Nav2 = _interopRequireDefault(_Nav);
 
-	var _Cover = __webpack_require__(195);
+	var _Cover = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../Cover/Cover\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 
 	var _Cover2 = _interopRequireDefault(_Cover);
 
@@ -22683,7 +22683,6 @@
 	            _react2.default.createElement(_Cover2.default, null),
 	            _react2.default.createElement(_Projects2.default, null),
 	            _react2.default.createElement(_Contact2.default, null),
-	            _react2.default.createElement(_AboutSite2.default, null),
 	            _react2.default.createElement(_Footer2.default, null)
 	        );
 	    }
@@ -22815,17 +22814,6 @@
 	                ),
 	                _react2.default.createElement(
 	                    'a',
-	                    { href: '#about-me', onClick: function onClick() {
-	                            _this.props.handleMenuToggle();
-	                        } },
-	                    _react2.default.createElement(
-	                        'li',
-	                        null,
-	                        'About Me'
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    'a',
 	                    { href: '#contact', onClick: function onClick() {
 	                            _this.props.handleMenuToggle();
 	                        } },
@@ -22927,141 +22915,9 @@
 
 
 /***/ }),
-/* 195 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var _react = __webpack_require__(6);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _cover = __webpack_require__(196);
-
-	var _cover2 = _interopRequireDefault(_cover);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	var Cover = _react2.default.createClass({
-	    displayName: 'Cover',
-
-	    render: function render() {
-	        return _react2.default.createElement(
-	            'section',
-	            { className: 'cover-section' },
-	            _react2.default.createElement('a', { name: 'home' }),
-	            _react2.default.createElement(
-	                'div',
-	                { className: 'cover-left' },
-	                _react2.default.createElement('img', { src: 'img/amit-circle-pic.png' })
-	            ),
-	            _react2.default.createElement(
-	                'div',
-	                { className: 'cover-right' },
-	                _react2.default.createElement(
-	                    'h1',
-	                    null,
-	                    'Amit Ranan'
-	                ),
-	                _react2.default.createElement('a', { name: 'portfolio' }),
-	                _react2.default.createElement(
-	                    'h2',
-	                    null,
-	                    'Software Engineer at ',
-	                    _react2.default.createElement(
-	                        'a',
-	                        { href: 'https://www.therealreal.com/', target: '_blank' },
-	                        'The RealReal'
-	                    ),
-	                    ' with 3 years experience building web apps in React/Redux/Node/Elixir/Phoenix. ',
-	                    _react2.default.createElement(
-	                        'a',
-	                        { href: '500 Startups' },
-	                        '500 Startups'
-	                    ),
-	                    ' Batch 13.'
-	                ),
-	                _react2.default.createElement(
-	                    'a',
-	                    { href: './img/amit_ranan_resume.pdf', target: '_blank' },
-	                    _react2.default.createElement(
-	                        'button',
-	                        null,
-	                        'Resume'
-	                    )
-	                )
-	            )
-	        );
-	    }
-	});
-
-	module.exports = Cover;
-
-/***/ }),
-/* 196 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	
-	var content = __webpack_require__(197);
-
-	if(typeof content === 'string') content = [[module.id, content, '']];
-
-	var transform;
-	var insertInto;
-
-
-
-	var options = {"hmr":true}
-
-	options.transform = transform
-	options.insertInto = undefined;
-
-	var update = __webpack_require__(4)(content, options);
-
-	if(content.locals) module.exports = content.locals;
-
-	if(false) {
-		module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/sass-loader/index.js!./cover.scss", function() {
-			var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/sass-loader/index.js!./cover.scss");
-
-			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-
-			var locals = (function(a, b) {
-				var key, idx = 0;
-
-				for(key in a) {
-					if(!b || a[key] !== b[key]) return false;
-					idx++;
-				}
-
-				for(key in b) idx--;
-
-				return idx === 0;
-			}(content.locals, newContent.locals));
-
-			if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
-
-			update(newContent);
-		});
-
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ }),
-/* 197 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(3)();
-	// imports
-
-
-	// module
-	exports.push([module.id, ".cover-section {\n  width: 90%;\n  text-align: center;\n  margin: 0 auto; }\n  .cover-section .cover-left, .cover-section .cover-right {\n    display: block;\n    text-align: center;\n    padding: 8em 0em 2em 0em; }\n  .cover-section .cover-right {\n    display: block;\n    text-align: center;\n    padding: 0em 0em 2em 0em; }\n  .cover-section .cover-right h1, .cover-section .cover-right h2 {\n    color: #415161;\n    font-weight: 500; }\n  .cover-section .cover-right h1 {\n    font-size: 2.5em;\n    margin-top: 0em;\n    margin-bottom: 0em;\n    color: #1FA975; }\n  .cover-section .cover-right h2 {\n    font-size: 1.5em;\n    margin-top: 0.5em; }\n    .cover-section .cover-right h2 span {\n      color: #1FA975; }\n  .cover-section .cover-right a {\n    color: #586D82; }\n    .cover-section .cover-right a:hover {\n      color: #415161; }\n  .cover-section .cover-right button {\n    background: #415161;\n    border: none;\n    font-weight: 400;\n    padding: 0.5em 1em;\n    border-radius: 3px;\n    margin-right: 0.75em;\n    color: #fff; }\n    .cover-section .cover-right button:hover {\n      background: #4b5e70;\n      color: #fff;\n      cursor: pointer; }\n    .cover-section .cover-right button:focus {\n      outline: none; }\n\n@media only screen and (min-width: 700px) {\n  .cover-section .cover-right {\n    width: 35em;\n    margin: 0 auto; } }\n\n@media only screen and (min-width: 1000px) {\n  .cover-section .cover-left, .cover-section .cover-right {\n    display: inline-block; }\n  .cover-section .cover-right {\n    padding-left: 4em;\n    position: relative;\n    top: -3.5em; } }\n", ""]);
-
-	// exports
-
-
-/***/ }),
+/* 195 */,
+/* 196 */,
+/* 197 */,
 /* 198 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -23291,57 +23147,6 @@
 	                            _react2.default.createElement(
 	                                'a',
 	                                { href: 'https://github.com/amituuush/ChatApp', target: '_blank' },
-	                                _react2.default.createElement(
-	                                    'button',
-	                                    null,
-	                                    'Repo'
-	                                )
-	                            )
-	                        )
-	                    ),
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'projects-item' },
-	                        _react2.default.createElement(
-	                            'div',
-	                            { className: 'projects-item-image' },
-	                            _react2.default.createElement('img', { src: 'img/whether.png' })
-	                        ),
-	                        _react2.default.createElement(
-	                            'div',
-	                            { className: 'projects-item-content item-content-bird-strike' },
-	                            _react2.default.createElement(
-	                                'h3',
-	                                null,
-	                                'Whether'
-	                            ),
-	                            _react2.default.createElement(
-	                                'p',
-	                                null,
-	                                'Whether is a 5-day weather forecaster built in React/Redux. A user can search by city, and check the temperature, humidity, and pressure for the next 5 days. It uses the Google Maps and OpenWeatherMap API\'s.'
-	                            ),
-	                            _react2.default.createElement(
-	                                'p',
-	                                null,
-	                                _react2.default.createElement(
-	                                    'span',
-	                                    null,
-	                                    'Technologies: '
-	                                ),
-	                                'JavaScript, React, Redux, Webpack, Bootstrap'
-	                            ),
-	                            _react2.default.createElement(
-	                                'a',
-	                                { href: 'http://whether.herokuapp.com/', target: '_blank' },
-	                                _react2.default.createElement(
-	                                    'button',
-	                                    null,
-	                                    'Demo'
-	                                )
-	                            ),
-	                            _react2.default.createElement(
-	                                'a',
-	                                { href: 'https://github.com/amituuush/whether', target: '_blank' },
 	                                _react2.default.createElement(
 	                                    'button',
 	                                    null,
@@ -23647,7 +23452,7 @@
 	                    _react2.default.createElement(
 	                        'p',
 	                        null,
-	                        'This website is to be used by prospective employers or parties with legitimate business interests. Some of the material on this website is owned by their respective trademarked entities. \uFEFF   Amit Ranan \xA9 2016'
+	                        'This website is to be used by prospective employers or parties with legitimate business interests. Some of the material on this website is owned by their respective trademarked entities. \uFEFF   Amit Ranan \xA9 2018'
 	                    )
 	                )
 	            )
