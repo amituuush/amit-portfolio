@@ -117,11 +117,11 @@ nav ul li:first-child {
 }
 
 .cover-section .cover-pill {
-  color: #1FA975;
-  background: #4b5e70;
+  color: #fff;
+  background: #90a3b5;
   border-radius: 10px;
-  padding: 4px;
-  font-size: 16px;
+  padding: 5px;
+  font-size: 15px;
 }
 
 .cover-section .cover-right a {
